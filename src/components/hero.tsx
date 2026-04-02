@@ -3,7 +3,7 @@ import Icon from "@/components/icon";
 
 export default function Hero() {
   return (
-    <header className="relative flex min-h-[921px] items-center overflow-hidden">
+    <header className="relative flex min-h-[760px] items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           alt="University Campus"
@@ -22,23 +22,23 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-8 py-20 text-white">
+      <div className="relative z-10 mx-auto max-w-7xl px-8 py-14 text-white">
         <p className="font-label mb-4 font-semibold uppercase tracking-[0.2em] text-[#ffe08d]">
           International Symposium
         </p>
-        <h1 className="font-headline mb-6 text-7xl font-bold tracking-tighter md:text-9xl">IISA 2026</h1>
-        <h2 className="font-headline mb-8 max-w-2xl text-2xl leading-snug opacity-90 md:text-4xl">
+        <h1 className="font-headline mb-4 text-6xl font-bold tracking-tighter md:text-8xl">IISA 2026</h1>
+        <h2 className="font-headline mb-6 max-w-2xl text-xl leading-snug opacity-90 md:text-3xl">
           India International Symposium on Acoustics
         </h2>
 
-        <div className="mb-12 max-w-3xl rounded-lg border-l-4 border-l-[#745b04] bg-white/10 p-8 backdrop-blur-md">
+        <div className="mb-8 max-w-3xl rounded-lg border-l-4 border-l-[#745b04] bg-white/10 p-6 backdrop-blur-md">
           <p className="font-label mb-2 text-sm uppercase tracking-widest text-[#ffe08d]">Theme</p>
-          <p className="text-xl font-light italic leading-relaxed md:text-2xl">
+          <p className="text-lg font-light italic leading-relaxed md:text-xl">
             &quot;AI for Acoustics: Innovation, Inclusion and Impact for Social Good&quot;
           </p>
         </div>
 
-        <div className="mb-12 flex flex-wrap items-center gap-12">
+        <div className="mb-8 flex flex-wrap items-center gap-x-12 gap-y-4">
           <div className="flex items-center gap-3">
             <Icon className="size-6 text-[#ffe08d]" name="calendar" />
             <div>
@@ -56,13 +56,13 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-wrap gap-4">
-          <button className="kasavu-gold-gradient rounded-md px-8 py-4 text-lg font-semibold text-white transition-transform hover:scale-105">
+          <button className="kasavu-gold-gradient rounded-md px-6 py-3 text-base font-semibold text-white transition-transform hover:scale-105">
             Register Now
           </button>
-          <button className="rounded-md border border-white/30 bg-white/10 px-8 py-4 text-lg font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20">
+          <button className="rounded-md border border-white/30 bg-white/10 px-6 py-3 text-base font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20">
             Submit Paper
           </button>
-          <button className="flex items-center gap-2 px-8 py-4 text-white hover:underline">
+          <button className="flex items-center gap-2 px-6 py-3 text-white hover:underline">
             Download Brochure
             <Icon className="size-5" name="download" />
           </button>
