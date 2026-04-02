@@ -18,7 +18,24 @@ type IconName =
   | "utensils"
   | "arrow-right"
   | "share"
-  | "mail";
+  | "mail"
+  | "description"
+  | "article"
+  | "upload"
+  | "external-link"
+  | "info"
+  | "brain"
+  | "waves"
+  | "hub"
+  | "lock"
+  | "chip"
+  | "antenna"
+  | "health"
+  | "robot"
+  | "bolt"
+  | "arrow-left"
+  | "eye"
+  | "shield";
 
 type IconProps = {
   className?: string;
@@ -159,6 +176,117 @@ export default function Icon({ className, name }: IconProps) {
         <>
           <rect x="3" y="5" width="18" height="14" rx="2" />
           <path d="m4 7 8 6 8-6" />
+        </>
+      )}
+      {name === "description" && (
+        <>
+          <path d="M7 3h7l5 5v13H7z" />
+          <path d="M14 3v5h5M10 13h6M10 17h6M10 9h2" />
+        </>
+      )}
+      {name === "article" && (
+        <>
+          <rect x="5" y="4" width="14" height="16" rx="2" />
+          <path d="M8 8h8M8 12h8M8 16h5" />
+        </>
+      )}
+      {name === "upload" && (
+        <>
+          <path d="M12 20V9" />
+          <path d="m7 13 5-5 5 5" />
+          <path d="M5 4h14" />
+        </>
+      )}
+      {name === "external-link" && (
+        <>
+          <path d="M14 5h5v5" />
+          <path d="M10 14 19 5" />
+          <path d="M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5" />
+        </>
+      )}
+      {name === "info" && (
+        <>
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 10v6M12 7h.01" />
+        </>
+      )}
+      {name === "brain" && (
+        <>
+          <path d="M9.5 7.5a3 3 0 1 1 6 0 3 3 0 0 1 1.5 5.6 3.5 3.5 0 0 1-3 5.4H11a3.5 3.5 0 0 1-3-5.4 3 3 0 0 1 1.5-5.6Z" />
+          <path d="M12 7v11M9.5 10.5H12M12 13.5h2.5" />
+        </>
+      )}
+      {name === "waves" && (
+        <>
+          <path d="M3 12c2-3 4-3 6 0s4 3 6 0 4-3 6 0" />
+          <path d="M3 17c2-3 4-3 6 0s4 3 6 0 4-3 6 0" />
+          <path d="M3 7c2-3 4-3 6 0s4 3 6 0 4-3 6 0" />
+        </>
+      )}
+      {name === "hub" && (
+        <>
+          <rect x="10" y="10" width="4" height="4" rx="1" />
+          <path d="M12 4v6M12 14v6M4 12h6M14 12h6" />
+          <circle cx="12" cy="4" r="2" />
+          <circle cx="12" cy="20" r="2" />
+          <circle cx="4" cy="12" r="2" />
+          <circle cx="20" cy="12" r="2" />
+        </>
+      )}
+      {name === "lock" && (
+        <>
+          <rect x="5" y="11" width="14" height="10" rx="2" />
+          <path d="M8 11V8a4 4 0 1 1 8 0v3" />
+        </>
+      )}
+      {name === "chip" && (
+        <>
+          <rect x="7" y="7" width="10" height="10" rx="2" />
+          <path d="M10 10h4v4h-4zM9 3v4M15 3v4M9 17v4M15 17v4M3 9h4M3 15h4M17 9h4M17 15h4" />
+        </>
+      )}
+      {name === "antenna" && (
+        <>
+          <path d="M12 18v3M8 21h8" />
+          <path d="M12 3a7 7 0 0 1 7 7" />
+          <path d="M12 7a3 3 0 0 1 3 3" />
+          <path d="M12 10a1 1 0 1 1 0 .01" />
+          <path d="M5 10a7 7 0 0 1 7-7" />
+        </>
+      )}
+      {name === "health" && (
+        <>
+          <path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z" />
+          <path d="M10 12h4M12 10v4" />
+        </>
+      )}
+      {name === "robot" && (
+        <>
+          <rect x="6" y="8" width="12" height="10" rx="2" />
+          <path d="M12 4v4M9 13h.01M15 13h.01M9 18v2M15 18v2M6 12H4M20 12h-2" />
+        </>
+      )}
+      {name === "bolt" && (
+        <>
+          <path d="M13 2 6 13h5l-1 9 8-12h-5l0-8Z" />
+        </>
+      )}
+      {name === "arrow-left" && (
+        <>
+          <path d="M19 12H5" />
+          <path d="m11 6-6 6 6 6" />
+        </>
+      )}
+      {name === "eye" && (
+        <>
+          <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6Z" />
+          <circle cx="12" cy="12" r="2.5" />
+        </>
+      )}
+      {name === "shield" && (
+        <>
+          <path d="M12 3 6 5v5c0 4.2 2.3 8 6 11 3.7-3 6-6.8 6-11V5l-6-2Z" />
+          <path d="M10 12h4M12 10v4" />
         </>
       )}
     </svg>
