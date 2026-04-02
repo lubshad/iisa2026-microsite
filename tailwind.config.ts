@@ -1,0 +1,88 @@
+import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
+
+const config: Config = {
+  darkMode: "class",
+  content: ["./src/**/*.{ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        primary: "#00375e",
+        "primary-fixed": "#d0e4ff",
+        "primary-fixed-dim": "#9fcafc",
+        "primary-container": "#1e4e79",
+        "on-primary": "#ffffff",
+        "on-primary-fixed": "#001d35",
+        "on-primary-container": "#95bff1",
+        secondary: "#745b04",
+        "secondary-fixed": "#ffe08d",
+        "secondary-fixed-dim": "#e4c368",
+        "secondary-container": "#ffdc7e",
+        "on-secondary": "#ffffff",
+        "on-secondary-fixed": "#241a00",
+        "on-secondary-container": "#78600a",
+        tertiary: "#273549",
+        "tertiary-container": "#3e4c61",
+        "tertiary-fixed": "#d5e3fd",
+        "tertiary-fixed-dim": "#b9c7e0",
+        "on-tertiary": "#ffffff",
+        "on-tertiary-fixed": "#0d1c2f",
+        "on-tertiary-container": "#aebcd5",
+        surface: "#f9f9f9",
+        "surface-dim": "#dadada",
+        "surface-bright": "#f9f9f9",
+        "surface-container-lowest": "#ffffff",
+        "surface-container-low": "#f3f3f4",
+        "surface-container": "#eeeeee",
+        "surface-container-high": "#e8e8e8",
+        "surface-container-highest": "#e2e2e2",
+        "surface-variant": "#e2e2e2",
+        "on-surface": "#1a1c1c",
+        "on-surface-variant": "#42474f",
+        "inverse-surface": "#2f3131",
+        "inverse-on-surface": "#f0f1f1",
+        "inverse-primary": "#9fcafc",
+        background: "#f9f9f9",
+        "on-background": "#1a1c1c",
+        "on-secondary-fixed-variant": "#584400",
+        "on-primary-fixed-variant": "#174974",
+        "on-tertiary-fixed-variant": "#3a485c",
+        outline: "#72777f",
+        "outline-variant": "#c2c7d0",
+        error: "#ba1a1a",
+        "error-container": "#ffdad6",
+        "on-error": "#ffffff",
+        "on-error-container": "#93000a",
+        "surface-tint": "#35618d",
+      },
+      fontFamily: {
+        headline: ["var(--font-noto-serif)", "serif"],
+        body: ["var(--font-inter)", "sans-serif"],
+        label: ["var(--font-inter)", "sans-serif"],
+      },
+      borderRadius: {
+        DEFAULT: "0.125rem",
+        lg: "0.25rem",
+        xl: "0.5rem",
+        full: "0.75rem",
+      },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
+    },
+  },
+  plugins: [tailwindcssAnimate],
+};
+
+export default config;
