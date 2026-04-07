@@ -3,27 +3,33 @@ import Icon from "@/components/icon";
 const focusAreas = [
   {
     icon: "hearing" as const,
-    title: "Speech & Hearing",
-    description:
-      "Exploring neural networks in speech synthesis and advanced hearing aid technologies for inclusive healthcare.",
+    title: "Speech & Hearing Technologies",
+    description: "Advancing digital intelligence in speech processing and inclusive hearing assistance tools.",
+  },
+  {
+    icon: "chip" as const,
+    title: "Intelligent Sound Systems",
+    description: "Developing smart acoustic systems utilizing AI for enhanced audio processing.",
   },
   {
     icon: "water" as const,
     title: "Underwater Acoustics",
-    description:
-      "Deep sea signal processing and sonar innovation using AI-driven predictive modeling for marine conservation.",
+    description: "Deep sea signal processing and sonar innovation combined with predictive modeling.",
   },
   {
-    icon: "document" as const,
-    title: "Environmental Noise",
-    description:
-      "Leveraging machine learning for smart city noise mapping and sustainable urban acoustic planning.",
+    icon: "health" as const,
+    title: "Assistive Acoustics",
+    description: "Building accessible acoustic solutions and devices for impactful healthcare.",
   },
   {
-    icon: "building" as const,
-    title: "Architectural Signal",
-    description:
-      "Generative design in building acoustics to optimize soundscapes in public and private spaces.",
+    icon: "globe" as const,
+    title: "Sustainable Acoustic Environments",
+    description: "Leveraging technology for noise mapping and sustainable urban acoustic planning.",
+  },
+  {
+    icon: "waves" as const,
+    title: "Ultrasonics & Vibration",
+    description: "Exploring the intersection of advanced ultrasonic techniques and machine learning.",
   },
 ];
 
@@ -41,14 +47,10 @@ export default function About() {
           </h2>
           <div className="mb-8 h-1 w-24 bg-[#745b04]"></div>
           <p className="mb-6 text-lg leading-relaxed text-on-surface-variant">
-            The International Symposium on Acoustics 2026 stands at the forefront of the technological renaissance in
-            sound science. As we bridge the gap between physical phenomena and digital intelligence, IISA 2026
-            explores how Artificial Intelligence is fundamentally transforming the landscape of acoustics.
+            IISA 2026 explores the transformative role of Artificial Intelligence in advancing acoustical science with a strong focus on inclusion and societal impact. The symposium brings together researchers, engineers, healthcare professionals, and industry leaders to share knowledge, innovations, and real-world applications in acoustics.
           </p>
           <p className="text-lg leading-relaxed text-on-surface-variant">
-            From the depths of underwater acoustics to the intricacies of human speech and hearing, we invite the
-            global scientific community to contribute to a symposium focused on social impact and sustainable
-            innovation.
+            The conference aims to promote interdisciplinary collaboration and develop accessible, inclusive, and sustainable acoustic solutions for global communities.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-6 lg:col-span-7 md:grid-cols-2">

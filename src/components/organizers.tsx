@@ -1,11 +1,11 @@
-import Icon from "@/components/icon";
+import Image from "next/image";
 
 const organizers = [
-  { icon: "school" as const, label: "Acoustical Society of India" },
-  { icon: "bank" as const, label: "University of Calicut" },
-  { icon: "foundation" as const, label: "Kannur University" },
-  { icon: "globe" as const, label: "ICA (International Commission)" },
-  { icon: "public" as const, label: "ASA (Acoustical Society of America)" },
+  { logo: "/logos/asi.png", label: "Acoustical Society of India (ASI)" },
+  { logo: "/logos/university_of_calicut_logo.png", label: "University of Calicut, Kerala" },
+  { logo: "/logos/kannur_university.png", label: "Kannur University, Kerala" },
+  { logo: "/logos/ica.png", label: "International Commission for Acoustics (ICA)" },
+  { logo: "/logos/asa.png", label: "Acoustical Society of America (ASA)" },
 ];
 
 export default function Organizers() {
@@ -15,13 +15,20 @@ export default function Organizers() {
         <h3 className="font-label mb-12 text-xs uppercase tracking-[0.3em] text-[#72777f]">
           Organizers &amp; Strategic Partners
         </h3>
-        <div className="flex flex-wrap items-center justify-center gap-12 opacity-70 grayscale transition-all duration-500 hover:grayscale-0 md:gap-20">
+        <div className="flex flex-wrap items-center justify-center gap-12 opacity-80 grayscale transition-all duration-500 hover:grayscale-0 md:gap-20">
           {organizers.map((item) => (
-            <div key={item.label} className="flex flex-col items-center gap-2">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[rgba(30,78,121,0.1)]">
-                <Icon className="size-8 text-[#00375e]" name={item.icon} />
+            <div key={item.label} className="flex flex-col items-center gap-4">
+              <div className="relative flex h-24 w-32 items-center justify-center mix-blend-darken">
+                <Image
+                  src={item.logo}
+                  alt={item.label}
+                  fill
+                  className="object-contain"
+                />
               </div>
-              <span className="text-[10px] font-bold uppercase tracking-tighter">{item.label}</span>
+              <span className="max-w-[140px] text-center text-[11px] font-bold uppercase leading-tight tracking-tighter text-[#00375e]">
+                {item.label}
+              </span>
             </div>
           ))}
         </div>

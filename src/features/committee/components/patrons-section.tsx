@@ -8,15 +8,13 @@ const patrons = [
     name: "Prof. P. Raveendran",
     role: "Vice-Chancellor",
     institution: "University of Calicut, Kerala",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCCjmNtj9HiHdsjNF-0pHwrka5OlkpqbbO6S5c2gTbHAnTxRdhb4DBEDENI4E1HDixAAjb9Lnu5lRRCEOHf5GU8UIsGS6OU7EzHQSpLuymGTT9xdJMdyGgECN-1McPCWPbMVayxx3qhQd4niDwwm17iC6B5dAJUWOoxg33Qm5uKLRN_7wN2U5Rnv44Hdjyj23IdyhYLrptvtUBBPRjovZrkt4-XxtV5tzY3P3C8JkYlingRzM7duDEJBQRTt_d7RUi1Y7oXjYfJ56Aj",
+    image: "/portrait_images/Prof. P. Raveendran.png",
   },
   {
     name: "Prof. K.K. Saju",
     role: "Vice-Chancellor",
     institution: "Kannur University, Kerala",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7aJZaofTisWpCCtn3-e8xZlUElw-EORLz73yrCaXocm_I7bmBMq3yY5SEB89Xt11uDtDSqJn-EcyenjfJrXLyMDF8dSQxFfWkKBqWCxh6T__Eui317oPP-Yj57iA6bQ3Q_cfFkowQmiWO4LDeDR5ywGXujRTtrr2BU5fJlny875s8l_DyRM46WISpgAzOKQCDDJ6NYZDBrHKaIrHFcEb_ohPQ6nVvFTcwnFg91i8tJ6ktXJHi1h-eh4DXJCTaldb154rRTmGsrPOr",
+    image: "/portrait_images/Prof. K.K. Saju.png",
   },
 ];
 

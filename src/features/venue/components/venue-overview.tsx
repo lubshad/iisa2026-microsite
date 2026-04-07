@@ -65,7 +65,7 @@ export default function VenueOverview() {
               className="object-cover object-center"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
-              src="/university_calicut_campus_aerial_1775544818339.png"
+              src="/university of calicut.png"
             />
             {/* Caption overlay */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#00375e]/80 to-transparent px-8 py-6">

@@ -11,7 +11,7 @@ export default function Hero() {
           fill
           priority
           sizes="100vw"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN8ySIBtxNosEc2DbuSzlzmhfFTzMDxOQZE2Ohu12WomiHK0WUmxQZsTDzBr3qQNBo9rhVGBKfYTgHR7v1EdrwDcmKdzGT3Ow1OU0Y-L7SPk9_-StnlNYlQ44J3EIkG3GTLOWRS6rCplVOcgVX1tq7e3guq1jA6QjxVCtznUPIf1RAeTLzvDyssKQy7vxrPIRWpYFPD5xzWBy39kMGh_4KSdPZc-xlrp-L3h1vEs-rJtnXkpy-przHQ0eAVpr3oZy1hgq0yHdlYclU"
+          src="/university of calicut.png"
         />
         <div className="absolute inset-0 hero-gradient"></div>
         <div className="pointer-events-none absolute inset-0 opacity-20 mix-blend-screen">
@@ -50,7 +50,7 @@ export default function Hero() {
             <Icon className="size-6 text-[#ffe08d]" name="location" />
             <div>
               <p className="text-xs uppercase opacity-70">Venue</p>
-              <p className="font-medium">University of Calicut &amp; Kannur University, Kerala, India</p>
+              <p className="font-medium">University of Calicut, Kerala, India</p>
             </div>
           </div>
         </div>
@@ -61,10 +61,6 @@ export default function Hero() {
           </button>
           <button className="rounded-md border border-white/30 bg-white/10 px-6 py-3 text-base font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20">
             Submit Paper
-          </button>
-          <button className="flex items-center gap-2 px-6 py-3 text-white hover:underline">
-            Download Brochure
-            <Icon className="size-5" name="download" />
           </button>
         </div>
       </div>

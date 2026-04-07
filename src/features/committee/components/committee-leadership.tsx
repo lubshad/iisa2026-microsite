@@ -2,16 +2,20 @@
 
 import { motion } from "framer-motion";
 
+import Image from "next/image";
+
 const leadership = [
   {
     name: "Dr. Lajish V L",
     institution: "University of Calicut, Kerala",
     role: "General Chair",
+    image: "/portrait_images/Dr. Lajish V L.png",
   },
   {
     name: "Dr. Sunilkumar R K",
     institution: "Kannur University, Kerala",
     role: "General Co-Chair",
+    image: "/portrait_images/Dr. Sunilkumar R K.png",
   },
 ];
 
@@ -60,19 +64,29 @@ export default function CommitteeLeadership() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="bg-[#e8e8e8] p-8 flex flex-col justify-between hover:bg-[#e2e2e2] transition-colors"
+            className="bg-[#f3f3f4] p-1 group flex flex-col"
           >
-            <div>
-              <h5 className="font-headline text-xl text-[#00375e] font-bold">
-                {leader.name}
-              </h5>
-              <p className="text-[#42474f] text-sm mt-2">
-                {leader.institution}
+            <div className="relative overflow-hidden mb-4 aspect-[4/5] bg-slate-200">
+              <Image
+                src={leader.image}
+                alt={leader.name}
+                fill
+                className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+              />
+            </div>
+            <div className="px-4 pb-4 flex-grow flex flex-col justify-between">
+              <div>
+                <h5 className="font-headline text-xl text-[#00375e] font-bold">
+                  {leader.name}
+                </h5>
+                <p className="text-[#42474f] text-sm mt-2">
+                  {leader.institution}
+                </p>
+              </div>
+              <p className="text-[#745b04] font-bold text-xs uppercase tracking-widest mt-6">
+                {leader.role}
               </p>
             </div>
-            <p className="text-[#745b04] font-bold text-xs uppercase tracking-widest mt-8">
-              {leader.role}
-            </p>
           </motion.div>
         ))}
       </div>

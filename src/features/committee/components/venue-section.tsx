@@ -73,7 +73,7 @@ export default function VenueSection() {
             <div className="absolute -top-10 -left-10 w-40 h-40 border-l-4 border-t-4 border-secondary/20 dark:border-[#E4C368]/20"></div>
             <div className="aspect-square overflow-hidden shadow-2xl relative">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB745doO8Z1dwK9ncXz9PgWKruPH7VkLcl-eWGeMrObyW3A91kB8CatnRovLR8cHeskImnrTZcRn_WoekVqyCnH6r742NuuZF507J0nHhvtXibnO8pH0jWGzsfS9h2t9JzWW09fn-LqQaByfzEDQsr2xU1RPyxob4yOTAu7U3hk5xdYjHu2C0aNUPy4KwkjFhc_sc7BCpWAYgQh4sBRVCQBBklHH0u7AcWswMjr_AGHSi6dlsYXx7zlehMSDAHnmU9U0xK8MduRsM9a"
+                src="/university of calicut.png"
                 alt="University of Calicut"
                 fill
                 className="object-cover"

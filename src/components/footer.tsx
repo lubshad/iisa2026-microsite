@@ -8,8 +8,7 @@ export default function Footer() {
         <div>
           <div className="mb-7 font-serif text-[15px] text-[#1E4E79]">IISA 2026</div>
           <p className="mb-8 max-w-sm text-[13px] leading-relaxed text-[#5f6670]">
-            The International Symposium on Integrated Systems &amp; Applications is a premier venue for academic
-            exchange in signal processing and artificial intelligence.
+            Join IISA 2026 and be part of a global effort to shape the future of acoustics through innovation, collaboration, and impact.
           </p>
           <p className="text-[11px] text-[#5f6670]">© 2026 IISA. University of Calicut, Kerala, India.</p>
         </div>
@@ -19,28 +18,50 @@ export default function Footer() {
             <li>
               <Link
                 className="text-[13px] text-[#5f6670] underline-offset-4 hover:text-[#1E4E79] hover:underline"
-                href={routes.callForPapers}
+                href={routes.registration}
               >
-                Guidelines
+                Registration
               </Link>
             </li>
             <li>
-              <a className="text-[13px] text-[#5f6670] underline-offset-4 hover:text-[#1E4E79] hover:underline" href="#">
-                Visa Info
-              </a>
-            </li>
-            <li>
-              <a
+              <Link
                 className="text-[13px] text-[#5f6670] underline-offset-4 hover:text-[#1E4E79] hover:underline"
-                href="mailto:iisa2026@uoc.ac.in"
+                href={routes.callForPapers}
               >
-                Contact Email
-              </a>
+                Call for Papers
+              </Link>
             </li>
             <li>
-              <a className="text-[13px] text-[#5f6670] underline-offset-4 hover:text-[#1E4E79] hover:underline" href="#">
-                Privacy Policy
-              </a>
+              <Link
+                className="text-[13px] text-[#5f6670] underline-offset-4 hover:text-[#1E4E79] hover:underline"
+                href={`${routes.registration}/#sponsorship`}
+              >
+                Sponsorship
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-[13px] text-[#5f6670] underline-offset-4 hover:text-[#1E4E79] hover:underline"
+                href={`${routes.registration}/#exhibition`}
+              >
+                Exhibition
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-[13px] text-[#5f6670] underline-offset-4 hover:text-[#1E4E79] hover:underline"
+                href={routes.committee}
+              >
+                Committees
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-[13px] text-[#5f6670] underline-offset-4 hover:text-[#1E4E79] hover:underline"
+                href={routes.venue}
+              >
+                Venue
+              </Link>
             </li>
           </ul>
         </div>
