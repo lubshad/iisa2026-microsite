@@ -16,7 +16,7 @@ export default function RegistrationForm() {
     formState: { errors, isSubmitting },
     control,
   } = useForm<RegistrationFormData>({
-    resolver: zodResolver(registrationSchema),
+    resolver: zodResolver(registrationSchema) as any,
     defaultValues: {
       category: "STUDENT",
       membershipType: "NON_MEMBER",

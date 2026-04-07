@@ -19,7 +19,7 @@ export const registrationSchema = z.object({
     "ENFORCEMENT_AUTHORITY",
     "OTHER"
   ], {
-    required_error: "Please select a participant category",
+    error: "Please select a participant category",
   }),
 
   // Section 3: Membership Type
@@ -30,7 +30,7 @@ export const registrationSchema = z.object({
     "INTL_DELEGATE",
     "INTL_NON_MEMBER"
   ], {
-    required_error: "Please select a membership type",
+    error: "Please select a membership type",
   }),
 
   // Section 4: Paper Submission
@@ -50,7 +50,7 @@ export const registrationSchema = z.object({
     "Transducers & Electro-acoustics",
     "Vibro-acoustics & Noise"
   ], {
-    required_error: "Please select a topic area",
+    error: "Please select a topic area",
   }).optional(),
 
   // Section 5: Registration Type
@@ -65,7 +65,7 @@ export const registrationSchema = z.object({
 
   // Section 9: Payment
   paymentMethod: z.enum(["UPI", "CARD", "NET_BANKING", "INTL_PAYMENT"], {
-    required_error: "Please select a payment method",
+    error: "Please select a payment method",
   }),
 
   // Section 10: Confirmation
