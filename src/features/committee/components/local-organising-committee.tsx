@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function LocalOrganisingCommittee() {
   return (
-    <section className="mb-32 bg-primary/5 dark:bg-[#1e4e79]/10 p-12 rounded-2xl border border-primary/10 dark:border-[#1e4e79]/20">
+    <section className="mb-16 rounded-2xl border border-primary/10 bg-primary/5 p-6 dark:border-[#1e4e79]/20 dark:bg-[#1e4e79]/10 md:mb-32 md:p-12">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

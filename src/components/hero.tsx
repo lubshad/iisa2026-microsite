@@ -3,7 +3,7 @@ import Icon from "@/components/icon";
 
 export default function Hero() {
   return (
-    <header className="relative flex min-h-[760px] items-center overflow-hidden">
+    <header className="relative flex min-h-[520px] items-center overflow-hidden md:min-h-[760px]">
       <div className="absolute inset-0 z-0">
         <Image
           alt="University Campus"
@@ -22,7 +22,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-8 py-14 text-white">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 py-10 text-white md:px-8 md:py-14">
         <p className="font-label mb-4 font-semibold uppercase tracking-[0.2em] text-[#ffe08d]">
           International Symposium
         </p>
@@ -31,14 +31,14 @@ export default function Hero() {
           India International Symposium on Acoustics
         </h2>
 
-        <div className="mb-8 max-w-3xl rounded-lg border-l-4 border-l-[#745b04] bg-white/10 p-6 backdrop-blur-md">
+        <div className="mb-6 max-w-3xl rounded-lg border-l-4 border-l-[#745b04] bg-white/10 p-4 backdrop-blur-md md:mb-8 md:p-6">
           <p className="font-label mb-2 text-sm uppercase tracking-widest text-[#ffe08d]">Theme</p>
           <p className="text-lg font-light italic leading-relaxed md:text-xl">
             &quot;AI for Acoustics: Innovation, Inclusion and Impact for Social Good&quot;
           </p>
         </div>
 
-        <div className="mb-8 flex flex-wrap items-center gap-x-12 gap-y-4">
+        <div className="mb-6 flex flex-wrap items-center gap-x-6 gap-y-3 md:mb-8 md:gap-x-12 md:gap-y-4">
           <div className="flex items-center gap-3">
             <Icon className="size-6 text-[#ffe08d]" name="calendar" />
             <div>

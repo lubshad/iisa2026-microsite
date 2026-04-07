@@ -27,8 +27,8 @@ const advisoryMembers = [
 
 export default function AdvisoryCommittee() {
   return (
-    <section className="mb-32">
-      <h3 className="font-headline text-3xl text-[#00375e] mb-8 border-b border-[#c2c7d0]/30 pb-4">
+    <section className="mb-16 md:mb-32">
+      <h3 className="font-headline mb-6 border-b border-[#c2c7d0]/30 pb-4 text-2xl text-[#00375e] md:mb-8 md:text-3xl">
         Advisory Committee
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-8">

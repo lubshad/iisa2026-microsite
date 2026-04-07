@@ -38,7 +38,7 @@ export default function ParticipantBenefits() {
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXCWc0XabVl4IWrYfCWkNpPmBhuSYkaBiD89e6UkzU0dwiahvx_FxaypKq2nmV7nXmEvgxiyAQHmYk519Rp4Vjy-GdwOCKURGoqdgZob2zBhS36Jeg790oT5JkwRXCDamwhuYvYImUMf-g03gL5SnblnCAQPG3Ew8Y8xc5QFxiMUQerpmILR7JXe9igaGHyIk_7tg9ltIM-sYy_tIzJheg8biZsq0yZOqBJ6cUMhaaGXxGo-hydsOdcyJs35cGGTBo7XKiDdMhweTR"
               alt="Delegate Experience"
               fill
-              className="object-cover transition-all duration-700 md:grayscale group-hover:grayscale-0 group-hover:scale-105"
+              className="object-cover transition-all duration-700 group-hover:scale-105"
               unoptimized
             />
             <div className="absolute inset-0 bg-primary/20 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity"></div>

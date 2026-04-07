@@ -33,8 +33,8 @@ const accessibilityItems = [
 
 export default function AccessibilitySection() {
   return (
-    <section className="overflow-hidden bg-white py-24">
-      <div className="mx-auto max-w-7xl px-8 grid grid-cols-1 items-start gap-20 lg:grid-cols-2">
+    <section className="overflow-hidden bg-white py-12 md:py-24">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 items-start gap-10 px-4 md:gap-20 md:px-8 lg:grid-cols-2">
         {/* Left: transit items */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -45,12 +45,12 @@ export default function AccessibilitySection() {
           <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
             Getting Here
           </p>
-          <h2 className="font-headline mb-8 text-5xl leading-tight text-[#00375e]">
+          <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
             Accessibility
           </h2>
-          <div className="mb-12 h-1 w-24 bg-[#745b04]" />
+          <div className="mb-8 h-1 w-16 bg-[#745b04] md:mb-12 md:w-24" />
 
-          <div className="space-y-10">
+          <div className="space-y-6 md:space-y-10">
             {accessibilityItems.map((item) => (
               <div key={item.title} className="group flex gap-6">
                 <div className="flex size-14 flex-shrink-0 items-center justify-center bg-[#745b04]/10 text-[#745b04] transition-all group-hover:bg-[#745b04] group-hover:text-white">

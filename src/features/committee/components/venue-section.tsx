@@ -6,15 +6,15 @@ import Icon from "@/components/icon";
 
 export default function VenueSection() {
   return (
-    <section id="venue" className="mb-32">
-      <div className="bg-surface-dim/20 dark:bg-slate-900/40 -mx-8 px-8 py-24">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <section id="venue" className="mb-16 md:mb-32">
+      <div className="-mx-4 bg-surface-dim/20 px-4 py-12 dark:bg-slate-900/40 md:-mx-8 md:px-8 md:py-24">
+        <div className="mx-auto max-w-7xl grid grid-cols-1 items-center gap-10 md:gap-20 lg:grid-cols-2">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-headline text-5xl font-bold text-primary dark:text-white mb-8 leading-tight">
+            <h2 className="font-headline mb-6 text-3xl font-bold leading-tight text-primary dark:text-white md:mb-8 md:text-5xl">
               Venue:
               <br />
               University of Calicut

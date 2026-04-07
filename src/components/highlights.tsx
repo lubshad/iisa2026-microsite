@@ -27,15 +27,15 @@ const participantTypes = [
 
 export default function Highlights() {
   return (
-    <section className="bg-white py-24">
-      <div className="mx-auto max-w-7xl px-8">
-        <div className="mb-24 grid grid-cols-1 items-start gap-16 lg:grid-cols-12">
+    <section className="bg-white py-12 md:py-24">
+      <div className="mx-auto max-w-7xl px-4 md:px-8">
+        <div className="mb-12 grid grid-cols-1 items-start gap-8 md:gap-16 md:mb-24 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
               Program Overview
             </p>
-            <h2 className="font-headline mb-8 text-5xl leading-tight text-[#00375e]">Conference<br />Highlights</h2>
-            <div className="mb-8 h-1 w-24 bg-[#745b04]" />
+            <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">Conference<br />Highlights</h2>
+            <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24" />
             <ul className="flex flex-col gap-4">
               {highlights.map((item, i) => (
                 <li key={i} className="flex items-start gap-4">
@@ -76,13 +76,13 @@ export default function Highlights() {
           </div>
         </div>
 
-        <div className="mb-24">
+        <div className="mb-12 md:mb-24">
           <div className="mb-12 text-center">
             <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
               Value Proposition
             </p>
-            <h2 className="font-headline mx-auto mb-8 max-w-2xl text-5xl leading-tight text-[#00375e]">Why Attend IISA 2026?</h2>
-            <div className="mx-auto mb-8 h-1 w-24 bg-[#745b04]" />
+            <h2 className="font-headline mx-auto mb-6 max-w-2xl text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">Why Attend IISA 2026?</h2>
+            <div className="mx-auto mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24" />
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-5">
             {whyAttend.map((item, i) => (

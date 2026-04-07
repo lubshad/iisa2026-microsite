@@ -13,8 +13,8 @@ export default function AboutCalicut() {
   ];
 
   return (
-    <section className="py-24 bg-[#f3f3f4] relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <section className="relative overflow-hidden bg-[#f3f3f4] py-12 md:py-24">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 items-center gap-8 px-4 md:gap-20 md:px-8 lg:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -24,10 +24,10 @@ export default function AboutCalicut() {
           <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
             Experience Kozhikode
           </p>
-          <h2 className="font-headline mb-8 text-5xl leading-tight text-[#00375e]">
+          <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
             About Calicut (Kozhikode)
           </h2>
-          <div className="mb-10 h-1 w-24 bg-[#745b04]" />
+          <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-10 md:w-24" />
           <p className="font-body text-lg text-[#42474f] leading-relaxed mb-6">
             Calicut is a historic coastal city in Kerala known for its cultural
             heritage, academic significance, and scenic beauty. It has stood as
@@ -42,7 +42,7 @@ export default function AboutCalicut() {
               </li>
             ))}
           </ul>
-          <div className="p-8 bg-white border-l-4 border-[#745b04] shadow-sm">
+          <div className="border-l-4 border-[#745b04] bg-white p-5 shadow-sm md:p-8">
             <h4 className="text-xl font-headline font-bold text-[#00375e] mb-3 italic">
               City of Spices
             </h4>

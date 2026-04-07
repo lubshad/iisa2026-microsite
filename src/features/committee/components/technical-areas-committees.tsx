@@ -51,11 +51,11 @@ const technicalAreas = [
 
 export default function TechnicalAreasCommittees() {
   return (
-    <section className="mb-32">
-      <h3 className="font-headline text-3xl text-[#00375e] mb-12 border-b border-[#c2c7d0]/30 pb-4">
+    <section className="mb-16 md:mb-32">
+      <h3 className="font-headline mb-8 border-b border-[#c2c7d0]/30 pb-4 text-2xl text-[#00375e] md:mb-12 md:text-3xl">
         Technical Areas Committees
       </h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
         {technicalAreas.map((area, index) => (
           <motion.div
             key={area.title}

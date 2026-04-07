@@ -24,25 +24,25 @@ export default function VenueSummary() {
   ];
 
   return (
-    <section className="py-24 bg-[#00375e] text-white relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+    <section className="relative overflow-hidden bg-[#00375e] py-12 text-white md:py-24">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-20"
+          className="mb-12 text-center md:mb-20"
         >
           <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#ffe08d]">
             The Case for Calicut
           </p>
-          <h2 className="font-headline mb-8 text-5xl leading-tight text-white">
+          <h2 className="font-headline mb-6 text-3xl leading-tight text-white md:mb-8 md:text-5xl">
             Why This Venue?
           </h2>
-          <div className="mx-auto mb-4 h-1 w-24 bg-[#745b04]" />
+          <div className="mx-auto mb-4 h-1 w-16 bg-[#745b04] md:w-24" />
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
+        <div className="mb-16 grid grid-cols-1 gap-8 md:mb-24 md:grid-cols-2 md:gap-12">
           {reasons.map((reason, index) => (
             <motion.div
               key={reason.title}
@@ -50,7 +50,7 @@ export default function VenueSummary() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="flex gap-8 group"
+              className="group flex gap-5 md:gap-8"
             >
               <div className="flex-shrink-0 w-20 h-20 border border-[#745b04]/30 flex items-center justify-center transition-all group-hover:bg-[#745b04] group-hover:border-[#745b04]">
                 <span className="text-3xl font-headline font-bold text-[#ffe08d] group-hover:text-white">
@@ -74,7 +74,7 @@ export default function VenueSummary() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="relative mt-32 p-12 lg:p-20 bg-white/5 border border-white/10 text-center"
+          className="relative mt-12 border border-white/10 bg-white/5 p-8 text-center md:mt-32 lg:p-20"
         >
           <h3 className="font-headline text-3xl md:text-5xl font-bold mb-10 text-[#ffe08d]">
             Closing Note
@@ -84,7 +84,7 @@ export default function VenueSummary() {
             2026, fostering meaningful discussions, collaboration, and
             innovation in acoustics and AI-driven technologies.&quot;
           </p>
-          <div className="mt-16 flex justify-center items-center gap-6">
+          <div className="mt-8 flex items-center justify-center gap-6 md:mt-16">
             <div className="w-16 h-0.5 bg-white/20" />
             <Icon name="star" className="w-6 h-6 text-[#ffe08d]" />
             <div className="w-16 h-0.5 bg-white/20" />

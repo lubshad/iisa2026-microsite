@@ -17,8 +17,8 @@ const pastPresidents = [
 
 export default function PastPresidentsASI() {
   return (
-    <section className="mb-20">
-      <h3 className="font-headline text-3xl text-[#00375e] mb-8 border-b border-[#c2c7d0]/30 pb-4">
+    <section className="mb-12 md:mb-20">
+      <h3 className="font-headline mb-6 border-b border-[#c2c7d0]/30 pb-4 text-2xl text-[#00375e] md:mb-8 md:text-3xl">
         Past Presidents of Acoustical Society of India (ASI)
       </h3>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">

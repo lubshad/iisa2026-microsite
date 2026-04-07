@@ -3,8 +3,8 @@ import { routes } from "@/navigation/routes";
 
 export default function Footer() {
   return (
-    <footer className="mt-20 bg-[#F3F3F4]">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-8 py-16 md:grid-cols-[1.6fr_1fr_1fr]">
+    <footer className="mt-10 bg-[#F3F3F4] md:mt-20">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-10 md:grid-cols-[1.6fr_1fr_1fr] md:gap-12 md:px-8 md:py-16">
         <div>
           <div className="mb-7 font-serif text-[15px] text-[#1E4E79]">IISA 2026</div>
           <p className="mb-8 max-w-sm text-[13px] leading-relaxed text-[#5f6670]">

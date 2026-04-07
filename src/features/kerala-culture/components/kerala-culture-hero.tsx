@@ -3,7 +3,7 @@ import Icon from "@/components/icon";
 
 export default function KeralaCultureHero() {
   return (
-    <section className="relative h-[85vh] min-h-[600px] overflow-hidden">
+    <section className="relative h-[60vh] min-h-[420px] overflow-hidden md:h-[85vh] md:min-h-[600px]">
       <Image
         alt="Theyyam ritual performer in vibrant costume"
         className="object-cover"
@@ -14,7 +14,7 @@ export default function KeralaCultureHero() {
       />
       <div className="hero-gradient absolute inset-0" />
       <div className="relative z-10 flex h-full items-end">
-        <div className="mx-auto w-full max-w-7xl px-8 pb-20">
+        <div className="mx-auto w-full max-w-7xl px-4 pb-10 md:px-8 md:pb-20">
           <p className="font-label mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-[#ffe08d]">
             Regional Experience
           </p>
@@ -23,14 +23,14 @@ export default function KeralaCultureHero() {
             <br />
             Malabar
           </h1>
-          <div className="mb-10 border-l-4 border-l-[#745b04] pl-6">
+          <div className="mb-6 border-l-4 border-l-[#745b04] pl-5 md:mb-10 md:pl-6">
             <p className="max-w-2xl text-xl font-light leading-relaxed text-white/90">
               Beyond the symposium, discover the soul of Kerala. From the rhythmic intensity of
               Theyyam to the pristine coastline of Calicut, experience a land where tradition and
               innovation exist in perfect resonance.
             </p>
           </div>
-          <div className="flex flex-wrap gap-6 text-white">
+          <div className="flex flex-wrap gap-4 text-white md:gap-6">
             <div className="flex items-center gap-3">
               <Icon className="size-6 text-[#ffe08d]" name="mask" />
               <div>

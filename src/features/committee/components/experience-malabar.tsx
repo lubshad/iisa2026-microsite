@@ -27,11 +27,11 @@ const experiences = [
 export default function ExperienceMalabar() {
   return (
     <section id="culture" className="mb-20">
-      <div className="text-center mb-16">
-        <span className="text-[#745b04] font-bold tracking-[0.3em] uppercase text-xs">
+      <div className="mb-10 text-center md:mb-16">
+        <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#745b04]">
           Cultural Heritage
         </span>
-        <h2 className="font-headline text-5xl font-bold text-[#00375e] mt-4">
+        <h2 className="font-headline mt-4 text-3xl font-bold text-[#00375e] md:text-5xl">
           Experience Malabar
         </h2>
       </div>
@@ -43,14 +43,14 @@ export default function ExperienceMalabar() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="p-10 border-b md:border-b-0 md:border-r border-[#c2c7d0]/20 group hover:bg-[#1e4e79] transition-all duration-500"
+            className="group border-b border-[#c2c7d0]/20 p-6 transition-all duration-500 hover:bg-[#1e4e79] md:border-b-0 md:border-r md:p-10"
           >
             <div className="relative w-full h-48 mb-8 overflow-hidden">
                 <Image
                   src={exp.image}
                   alt={exp.title}
                   fill
-                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                  className="object-cover transition-all duration-700"
                 />
             </div>
             <h3 className="font-headline text-2xl mb-4 text-[#1a1c1c] group-hover:text-white transition-colors">

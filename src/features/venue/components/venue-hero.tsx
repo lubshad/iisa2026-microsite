@@ -6,7 +6,7 @@ import Icon from "@/components/icon";
 
 export default function VenueHero() {
   return (
-    <section className="relative h-[90vh] min-h-[640px] w-full overflow-hidden">
+    <section className="relative h-[60vh] min-h-[420px] w-full overflow-hidden md:h-[90vh] md:min-h-[640px]">
       {/* Full-bleed campus photo */}
       <Image
         alt="University of Calicut Campus"
@@ -23,7 +23,7 @@ export default function VenueHero() {
 
       {/* Content anchored to bottom-left */}
       <div className="absolute inset-0 flex items-end">
-        <div className="mx-auto w-full max-w-7xl px-8 pb-20">
+        <div className="mx-auto w-full max-w-7xl px-4 pb-10 md:px-8 md:pb-20">
           <motion.div
             animate={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 30 }}
@@ -43,7 +43,7 @@ export default function VenueHero() {
             <div className="mb-8 h-1 w-24 bg-[#745b04]" />
 
             {/* Key facts row */}
-            <div className="flex flex-wrap gap-x-10 gap-y-4 text-white">
+            <div className="flex flex-wrap gap-x-6 gap-y-3 text-white md:gap-x-10 md:gap-y-4">
               <div className="flex items-center gap-3">
                 <Icon className="size-5 text-[#ffe08d]" name="verified" />
                 <span className="text-sm font-medium">NAAC &lsquo;A+&rsquo; Accredited</span>

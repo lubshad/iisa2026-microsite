@@ -6,8 +6,8 @@ import { submissionGuidelines } from "@/features/call-for-papers/data";
 
 export default function SubmissionGuidelines() {
   return (
-    <section className="py-24 bg-white">
-      <div className="mx-auto max-w-7xl px-8 grid grid-cols-1 items-start gap-16 lg:grid-cols-12">
+    <section className="bg-white py-12 md:py-24">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 items-start gap-8 px-4 md:gap-16 md:px-8 lg:grid-cols-12">
         <motion.div
           className="lg:col-span-5"
           initial={{ opacity: 0, x: -30 }}
@@ -18,11 +18,11 @@ export default function SubmissionGuidelines() {
           <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
             Paper Submission
           </p>
-          <h2 className="font-headline mb-8 text-5xl leading-tight text-[#00375e]">
+          <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
             Submission Guidelines
           </h2>
-          <div className="mb-10 h-1 w-24 bg-[#745b04]" />
-          <p className="font-body mb-12 text-lg leading-relaxed text-[#42474f]">
+          <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-10 md:w-24" />
+          <p className="font-body mb-8 text-lg leading-relaxed text-[#42474f] md:mb-12">
             IISA 2026 invites original contributions that have not been published or
             submitted for publication elsewhere. All submissions undergo a
             double-blind peer review by at least three members of the technical

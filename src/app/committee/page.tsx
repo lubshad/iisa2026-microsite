@@ -21,7 +21,7 @@ export default function CommitteePage() {
   return (
     <div className="page-shell">
       <Navbar activePath={routes.committee} />
-      <main className="max-w-7xl mx-auto px-8 py-16">
+      <main className="mx-auto max-w-7xl px-4 py-10 md:px-8 md:py-16">
         <PatronsSection />
         <CommitteeLeadership />
         <AdvisoryCommittee />

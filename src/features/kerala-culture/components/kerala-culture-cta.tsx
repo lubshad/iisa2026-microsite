@@ -4,17 +4,17 @@ import { routes } from "@/navigation/routes";
 
 export default function KeralaCultureCta() {
   return (
-    <section className="bg-[#00375e] py-24">
-      <div className="mx-auto max-w-7xl px-8">
-        <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+    <section className="bg-[#00375e] py-12 md:py-24">
+      <div className="mx-auto max-w-7xl px-4 md:px-8">
+        <div className="grid grid-cols-1 items-center gap-8 md:gap-16 lg:grid-cols-2">
           <div>
             <p className="font-label mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#ffe08d]">
               Join Us in Kerala
             </p>
-            <h2 className="font-headline mb-6 text-5xl leading-tight text-white">
+            <h2 className="font-headline mb-6 text-3xl leading-tight text-white md:text-5xl">
               Experience It First-Hand
             </h2>
-            <div className="mb-8 h-1 w-24 bg-[#745b04]" />
+            <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24" />
             <p className="mb-10 max-w-xl text-lg leading-relaxed text-white/80">
               IISA 2026 takes place at the University of Calicut — in the heart of this extraordinary
               region. Come for the science, stay for the culture. We look forward to hosting you in
@@ -46,7 +46,7 @@ export default function KeralaCultureCta() {
             ].map((stat) => (
               <div
                 key={stat.label}
-                className="rounded-xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm"
+                className="rounded-xl border border-white/10 bg-white/5 p-5 text-center backdrop-blur-sm md:p-8"
               >
                 <p className="font-headline mb-2 text-4xl font-bold text-[#ffe08d]">{stat.value}</p>
                 <p className="text-sm text-white/70">{stat.label}</p>

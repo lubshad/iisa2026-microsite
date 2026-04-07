@@ -6,7 +6,7 @@ import Icon from "@/components/icon";
 
 export default function CallForPapersHero() {
   return (
-    <section className="relative min-h-[70vh] flex items-end overflow-hidden bg-[#00375e]">
+    <section className="relative flex min-h-[55vh] items-end overflow-hidden bg-[#00375e] md:min-h-[70vh]">
       <Image
         alt="University of Calicut campus aerial view"
         className="object-cover object-center"
@@ -17,7 +17,7 @@ export default function CallForPapersHero() {
       />
       <div className="hero-gradient absolute inset-0" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-8 pb-20 pt-40 w-full">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-10 pt-20 md:px-8 md:pb-20 md:pt-40">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -39,7 +39,7 @@ export default function CallForPapersHero() {
             acoustics, ultrasonics, and vibration.
           </p>
 
-          <div className="flex flex-wrap gap-8">
+          <div className="flex flex-wrap gap-4 md:gap-8">
             <div className="flex items-center gap-3">
               <Icon className="size-5 text-[#ffe08d]" name="calendar" />
               <div>

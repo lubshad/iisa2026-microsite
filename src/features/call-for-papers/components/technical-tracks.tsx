@@ -6,22 +6,22 @@ import { technicalTracks } from "@/features/call-for-papers/data";
 
 export default function TechnicalTracks() {
   return (
-    <section className="py-24 bg-white">
-      <div className="mx-auto max-w-7xl px-8">
+    <section className="bg-white py-12 md:py-24">
+      <div className="mx-auto max-w-7xl px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           viewport={{ once: true }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-16"
+          className="mb-10 md:mb-16"
         >
           <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
             Research Areas
           </p>
-          <h2 className="font-headline mb-8 text-5xl leading-tight text-[#00375e]">
+          <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
             Technical Tracks
           </h2>
-          <div className="mb-8 h-1 w-24 bg-[#745b04]" />
+          <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24" />
           <p className="font-body max-w-2xl text-lg leading-relaxed text-[#42474f]">
             We welcome submissions in the following specialized research domains.
             Each track is chaired by internationally renowned subject matter experts.
@@ -36,7 +36,7 @@ export default function TechnicalTracks() {
               viewport={{ once: true }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.06 }}
-              className={`group flex flex-col justify-between bg-[#f3f3f4] p-8 transition-all hover:bg-[#00375e] ${
+              className={`group flex flex-col justify-between bg-[#f3f3f4] p-5 transition-all hover:bg-[#00375e] md:p-8 ${
                 track.wide ? "lg:col-span-2" : ""
               }`}
             >

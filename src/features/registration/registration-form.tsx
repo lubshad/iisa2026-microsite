@@ -45,7 +45,7 @@ export default function RegistrationForm() {
       <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(30,78,121,0.06)_0%,rgba(255,255,255,0)_100%)]" />
       <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_bottom_left,rgba(116,91,4,0.04)_0%,rgba(255,255,255,0)_100%)]" />
 
-      <header className="mb-24 max-w-4xl">
+      <header className="mb-12 max-w-4xl md:mb-24">
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ export default function RegistrationForm() {
         >
           IISA 2026 Registration
         </motion.h1>
-        <div className="space-y-4 border-l-4 border-primary pl-8 py-2">
+        <div className="space-y-4 border-l-4 border-primary py-2 pl-4 md:pl-8">
           <motion.h2
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}

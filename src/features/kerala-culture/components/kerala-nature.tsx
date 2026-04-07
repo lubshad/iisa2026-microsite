@@ -26,23 +26,23 @@ const highlights = [
 
 export default function KeralaNature() {
   return (
-    <section className="bg-[#f3f3f4] py-24">
-      <div className="mx-auto max-w-7xl px-8">
-        <div className="mb-16">
+    <section className="bg-[#f3f3f4] py-12 md:py-24">
+      <div className="mx-auto max-w-7xl px-4 md:px-8">
+        <div className="mb-10 md:mb-16">
           <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
             Natural Wonders
           </p>
-          <h2 className="font-headline mb-8 text-5xl leading-tight text-[#00375e]">
+          <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
             God&apos;s Own Country
           </h2>
-          <div className="mb-8 h-1 w-24 bg-[#745b04]" />
+          <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24" />
           <p className="max-w-2xl text-lg leading-relaxed text-on-surface-variant">
             Kerala&apos;s geography encompasses beaches, backwaters, and Western Ghats rainforests
             within a narrow coastal strip — extraordinary ecological diversity in a compact landscape.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 md:gap-16 lg:grid-cols-2">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
               <Image
@@ -62,7 +62,7 @@ export default function KeralaNature() {
                 width={320}
               />
             </div>
-            <div className="space-y-4 pt-12">
+            <div className="space-y-4 pt-6 md:pt-12">
               <Image
                 alt="Traditional Kerala architecture"
                 className="h-48 w-full rounded-xl object-cover"

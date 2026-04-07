@@ -55,14 +55,14 @@ export default function SponsorshipTiers() {
   return (
     <section className="py-16">
       {/* Section header */}
-      <div className="mb-16 max-w-3xl">
+      <div className="mb-10 max-w-3xl md:mb-16">
         <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
           Partnership Opportunities
         </p>
-        <h2 className="font-headline mb-8 text-5xl leading-tight text-[#00375e]">
+        <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
           IISA 2026 Sponsorship
         </h2>
-        <div className="mb-8 h-1 w-24 bg-[#745b04]" />
+        <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24" />
         <div className="border-l-4 border-l-[#745b04] py-2 pl-6">
           <p className="mb-2 font-body text-lg font-bold text-[#1a1c1c]">
             India International Symposium on Acoustics 2026
@@ -87,7 +87,7 @@ export default function SponsorshipTiers() {
         {tiers.map((tier, index) => (
           <motion.div
             key={index}
-            className={`group relative flex flex-col rounded-xl p-8 transition-all duration-300 ${
+            className={`group relative flex flex-col rounded-xl p-6 transition-all duration-300 md:p-8 ${
               tier.variant === "popular"
                 ? "editorial-shadow ring-2 ring-[#00375e] bg-[#00375e]/5 -translate-y-2"
                 : tier.variant === "exclusive"

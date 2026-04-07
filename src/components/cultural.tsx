@@ -4,12 +4,12 @@ import Icon from "@/components/icon";
 export default function Cultural() {
   return (
     <section className="relative overflow-hidden">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-20 px-8 py-32 lg:grid-cols-2">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-4 py-12 md:px-8 md:gap-20 md:py-32 lg:grid-cols-2">
         <div className="relative z-10">
           <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
             Regional Experience
           </p>
-          <h2 className="font-headline mb-8 text-6xl text-[#00375e]">Heart of Malabar</h2>
+          <h2 className="font-headline mb-6 text-3xl text-[#00375e] md:mb-8 md:text-6xl">Heart of Malabar</h2>
           <p className="mb-8 text-xl font-light italic leading-relaxed text-on-surface">
             Beyond the symposium, discover the soul of Kerala. From the rhythmic intensity of Theyyam to the pristine
             coastline of Calicut, experience a land where tradition and innovation exist in perfect resonance.
@@ -28,7 +28,7 @@ export default function Cultural() {
               <span className="text-sm font-medium">Calicut Cuisine</span>
             </div>
           </div>
-          <button className="group mt-12 flex items-center gap-3 font-semibold text-[#745b04]">
+          <button className="group mt-8 flex items-center gap-3 font-semibold text-[#745b04] md:mt-12">
             EXPLORE KERALA CULTURE
             <Icon className="size-5 transition-transform group-hover:translate-x-2" name="arrow-right" />
           </button>
@@ -52,7 +52,7 @@ export default function Cultural() {
               width={320}
             />
           </div>
-          <div className="space-y-4 pt-12">
+          <div className="space-y-4 pt-6 md:pt-12">
             <Image
               alt="Coastal Calicut"
               className="h-48 w-full rounded-lg object-cover"

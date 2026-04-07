@@ -38,19 +38,19 @@ const technicalCommittee = [
 
 export default function CommitteeLeadership() {
   return (
-    <div className="space-y-16 mb-32">
+    <div className="mb-16 space-y-10 md:mb-32 md:space-y-16">
       {/* Conference Leadership */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="md:col-span-2 bg-[#00375e] p-12 text-white flex flex-col justify-end min-h-[400px]"
+          className="flex flex-col justify-end bg-[#00375e] p-8 text-white md:col-span-2 md:min-h-[400px] md:p-12"
         >
           <span className="text-[#ffe08d] text-sm font-bold tracking-[0.2em] mb-4 uppercase">
             LEADERSHIP
           </span>
-          <h3 className="font-headline text-4xl mb-6 text-white">Conference Leadership</h3>
+          <h3 className="font-headline mb-4 text-2xl text-white md:mb-6 md:text-4xl">Conference Leadership</h3>
           <p className="opacity-80 font-light leading-loose text-lg text-white">
             Orchestrating the convergence of global signal processing research and
             Malabar&apos;s intellectual heritage.
@@ -71,7 +71,7 @@ export default function CommitteeLeadership() {
                 src={leader.image}
                 alt={leader.name}
                 fill
-                className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                className="object-cover transition-all duration-500"
               />
             </div>
             <div className="px-4 pb-4 flex-grow flex flex-col justify-between">
@@ -93,10 +93,10 @@ export default function CommitteeLeadership() {
 
       {/* Technical Committee */}
       <div>
-        <h3 className="font-headline text-3xl text-[#00375e] mb-8 border-b border-[#c2c7d0]/30 pb-4">
+        <h3 className="font-headline mb-6 border-b border-[#c2c7d0]/30 pb-4 text-2xl text-[#00375e] md:mb-8 md:text-3xl">
           Technical Committee
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
           {technicalCommittee.map((group, index) => (
             <motion.div
               key={group.title}
@@ -104,7 +104,7 @@ export default function CommitteeLeadership() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-[#f3f3f4] p-8 rounded-lg"
+              className="rounded-lg bg-[#f3f3f4] p-5 md:p-8"
             >
               <h4 className="text-[#745b04] font-bold text-sm uppercase tracking-widest mb-6">
                 {group.title}

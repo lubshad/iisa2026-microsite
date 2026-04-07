@@ -20,13 +20,13 @@ const patrons = [
 
 export default function PatronsSection() {
   return (
-    <section id="committee" className="mb-32">
-      <div className="flex flex-col md:flex-row gap-8 items-baseline mb-16">
-        <motion.h2 
+    <section id="committee" className="mb-16 md:mb-32">
+      <div className="mb-10 flex flex-col items-baseline gap-8 md:mb-16 md:flex-row">
+        <motion.h2
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          className="font-headline text-5xl font-bold text-[#00375e] tracking-tight max-w-xl"
+          className="font-headline max-w-xl text-3xl font-bold tracking-tight text-[#00375e] md:text-5xl"
         >
           IISA 2026 Committees
         </motion.h2>
@@ -36,7 +36,7 @@ export default function PatronsSection() {
         </span>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20">
+      <div className="mb-12 grid grid-cols-1 gap-8 md:mb-20 md:grid-cols-12 md:gap-12">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -63,7 +63,7 @@ export default function PatronsSection() {
                   src={patron.image}
                   alt={patron.name}
                   fill
-                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  className="object-cover transition-all duration-500"
                 />
               </div>
               <div className="px-4 pb-4">

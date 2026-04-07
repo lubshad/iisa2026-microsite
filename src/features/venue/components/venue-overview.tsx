@@ -12,8 +12,8 @@ const stats = [
 
 export default function VenueOverview() {
   return (
-    <section className="bg-white py-24">
-      <div className="mx-auto max-w-7xl px-8 grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+    <section className="bg-white py-12 md:py-24">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 items-center gap-8 px-4 md:gap-16 md:px-8 lg:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           transition={{ duration: 0.8 }}
@@ -23,17 +23,17 @@ export default function VenueOverview() {
           <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
             Academic Hub
           </p>
-          <h2 className="font-headline mb-8 text-5xl leading-tight text-[#00375e]">
+          <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
             About the Venue
           </h2>
-          <div className="mb-8 h-1 w-24 bg-[#745b04]" />
+          <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24" />
 
           <p className="font-body mb-6 text-lg leading-relaxed text-[#42474f]">
             IISA 2026 will be held at the University of Calicut, one of the premier higher
             education institutions in Kerala, India. Established in 1968, the university is known
             for its strong academic environment, research excellence, and modern infrastructure.
           </p>
-          <p className="font-body mb-12 text-lg leading-relaxed text-[#42474f]">
+          <p className="font-body mb-8 text-lg leading-relaxed text-[#42474f] md:mb-12">
             The sprawling green campus at Thenhipalam provides a serene and inspiring setting —
             ideal for academic exchange, international collaboration, and world-class conferences.
           </p>

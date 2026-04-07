@@ -9,7 +9,7 @@ export default function RegistrationHero() {
       <div className="absolute right-0 top-0 -z-0 h-full w-1/2 translate-x-1/4 skew-x-12 transform bg-[#1e4e79]/40" />
       <div className="absolute bottom-0 left-0 -z-0 h-64 w-64 -translate-x-1/2 translate-y-1/2 rounded-full bg-[#745b04]/10 blur-[80px]" />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-8 text-center">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 text-center md:px-8">
         <motion.div
           animate={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 20 }}
@@ -29,7 +29,7 @@ export default function RegistrationHero() {
           </p>
         </motion.div>
 
-        <div className="mt-12 flex flex-wrap justify-center gap-8 text-white">
+        <div className="mt-8 flex flex-wrap justify-center gap-4 text-white md:mt-12 md:gap-8">
           <div className="flex items-center gap-3">
             <div className="h-px w-8 bg-[#ffe08d]" />
             <span className="text-sm">Early Bird Deadline: Oct 30, 2025</span>

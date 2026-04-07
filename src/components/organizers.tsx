@@ -10,15 +10,15 @@ const organizers = [
 
 export default function Organizers() {
   return (
-    <section className="bg-[#f3f3f4] py-16">
-      <div className="mx-auto max-w-7xl px-8 text-center">
-        <h3 className="font-label mb-12 text-xs uppercase tracking-[0.3em] text-[#72777f]">
+    <section className="bg-[#f3f3f4] py-8 md:py-16">
+      <div className="mx-auto max-w-7xl px-4 text-center md:px-8">
+        <h3 className="font-label mb-8 text-xs uppercase tracking-[0.3em] text-[#72777f] md:mb-12">
           Organizers &amp; Strategic Partners
         </h3>
-        <div className="flex flex-wrap items-center justify-center gap-12 opacity-80 grayscale transition-all duration-500 hover:grayscale-0 md:gap-20">
+        <div className="flex flex-wrap items-center justify-center gap-6 opacity-80 md:gap-20">
           {organizers.map((item) => (
-            <div key={item.label} className="flex flex-col items-center gap-4">
-              <div className="relative flex h-24 w-32 items-center justify-center mix-blend-darken">
+            <div key={item.label} className="flex flex-col items-center gap-3">
+              <div className="relative flex h-16 w-24 items-center justify-center mix-blend-darken md:h-24 md:w-32">
                 <Image
                   src={item.logo}
                   alt={item.label}

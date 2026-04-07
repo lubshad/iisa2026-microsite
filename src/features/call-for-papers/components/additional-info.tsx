@@ -37,25 +37,25 @@ export default function AdditionalInfo() {
   ];
 
   return (
-    <section className="py-24 bg-[#00375e] relative overflow-hidden">
-      <div className="mx-auto max-w-7xl px-8 relative z-10">
+    <section className="relative overflow-hidden bg-[#00375e] py-12 md:py-24">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           viewport={{ once: true }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-16"
+          className="mb-10 md:mb-16"
         >
           <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#ffe08d]">
             Additional Information
           </p>
-          <h2 className="font-headline mb-8 text-5xl leading-tight text-white">
+          <h2 className="font-headline mb-6 text-3xl leading-tight text-white md:mb-8 md:text-5xl">
             What to Expect
           </h2>
-          <div className="h-1 w-24 bg-[#745b04]" />
+          <div className="h-1 w-16 bg-[#745b04] md:w-24" />
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+        <div className="mb-12 grid grid-cols-1 gap-6 md:mb-20 md:grid-cols-2 lg:grid-cols-4">
           {sections.map((section, index) => (
             <motion.div
               key={section.title}
@@ -63,7 +63,7 @@ export default function AdditionalInfo() {
               viewport={{ once: true }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group bg-white/5 border border-white/10 p-8 transition-all hover:bg-white/10"
+              className="group border border-white/10 bg-white/5 p-5 transition-all hover:bg-white/10 md:p-8"
             >
               <div className="mb-6 flex size-12 items-center justify-center bg-[#745b04]/30 text-[#ffe08d] transition-colors group-hover:bg-[#745b04]">
                 <Icon className="size-6" name={section.icon} />
@@ -86,7 +86,7 @@ export default function AdditionalInfo() {
           viewport={{ once: true }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="border border-white/10 bg-white/5 p-12 text-center max-w-4xl mx-auto"
+          className="mx-auto max-w-4xl border border-white/10 bg-white/5 p-6 text-center md:p-12"
         >
           <p className="font-body text-xl italic leading-relaxed text-white/90">
             &quot;Authors are encouraged to contribute to IISA 2026 and be part of
