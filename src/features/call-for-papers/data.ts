@@ -1,6 +1,6 @@
 export type Guideline = {
   description: string;
-  icon: "description" | "article";
+  icon: "description" | "article" | "check" | "file-up";
   title: string;
 };
 
@@ -11,7 +11,7 @@ export type ImportantDate = {
 };
 
 export type Track = {
-  icon: "brain" | "waves" | "hub" | "lock" | "chip" | "antenna" | "shield" | "robot" | "bolt" | "eye";
+  icon: "waves" | "building" | "health" | "bolt" | "settings" | "music" | "science" | "psychology" | "microphone" | "speaker" | "construction";
   id: string;
   title: string;
   wide?: boolean;
@@ -19,49 +19,60 @@ export type Track = {
 
 export const submissionGuidelines: Guideline[] = [
   {
-    icon: "description",
-    title: "Originality & Length",
-    description: "Full papers must be 6-8 pages in length, including references. Short papers are limited to 4 pages.",
+    icon: "check",
+    title: "Originality",
+    description: "Papers must be original and not published elsewhere.",
   },
   {
     icon: "article",
-    title: "Formatting Standards",
-    description: "Papers must follow the standard IEEE two-column conference template (A4 size).",
+    title: "Contribution Types",
+    description: "Submissions can include experimental investigations, case studies, simulation studies, or instrument/system designs.",
+  },
+  {
+    icon: "description",
+    title: "Manuscript Format",
+    description: "Maximum 6 pages in A4 size format.",
+  },
+  {
+    icon: "file-up",
+    title: "Submission Portal",
+    description: "All submissions must be made through the official conference website.",
   },
 ];
 
 export const importantDates: ImportantDate[] = [
   {
-    date: "OCT 15, 2025",
+    date: "TBA",
     title: "Abstract Submission",
-    description: "Mandatory preliminary abstract submission for all tracks.",
+    description: "Opening soon for all technical tracks.",
   },
   {
-    date: "NOV 30, 2025",
+    date: "TBA",
     title: "Full Paper Deadline",
-    description: "Final date for complete paper upload via EasyChair.",
+    description: "Deadline for complete paper upload.",
   },
   {
-    date: "JAN 20, 2026",
+    date: "TBA",
     title: "Acceptance Notification",
-    description: "Decision emails sent to corresponding authors.",
+    description: "Notifications sent to corresponding authors.",
   },
   {
-    date: "FEB 15, 2026",
+    date: "TBA",
     title: "Camera Ready",
-    description: "Final version submission and early-bird registration.",
+    description: "Final version and registration deadline.",
   },
 ];
 
 export const technicalTracks: Track[] = [
-  { id: "TRACK 01", title: "Artificial Intelligence & Neural Networks", icon: "brain" },
-  { id: "TRACK 02", title: "Advanced Signal Processing Algorithms", icon: "waves" },
-  { id: "TRACK 03", title: "Internet of Things & Edge Computing", icon: "hub" },
-  { id: "TRACK 04", title: "Cyber-Physical Systems Security", icon: "lock" },
-  { id: "TRACK 05", title: "Embedded Hardware Design & VLSI", icon: "chip" },
-  { id: "TRACK 06", title: "Wireless Communication & 6G Networks", icon: "antenna" },
-  { id: "TRACK 07", title: "Biomedical Engineering & Informatics", icon: "shield", wide: true },
-  { id: "TRACK 08", title: "Robotics & Autonomous Systems", icon: "robot" },
-  { id: "TRACK 09", title: "Renewable Energy & Smart Grids", icon: "bolt" },
-  { id: "TRACK 10", title: "Human-Computer Interaction & Data Visualization", icon: "eye", wide: true },
+  { id: "Track 01", title: "Aero, Hydro & Underwater Acoustics", icon: "waves" },
+  { id: "Track 02", title: "Architectural & Building Acoustics", icon: "building" },
+  { id: "Track 03", title: "Bioacoustics", icon: "health" },
+  { id: "Track 04", title: "Environmental Noise", icon: "bolt" },
+  { id: "Track 05", title: "Instrumentation & Signal Processing", icon: "settings" },
+  { id: "Track 06", title: "Musical Acoustics", icon: "music" },
+  { id: "Track 07", title: "Physical Acoustics & Ultrasonics", icon: "science" },
+  { id: "Track 08", title: "Speech", icon: "microphone" },
+  { id: "Track 09", title: "Sound Perception", icon: "psychology" },
+  { id: "Track 10", title: "Transducers & Electro-acoustics", icon: "speaker" },
+  { id: "Track 11", title: "Vibro-acoustics & Noise", icon: "construction", wide: true },
 ];

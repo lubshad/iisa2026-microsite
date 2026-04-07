@@ -1,38 +1,69 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
+import Icon from "@/components/icon";
 
 export default function CallForPapersHero() {
   return (
-    <section className="relative mb-24 flex h-[400px] items-center overflow-hidden rounded-xl bg-[#1E4E79]">
+    <section className="relative min-h-[70vh] flex items-end overflow-hidden bg-[#00375e]">
       <Image
-        alt="Stately academic stone building with large columns under a clear blue sky at the University of Calicut campus"
-        className="absolute inset-0 h-full w-full object-cover opacity-30 mix-blend-overlay"
+        alt="University of Calicut campus aerial view"
+        className="object-cover object-center"
         fill
         priority
-        sizes="(min-width: 1280px) 1280px, 100vw"
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQo5CbPz5n4UWmQfED0hYXjpk3FjBYk_rEJt6pXlZhXUAzCkEybQnOC_dNXxRP2bE3jCNjZ0M55pjg0FxDs8MKapk932U1rROiJEW5ThqiqQodbPJe5K37e5nlNzOnf5_wHfY8Gxod8gckaPSYcj7mWBF-R3YYHP07NjBbh37oluMiapWJy30_1XolmoT_QXVyeAAF93V05zQsFeNLXdB8IqEjxfvCxAxDe-rWf7D2cL_mMC-18bKvxLMXmJ_4fjF9KPVS4Vn3dCGA"
+        sizes="100vw"
+        src="/university_calicut_campus_aerial_1775544818339.png"
       />
-      <div className="relative z-10 max-w-[52rem] px-5 md:px-12">
-        <span className="mb-7 inline-block rounded-full bg-[#ffe08d] px-6 py-1.5 text-[11px] font-bold uppercase tracking-[0.24em] text-[#241a00]">
-          Call for Submissions
-        </span>
-        <h1 className="font-headline mb-7 max-w-[760px] text-[3.65rem] leading-[0.94] tracking-[-0.07em] text-white md:text-[5.4rem]">
-          Global Intelligence through Signal Processing.
-        </h1>
-        <p className="max-w-[720px] text-base leading-[1.45] text-[#d5e3fd] md:text-[1.05rem]">
-          Join the world&apos;s leading researchers at the International Symposium on Integrated Systems &amp;
-          Applications 2026.
-        </p>
+      <div className="hero-gradient absolute inset-0" />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-8 pb-20 pt-40 w-full">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <p className="font-label mb-6 text-xs font-bold uppercase tracking-[0.2em] text-[#ffe08d]">
+            Call for Papers
+          </p>
+          <h1 className="font-headline mb-4 text-5xl font-bold leading-tight text-white md:text-7xl max-w-3xl">
+            India International Symposium on Acoustics
+          </h1>
+          <p className="font-headline mb-10 text-2xl font-light text-white/70 md:text-3xl">
+            IISA 2026
+          </p>
+          <div className="mb-10 h-1 w-24 bg-[#745b04]" />
+          <p className="font-body mb-12 max-w-2xl text-lg leading-relaxed text-white/80">
+            IISA 2026 invites researchers, academicians, industry professionals,
+            and practitioners to submit original research papers in all areas of
+            acoustics, ultrasonics, and vibration.
+          </p>
+
+          <div className="flex flex-wrap gap-8">
+            <div className="flex items-center gap-3">
+              <Icon className="size-5 text-[#ffe08d]" name="calendar" />
+              <div>
+                <p className="text-xs uppercase opacity-60 text-white">Date</p>
+                <p className="font-medium text-white">November 19–22, 2026</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <Icon className="size-5 text-[#ffe08d]" name="location" />
+              <div>
+                <p className="text-xs uppercase opacity-60 text-white">Venue</p>
+                <p className="font-medium text-white">University of Calicut, Kerala</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <Icon className="size-5 text-[#ffe08d]" name="article" />
+              <div>
+                <p className="text-xs uppercase opacity-60 text-white">Format</p>
+                <p className="font-medium text-white">Max 6 pages, A4, Double-blind review</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
-      <svg
-        aria-hidden="true"
-        className="pointer-events-none absolute right-0 top-0 h-full w-1/2 opacity-20"
-        preserveAspectRatio="none"
-        viewBox="0 0 400 400"
-      >
-        <path d="M0,200 Q100,50 200,200 T400,200" fill="none" stroke="#ffe08d" strokeWidth="2" />
-        <path d="M0,220 Q100,70 200,220 T400,220" fill="none" stroke="#ffe08d" strokeWidth="1" />
-        <path d="M0,180 Q100,30 200,180 T400,180" fill="none" stroke="#ffe08d" strokeWidth="0.5" />
-      </svg>
     </section>
   );
 }

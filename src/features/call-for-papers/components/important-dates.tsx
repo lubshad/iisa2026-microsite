@@ -1,22 +1,53 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Icon from "@/components/icon";
 import { importantDates } from "@/features/call-for-papers/data";
 
 export default function ImportantDates() {
   return (
-    <section className="mb-24">
-      <div className="mb-12 text-center md:mb-16">
-        <h2 className="font-headline mb-5 text-4xl text-[#00375e]">Important Dates</h2>
-        <div className="mx-auto h-[2px] w-20 bg-[#745b04]"></div>
-      </div>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-        {importantDates.map((item) => (
-          <div key={item.title} className="group relative">
-            <div className="h-full rounded-xl border-t-2 border-transparent bg-surface-container-lowest p-8 shadow-[0_20px_40px_rgba(30,78,121,0.06)] transition-all group-hover:border-secondary">
-              <span className="mb-4 block text-[11px] font-bold tracking-[0.2em] text-[#745b04]">{item.date}</span>
-              <h3 className="font-headline mb-4 text-xl text-[#00375e]">{item.title}</h3>
-              <p className="text-sm leading-relaxed text-[#42474f]">{item.description}</p>
-            </div>
-          </div>
-        ))}
+    <section className="py-24 bg-[#f3f3f4]">
+      <div className="mx-auto max-w-7xl px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          viewport={{ once: true }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="mb-16"
+        >
+          <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
+            Key Milestones
+          </p>
+          <h2 className="font-headline mb-8 text-5xl leading-tight text-[#00375e]">
+            Important Dates
+          </h2>
+          <div className="h-1 w-24 bg-[#745b04]" />
+        </motion.div>
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {importantDates.map((item, index) => (
+            <motion.div
+              key={item.title}
+              initial={{ opacity: 0, y: 30 }}
+              viewport={{ once: true }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="group relative bg-white p-8 border-t-4 border-[#745b04] editorial-shadow transition-all hover:-translate-y-1"
+            >
+              <div className="mb-6 flex size-12 items-center justify-center bg-[#745b04]/10 text-[#745b04] transition-colors group-hover:bg-[#745b04] group-hover:text-white">
+                <Icon className="size-6" name="calendar" />
+              </div>
+              <span className="font-label mb-3 block text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
+                {item.date}
+              </span>
+              <h3 className="font-headline mb-3 text-xl text-[#00375e]">{item.title}</h3>
+              <p className="font-body text-sm leading-relaxed text-[#42474f]">
+                {item.description}
+              </p>
+              <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-[#745b04] transition-all duration-500 group-hover:w-full" />
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
