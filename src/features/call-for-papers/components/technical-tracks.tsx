@@ -15,14 +15,14 @@ export default function TechnicalTracks() {
           transition={{ duration: 0.8 }}
           className="mb-10 md:mb-16"
         >
-          <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
+          <p className="font-label mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:mb-4 md:text-xs">
             Research Areas
           </p>
           <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
             Technical Tracks
           </h2>
           <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24" />
-          <p className="font-body max-w-2xl text-lg leading-relaxed text-[#42474f]">
+          <p className="font-body max-w-2xl text-base leading-relaxed text-[#42474f] md:text-lg">
             We welcome submissions in the following specialized research domains.
             Each track is chaired by internationally renowned subject matter experts.
           </p>

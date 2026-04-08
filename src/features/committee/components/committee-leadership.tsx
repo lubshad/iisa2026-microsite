@@ -1,21 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import Image from "next/image";
+import lajishImg from "@/assets/images/lajish.jpg";
+import sunilkumarImg from "@/assets/images/sunilkumar.jpg";
 
 const leadership = [
   {
     name: "Dr. Lajish V L",
     institution: "University of Calicut, Kerala",
     role: "General Chair",
-    image: "/portrait_images/Dr. Lajish V L.jpg",
+    image: lajishImg,
   },
   {
     name: "Dr. Sunilkumar R K",
     institution: "Kannur University, Kerala",
     role: "General Co-Chair",
-    image: "/portrait_images/Dr. Sunilkumar R K.jpg",
+    image: sunilkumarImg,
   },
 ];
 

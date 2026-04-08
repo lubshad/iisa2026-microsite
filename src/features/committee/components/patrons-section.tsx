@@ -2,19 +2,21 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import raveendranImg from "@/assets/images/raveendran.jpg";
+import sajuImg from "@/assets/images/saju.jpg";
 
 const patrons = [
   {
     name: "Prof. P. Raveendran",
     role: "Vice-Chancellor",
     institution: "University of Calicut, Kerala",
-    image: "/portrait_images/Prof. P. Raveendran.jpg",
+    image: raveendranImg,
   },
   {
     name: "Prof. K.K. Saju",
     role: "Vice-Chancellor",
     institution: "Kannur University, Kerala",
-    image: "/portrait_images/Prof. K.K. Saju.jpg",
+    image: sajuImg,
   },
 ];
 

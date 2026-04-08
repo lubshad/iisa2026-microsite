@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Icon from "@/components/icon";
+import universityImg from "@/assets/images/university-of-calicut.jpg";
 
 export default function VenueSection() {
   return (
@@ -73,7 +74,7 @@ export default function VenueSection() {
             <div className="absolute -top-10 -left-10 w-40 h-40 border-l-4 border-t-4 border-secondary/20 dark:border-[#E4C368]/20"></div>
             <div className="aspect-square overflow-hidden shadow-2xl relative">
               <Image
-                src="/university of calicut.jpg"
+                src={universityImg}
                 alt="University of Calicut"
                 fill
                 className="object-cover"

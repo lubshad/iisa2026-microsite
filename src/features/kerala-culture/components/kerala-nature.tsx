@@ -29,14 +29,14 @@ export default function KeralaNature() {
     <section className="bg-[#f3f3f4] py-12 md:py-24">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="mb-10 md:mb-16">
-          <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
+          <p className="font-label mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:mb-4 md:text-xs">
             Natural Wonders
           </p>
           <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
             God&apos;s Own Country
           </h2>
           <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24" />
-          <p className="max-w-2xl text-lg leading-relaxed text-on-surface-variant">
+          <p className="max-w-2xl text-base leading-relaxed text-on-surface-variant md:text-lg">
             Kerala&apos;s geography encompasses beaches, backwaters, and Western Ghats rainforests
             within a narrow coastal strip — extraordinary ecological diversity in a compact landscape.
           </p>
@@ -84,10 +84,10 @@ export default function KeralaNature() {
 
           <div className="flex flex-col justify-center gap-8">
             {highlights.map((item) => (
-              <div key={item.title} className="flex gap-5">
+              <div key={item.title} className="flex gap-4 md:gap-5">
                 <div className="flex-shrink-0">
-                  <div className="editorial-shadow flex size-12 items-center justify-center rounded-xl bg-white">
-                    <Icon className="size-6 text-[#00375e]" name={item.icon} />
+                  <div className="editorial-shadow flex size-10 items-center justify-center rounded-xl bg-white md:size-12">
+                    <Icon className="size-5 text-[#00375e] md:size-6" name={item.icon} />
                   </div>
                 </div>
                 <div>

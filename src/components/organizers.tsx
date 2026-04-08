@@ -1,11 +1,16 @@
 import Image from "next/image";
+import asiLogo from "@/assets/images/logos/asi.png";
+import calicutLogo from "@/assets/images/logos/university_of_calicut_logo.png";
+import kannurLogo from "@/assets/images/logos/kannur_university.png";
+import icaLogo from "@/assets/images/logos/ica.png";
+import asaLogo from "@/assets/images/logos/asa.png";
 
 const organizers = [
-  { logo: "/logos/asi.png", label: "Acoustical Society of India (ASI)" },
-  { logo: "/logos/university_of_calicut_logo.png", label: "University of Calicut, Kerala" },
-  { logo: "/logos/kannur_university.png", label: "Kannur University, Kerala" },
-  { logo: "/logos/ica.png", label: "International Commission for Acoustics (ICA)" },
-  { logo: "/logos/asa.png", label: "Acoustical Society of America (ASA)" },
+  { logo: asiLogo, label: "Acoustical Society of India (ASI)" },
+  { logo: calicutLogo, label: "University of Calicut, Kerala" },
+  { logo: kannurLogo, label: "Kannur University, Kerala" },
+  { logo: icaLogo, label: "International Commission for Acoustics (ICA)" },
+  { logo: asaLogo, label: "Acoustical Society of America (ASA)" },
 ];
 
 export default function Organizers() {

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import universityImg from "@/assets/images/university-of-calicut.jpg";
 
 const stats = [
   { value: "500+", label: "Acres of green campus" },
@@ -65,7 +66,7 @@ export default function VenueOverview() {
               className="object-cover object-center"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
-              src="/university of calicut.jpg"
+              src={universityImg}
             />
             {/* Caption overlay */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#00375e]/80 to-transparent px-8 py-6">

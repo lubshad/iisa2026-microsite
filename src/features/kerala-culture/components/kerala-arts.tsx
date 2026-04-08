@@ -36,14 +36,14 @@ export default function KeralaArts() {
     <section className="bg-[#f9f9f9] py-12 md:py-24">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="mb-10 md:mb-16">
-          <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
+          <p className="font-label mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:mb-4 md:text-xs">
             Living Traditions
           </p>
           <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
             Performing Arts
           </h2>
           <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24" />
-          <p className="max-w-2xl text-lg leading-relaxed text-on-surface-variant">
+          <p className="max-w-2xl text-base leading-relaxed text-on-surface-variant md:text-lg">
             Kerala&apos;s performing arts are among the world&apos;s most ancient and sophisticated — rooted in
             ritual, refined over millennia, and still vibrantly alive today.
           </p>
@@ -58,14 +58,14 @@ export default function KeralaArts() {
               }`}
             >
               <div>
-                <div className="editorial-shadow mb-6 inline-flex items-center gap-3 rounded-full bg-white px-5 py-2.5">
-                  <Icon className="size-5 text-[#00375e]" name={art.icon} />
-                  <span className="font-label text-xs font-bold uppercase tracking-[0.15em] text-[#00375e]">
+                <div className="editorial-shadow mb-4 inline-flex items-center gap-3 rounded-full bg-white px-4 py-2 md:mb-6 md:px-5 md:py-2.5">
+                  <Icon className="size-4 text-[#00375e] md:size-5" name={art.icon} />
+                  <span className="font-label text-[10px] font-bold uppercase tracking-[0.15em] text-[#00375e] md:text-xs">
                     {art.title}
                   </span>
                 </div>
-                <h3 className="font-headline mb-4 text-2xl text-[#00375e] md:mb-6 md:text-4xl">{art.title}</h3>
-                <p className="text-lg leading-relaxed text-on-surface-variant">{art.description}</p>
+                <h3 className="font-headline mb-3 text-2xl text-[#00375e] md:mb-6 md:text-4xl">{art.title}</h3>
+                <p className="text-base leading-relaxed text-on-surface-variant md:text-lg">{art.description}</p>
               </div>
               <div className="relative">
                 <Image

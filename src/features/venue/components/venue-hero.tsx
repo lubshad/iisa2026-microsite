@@ -3,18 +3,20 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Icon from "@/components/icon";
+import universityImg from "@/assets/images/university-of-calicut.jpg";
 
 export default function VenueHero() {
   return (
-    <section className="relative h-[60vh] min-h-[420px] w-full overflow-hidden md:h-[90vh] md:min-h-[640px]">
+    <section className="relative h-[70vh] min-h-[600px] w-full overflow-hidden md:h-[85vh] md:min-h-[750px]">
       {/* Full-bleed campus photo */}
       <Image
         alt="University of Calicut Campus"
         className="object-cover object-center"
         fill
+        fetchPriority="high"
         priority
         sizes="100vw"
-        src="/university of calicut.jpg"
+        src={universityImg}
       />
 
       {/* Gradient: strong at bottom-left, fades right */}
@@ -29,13 +31,13 @@ export default function VenueHero() {
             initial={{ opacity: 0, y: 30 }}
             transition={{ duration: 0.9, ease: "easeOut" }}
           >
-            <p className="font-label mb-5 text-xs font-semibold uppercase tracking-[0.3em] text-[#ffe08d]">
+            <p className="font-label mb-4 text-[10px] font-semibold uppercase tracking-[0.3em] text-[#ffe08d] md:mb-5 md:text-xs">
               Conference Venue
             </p>
-            <h1 className="font-headline mb-3 text-5xl font-bold leading-tight text-white md:text-7xl">
+            <h1 className="font-headline mb-3 text-4xl font-bold leading-tight text-white md:text-7xl">
               University of Calicut
             </h1>
-            <p className="font-headline mb-8 text-2xl font-light text-white/70 md:text-3xl">
+            <p className="font-headline mb-8 text-xl font-light text-white/70 md:text-3xl">
               Thenhipalam, Malappuram, Kerala
             </p>
 

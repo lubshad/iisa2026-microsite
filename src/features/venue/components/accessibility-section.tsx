@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Icon from "@/components/icon";
+import beachImg from "@/assets/images/kozhikode-beach.jpg";
 
 const accessibilityItems = [
   {
@@ -82,7 +83,7 @@ export default function AccessibilitySection() {
               className="object-cover object-center"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
-              src="/kozhikode_beach_culture_1775544870042.jpg"
+              src={beachImg}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#00375e]/80 via-transparent to-transparent" />
             {/* Location badge */}

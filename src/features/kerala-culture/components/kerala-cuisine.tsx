@@ -45,14 +45,14 @@ export default function KeralaCuisine() {
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="mb-10 grid grid-cols-1 gap-8 md:mb-16 md:gap-16 lg:grid-cols-12">
           <div className="lg:col-span-4">
-            <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
+            <p className="font-label mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:mb-4 md:text-xs">
               Gastronomy
             </p>
             <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
               Malabar on a Plate
             </h2>
             <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24" />
-            <p className="text-lg leading-relaxed text-on-surface-variant">
+            <p className="text-base leading-relaxed text-on-surface-variant md:text-lg">
               Kozhikode (Calicut) is a UNESCO Creative City of Gastronomy. Its cuisine is a
               fragrant crossroads of Arab trade routes, spice heritage, and coastal abundance —
               one of India&apos;s most distinctive regional food cultures.

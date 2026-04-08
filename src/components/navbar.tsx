@@ -36,7 +36,7 @@ export default function Navbar({ activePath = routes.home }: NavbarProps) {
           </div>
           <div className="flex items-center gap-3">
             <button
-              className="kasavu-gold-gradient rounded-md px-6 py-2 text-[13px] font-medium text-white transition-transform active:opacity-80"
+              className="kasavu-gold-gradient rounded-md px-4 py-2 text-[13px] font-medium text-white transition-transform active:opacity-80 md:px-6"
             >
               Register Now
             </button>

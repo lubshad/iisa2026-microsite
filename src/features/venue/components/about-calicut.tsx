@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Icon from "@/components/icon";
+import beachImg from "@/assets/images/kozhikode-beach.jpg";
 
 export default function AboutCalicut() {
   const features = [
@@ -21,14 +22,14 @@ export default function AboutCalicut() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
+          <p className="font-label mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:mb-4 md:text-xs">
             Experience Kozhikode
           </p>
           <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
             About Calicut (Kozhikode)
           </h2>
           <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-10 md:w-24" />
-          <p className="font-body text-lg text-[#42474f] leading-relaxed mb-6">
+          <p className="font-body text-base text-[#42474f] leading-relaxed mb-6 md:text-lg">
             Calicut is a historic coastal city in Kerala known for its cultural
             heritage, academic significance, and scenic beauty. It has stood as
             a gateway to the East for centuries, blending tradition with modern
@@ -62,7 +63,7 @@ export default function AboutCalicut() {
         >
           <div className="aspect-[4/5] overflow-hidden shadow-2xl relative">
             <Image
-              src="/kozhikode_beach_culture_1775544870042.jpg"
+              src={beachImg}
               alt="Kozhikode Beach Sunset"
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-700"

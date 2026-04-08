@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function RegistrationHero() {
   return (
-    <section className="relative overflow-hidden bg-[#00375e] py-32 md:py-40">
+    <section className="relative flex h-[70vh] min-h-[600px] items-center overflow-hidden bg-[#00375e] md:h-[85vh] md:min-h-[750px]">
       {/* Subtle geometric accents */}
       <div className="absolute right-0 top-0 -z-0 h-full w-1/2 translate-x-1/4 skew-x-12 transform bg-[#1e4e79]/40" />
       <div className="absolute bottom-0 left-0 -z-0 h-64 w-64 -translate-x-1/2 translate-y-1/2 rounded-full bg-[#745b04]/10 blur-[80px]" />

@@ -1,5 +1,6 @@
 import Icon from "@/components/icon";
 import Image from "next/image";
+import universityImg from "@/assets/images/university-of-calicut.jpg";
 
 const highlights = [
   { icon: "user" as const, text: "Plenary and invited talks by global experts" },
@@ -113,7 +114,7 @@ export default function Highlights() {
             </div>
             <div className="relative min-h-[300px]">
               <Image 
-                src="/university of calicut.jpg" 
+                src={universityImg} 
                 alt="University of Calicut Campus" 
                 className="absolute inset-0 h-full w-full object-cover" 
                 fill

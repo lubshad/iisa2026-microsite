@@ -44,14 +44,14 @@ export default function KeralaHeritage() {
     <section className="py-12 md:py-24">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="mb-10 md:mb-16">
-          <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
+          <p className="font-label mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:mb-4 md:text-xs">
             History &amp; Heritage
           </p>
           <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
             Where History Lives
           </h2>
           <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24" />
-          <p className="max-w-2xl text-lg leading-relaxed text-on-surface-variant">
+          <p className="max-w-2xl text-base leading-relaxed text-on-surface-variant md:text-lg">
             Kozhikode was once the most powerful city on the Indian Ocean trade network. Its temples,
             forts, and markets carry the weight of a history that shaped the modern world.
           </p>

@@ -15,14 +15,14 @@ export default function SubmissionGuidelines() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
+          <p className="font-label mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:mb-4 md:text-xs">
             Paper Submission
           </p>
           <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
             Submission Guidelines
           </h2>
           <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-10 md:w-24" />
-          <p className="font-body mb-8 text-lg leading-relaxed text-[#42474f] md:mb-12">
+          <p className="font-body mb-8 text-base leading-relaxed text-[#42474f] md:mb-12 md:text-lg">
             IISA 2026 invites original contributions that have not been published or
             submitted for publication elsewhere. All submissions undergo a
             double-blind peer review by at least three members of the technical
@@ -57,22 +57,22 @@ export default function SubmissionGuidelines() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="border-l-4 border-[#745b04] bg-[#f3f3f4] p-8 md:p-12">
-            <div className="mb-8 flex items-center gap-4">
-              <Icon className="size-8 text-[#745b04]" name="upload" />
-              <h3 className="font-headline text-3xl text-[#00375e]">Official Submission Portal</h3>
+          <div className="border-l-4 border-[#745b04] bg-[#f3f3f4] p-6 md:p-12">
+            <div className="mb-6 flex items-center gap-4 md:mb-8">
+              <Icon className="size-6 text-[#745b04] md:size-8" name="upload" />
+              <h3 className="font-headline text-2xl text-[#00375e] md:text-3xl">Official Submission Portal</h3>
             </div>
-            <p className="font-body mb-10 text-lg leading-relaxed text-[#42474f]">
+            <p className="font-body mb-8 text-base leading-relaxed text-[#42474f] md:mb-10 md:text-lg">
               Click the button below to access the official submission system.
               Ensure your submission meets all guidelines before uploading.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                className="kasavu-gold-gradient inline-flex items-center gap-3 px-8 py-4 text-base font-semibold text-white shadow-lg transition-transform hover:scale-[1.02]"
+                className="kasavu-gold-gradient inline-flex items-center gap-3 px-6 py-3.5 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-[1.02] md:px-8 md:py-4 md:text-base"
                 href="#"
               >
-                Access Submission Portal
-                <Icon className="size-5" name="external-link" />
+                Access Portal
+                <Icon className="size-4 md:size-5" name="external-link" />
               </a>
               <a
                 className="inline-flex items-center gap-3 border border-[#c2c7d0] bg-white px-8 py-4 text-base font-semibold text-[#00375e] transition-colors hover:bg-[#f3f3f4]"
