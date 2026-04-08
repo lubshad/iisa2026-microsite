@@ -3,7 +3,7 @@ import Icon from "@/components/icon";
 
 export default function Hero() {
   return (
-    <header className="relative flex min-h-[520px] items-center overflow-hidden md:min-h-[760px]">
+    <header className="relative flex min-h-[520px] items-center overflow-hidden bg-[#00375e] md:min-h-[760px]">
       <div className="absolute inset-0 z-0">
         <Image
           alt="University Campus"
