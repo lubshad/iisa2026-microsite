@@ -62,7 +62,7 @@ export default function AboutCalicut() {
         >
           <div className="aspect-[4/5] overflow-hidden shadow-2xl relative">
             <Image
-              src="/kozhikode_beach_culture_1775544870042.png"
+              src="/kozhikode_beach_culture_1775544870042.jpg"
               alt="Kozhikode Beach Sunset"
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-700"

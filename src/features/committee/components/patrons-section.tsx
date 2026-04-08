@@ -8,13 +8,13 @@ const patrons = [
     name: "Prof. P. Raveendran",
     role: "Vice-Chancellor",
     institution: "University of Calicut, Kerala",
-    image: "/portrait_images/Prof. P. Raveendran.png",
+    image: "/portrait_images/Prof. P. Raveendran.jpg",
   },
   {
     name: "Prof. K.K. Saju",
     role: "Vice-Chancellor",
     institution: "Kannur University, Kerala",
-    image: "/portrait_images/Prof. K.K. Saju.png",
+    image: "/portrait_images/Prof. K.K. Saju.jpg",
   },
 ];
 

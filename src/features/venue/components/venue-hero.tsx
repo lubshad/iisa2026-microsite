@@ -14,7 +14,7 @@ export default function VenueHero() {
         fill
         priority
         sizes="100vw"
-        src="/university of calicut.png"
+        src="/university of calicut.jpg"
       />
 
       {/* Gradient: strong at bottom-left, fades right */}

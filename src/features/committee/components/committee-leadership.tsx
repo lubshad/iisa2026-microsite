@@ -9,13 +9,13 @@ const leadership = [
     name: "Dr. Lajish V L",
     institution: "University of Calicut, Kerala",
     role: "General Chair",
-    image: "/portrait_images/Dr. Lajish V L.png",
+    image: "/portrait_images/Dr. Lajish V L.jpg",
   },
   {
     name: "Dr. Sunilkumar R K",
     institution: "Kannur University, Kerala",
     role: "General Co-Chair",
-    image: "/portrait_images/Dr. Sunilkumar R K.png",
+    image: "/portrait_images/Dr. Sunilkumar R K.jpg",
   },
 ];
 

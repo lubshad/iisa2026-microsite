@@ -82,7 +82,7 @@ export default function AccessibilitySection() {
               className="object-cover object-center"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
-              src="/kozhikode_beach_culture_1775544870042.png"
+              src="/kozhikode_beach_culture_1775544870042.jpg"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#00375e]/80 via-transparent to-transparent" />
             {/* Location badge */}

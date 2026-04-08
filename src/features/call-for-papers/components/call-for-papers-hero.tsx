@@ -13,7 +13,7 @@ export default function CallForPapersHero() {
         fill
         priority
         sizes="100vw"
-        src="/university of calicut.png"
+        src="/university of calicut.jpg"
       />
       <div className="hero-gradient absolute inset-0" />
 

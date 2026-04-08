@@ -113,7 +113,7 @@ export default function Highlights() {
             </div>
             <div className="relative min-h-[300px]">
               <Image 
-                src="/university of calicut.png" 
+                src="/university of calicut.jpg" 
                 alt="University of Calicut Campus" 
                 className="absolute inset-0 h-full w-full object-cover" 
                 fill

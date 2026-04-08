@@ -11,7 +11,7 @@ export default function Hero() {
           fill
           priority
           sizes="100vw"
-          src="/university of calicut.png"
+          src="/university of calicut.jpg"
         />
         <div className="absolute inset-0 hero-gradient"></div>
         <div className="pointer-events-none absolute inset-0 opacity-20 mix-blend-screen">
