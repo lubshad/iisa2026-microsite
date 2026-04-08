@@ -13,7 +13,7 @@ export default function Footer() {
           <p className="text-[11px] text-[#5f6670]">© 2026 IISA. University of Calicut, Kerala, India.</p>
         </div>
         <div>
-          <h5 className="mb-6 text-[13px] font-bold text-[#1E4E79]">Quick Links</h5>
+          <h2 className="mb-6 text-[13px] font-bold text-[#1E4E79]">Quick Links</h2>
           <ul className="space-y-4">
             <li>
               <Link
@@ -66,7 +66,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h5 className="mb-6 text-[13px] font-bold text-[#1E4E79]">Contact</h5>
+          <h2 className="mb-6 text-[13px] font-bold text-[#1E4E79]">Contact</h2>
           <div className="space-y-2 text-[13px] text-[#5f6670]">
             <p>Department of Electronics</p>
             <p>University of Calicut</p>

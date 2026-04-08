@@ -108,7 +108,7 @@ export default function SponsorshipTiers() {
             <div className="mb-8">
               <span
                 className={`font-label mb-2 block text-[10px] font-bold uppercase tracking-[0.2em] ${
-                  tier.variant === "exclusive" ? "text-[#9fcafc]" : "text-[#72777f]"
+                  tier.variant === "exclusive" ? "text-[#9fcafc]" : "text-[#42474f]"
                 }`}
               >
                 {tier.name}

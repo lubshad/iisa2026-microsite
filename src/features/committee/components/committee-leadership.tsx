@@ -76,9 +76,9 @@ export default function CommitteeLeadership() {
             </div>
             <div className="px-4 pb-4 flex-grow flex flex-col justify-between">
               <div>
-                <h5 className="font-headline text-xl text-[#00375e] font-bold">
+                <h4 className="font-headline text-xl text-[#00375e] font-bold">
                   {leader.name}
-                </h5>
+                </h4>
                 <p className="text-[#42474f] text-sm mt-2">
                   {leader.institution}
                 </p>

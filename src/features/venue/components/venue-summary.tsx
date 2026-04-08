@@ -58,9 +58,9 @@ export default function VenueSummary() {
                 </span>
               </div>
               <div>
-                <h4 className="text-2xl font-bold mb-4 font-headline text-[#ffe08d]">
+                <h3 className="text-2xl font-bold mb-4 font-headline text-[#ffe08d]">
                   {reason.title}
-                </h4>
+                </h3>
                 <p className="text-lg opacity-80 leading-relaxed font-body">
                   {reason.desc}
                 </p>
@@ -76,9 +76,6 @@ export default function VenueSummary() {
           transition={{ duration: 1 }}
           className="relative mt-12 border border-white/10 bg-white/5 p-8 text-center md:mt-32 lg:p-20"
         >
-          <h3 className="font-headline text-3xl md:text-5xl font-bold mb-10 text-[#ffe08d]">
-            Closing Note
-          </h3>
           <p className="text-xl md:text-2xl font-body leading-relaxed max-w-4xl mx-auto italic opacity-90">
             &quot;The University of Calicut provides the perfect setting for IISA
             2026, fostering meaningful discussions, collaboration, and

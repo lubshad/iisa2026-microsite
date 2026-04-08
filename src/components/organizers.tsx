@@ -12,7 +12,7 @@ export default function Organizers() {
   return (
     <section className="bg-[#f3f3f4] py-8 md:py-16">
       <div className="mx-auto max-w-7xl px-4 text-center md:px-8">
-        <h3 className="font-label mb-8 text-xs uppercase tracking-[0.3em] text-[#72777f] md:mb-12">
+        <h3 className="font-label mb-8 text-xs font-bold uppercase tracking-[0.3em] text-[#745b04] md:mb-12">
           Organizers &amp; Strategic Partners
         </h3>
         <div className="flex flex-wrap items-center justify-center gap-6 opacity-80 md:gap-20">

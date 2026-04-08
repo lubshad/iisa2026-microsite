@@ -57,7 +57,7 @@ export default function AccessibilitySection() {
                   <Icon className="size-6" name={item.icon} />
                 </div>
                 <div>
-                  <h4 className="font-headline mb-1 text-xl text-[#00375e]">{item.title}</h4>
+                  <h3 className="font-headline mb-1 text-xl text-[#00375e]">{item.title}</h3>
                   <p className="font-label mb-2 text-xs font-bold uppercase tracking-widest text-[#745b04]">
                     {item.distance}
                   </p>

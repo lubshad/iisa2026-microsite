@@ -43,7 +43,7 @@ export default function VenueOverview() {
             {stats.map((stat) => (
               <div key={stat.label} className="border-l-4 border-[#745b04] pl-5">
                 <p className="font-headline text-3xl font-bold text-[#00375e]">{stat.value}</p>
-                <p className="font-label mt-1 text-xs uppercase tracking-widest text-[#72777f]">
+                <p className="font-label mt-1 text-xs uppercase tracking-widest text-[#42474f]">
                   {stat.label}
                 </p>
               </div>

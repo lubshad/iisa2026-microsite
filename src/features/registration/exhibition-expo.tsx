@@ -140,7 +140,7 @@ export default function ExhibitionExpo() {
       >
         <div className="mb-10 text-center">
           <h3 className="font-headline mb-2 text-3xl text-[#00375e]">Exhibition Fees</h3>
-          <p className="font-body text-[#72777f]">
+          <p className="font-body text-[#42474f]">
             Secure your spot early to take advantage of reduced rates.
           </p>
         </div>
@@ -149,7 +149,7 @@ export default function ExhibitionExpo() {
           <div className="editorial-shadow rounded-xl bg-white p-8">
             <div className="mb-6 flex items-center gap-3">
               <Icon className="size-5 text-[#00375e]" name="globe" />
-              <span className="font-label text-xs font-bold uppercase tracking-widest text-[#72777f]">
+              <span className="font-label text-xs font-bold uppercase tracking-widest text-[#42474f]">
                 Indian Exhibitors
               </span>
             </div>
@@ -163,14 +163,14 @@ export default function ExhibitionExpo() {
               <span className="font-body text-sm font-medium text-[#42474f]">
                 Regular (After Sep 1, 2025)
               </span>
-              <span className="font-body text-xl font-bold text-[#72777f]">₹40,000</span>
+              <span className="font-body text-xl font-bold text-[#42474f]">₹40,000</span>
             </div>
           </div>
 
           <div className="editorial-shadow rounded-xl bg-white p-8">
             <div className="mb-6 flex items-center gap-3">
               <Icon className="size-5 text-[#745b04]" name="map" />
-              <span className="font-label text-xs font-bold uppercase tracking-widest text-[#72777f]">
+              <span className="font-label text-xs font-bold uppercase tracking-widest text-[#42474f]">
                 Foreign Exhibitors
               </span>
             </div>
@@ -184,7 +184,7 @@ export default function ExhibitionExpo() {
               <span className="font-body text-sm font-medium text-[#42474f]">
                 Regular (After Sep 1, 2025)
               </span>
-              <span className="font-body text-xl font-bold text-[#72777f]">$1,500</span>
+              <span className="font-body text-xl font-bold text-[#42474f]">$1,500</span>
             </div>
           </div>
         </div>
@@ -205,7 +205,7 @@ export default function ExhibitionExpo() {
           </button>
         </div>
 
-        <p className="mt-10 mx-auto max-w-2xl text-center font-body italic text-[#72777f]">
+        <p className="mt-10 mx-auto max-w-2xl text-center font-body italic text-[#42474f]">
           &ldquo;Organizations are invited to participate in the IISA 2026 Exhibition to showcase
           their innovations, connect with a global audience, and explore collaboration opportunities
           in acoustics and AI-driven technologies.&rdquo;

@@ -43,9 +43,9 @@ export default function AboutCalicut() {
             ))}
           </ul>
           <div className="border-l-4 border-[#745b04] bg-white p-5 shadow-sm md:p-8">
-            <h4 className="text-xl font-headline font-bold text-[#00375e] mb-3 italic">
+            <h3 className="text-xl font-headline font-bold text-[#00375e] mb-3 italic">
               City of Spices
-            </h4>
+            </h3>
             <p className="text-[#42474f] max-w-sm leading-relaxed">
               Discover why travelers have been flocking to this coastal gem since
               the medieval era.
@@ -69,7 +69,7 @@ export default function AboutCalicut() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#00375e]/70 to-transparent" />
             <div className="absolute bottom-10 left-10 text-white">
-              <h4 className="text-4xl font-headline font-bold mb-2">Kozhikode Beach</h4>
+              <h3 className="text-4xl font-headline font-bold mb-2">Kozhikode Beach</h3>
               <p className="opacity-80 font-label tracking-widest uppercase text-xs">Where tradition meets the sea</p>
             </div>
           </div>

@@ -60,9 +60,9 @@ export default function UniversityInfo() {
                   name={detail.icon}
                 />
               </div>
-              <h4 className="font-headline mb-4 text-xl text-[#00375e] transition-colors group-hover:text-white">
+              <h3 className="font-headline mb-4 text-xl text-[#00375e] transition-colors group-hover:text-white">
                 {detail.title}
-              </h4>
+              </h3>
               <p className="font-body font-light leading-relaxed text-[#42474f] transition-colors group-hover:text-white/80">
                 {detail.desc}
               </p>

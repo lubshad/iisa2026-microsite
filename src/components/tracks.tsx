@@ -34,7 +34,7 @@ export default function Tracks() {
               }`}
             >
               <div className="font-headline mb-4 text-3xl text-[#745b04] group-hover:text-[#ffe08d]">{number}</div>
-              <h4 className="mb-2 text-lg font-bold">{title}</h4>
+              <h3 className="mb-2 text-lg font-bold">{title}</h3>
               <p className="text-xs opacity-60">{description}</p>
             </div>
           ))}

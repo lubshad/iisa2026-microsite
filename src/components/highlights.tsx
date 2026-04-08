@@ -90,7 +90,7 @@ export default function Highlights() {
                 <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#f3f3f4] text-[#00375e]">
                   <Icon name={item.icon} className="size-6" />
                 </div>
-                <h4 className="font-headline mb-3 text-xl text-[#00375e]">{item.title}</h4>
+                <h3 className="font-headline mb-3 text-xl text-[#00375e]">{item.title}</h3>
                 <p className="text-sm text-on-surface-variant">{item.text}</p>
               </div>
             ))}

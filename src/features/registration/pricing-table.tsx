@@ -43,7 +43,7 @@ const TableSection = ({ title, data }: { title: string; data: { category: string
       <table className="w-full text-left">
         <thead>
           <tr className="border-b border-[#f3f3f4]">
-            <th className="font-label pb-4 text-xs font-bold uppercase tracking-widest text-[#72777f]">
+            <th className="font-label pb-4 text-xs font-bold uppercase tracking-widest text-[#42474f]">
               Category
             </th>
             <th className="font-label pb-4 text-xs font-bold uppercase tracking-widest text-[#745b04]">
@@ -66,7 +66,7 @@ const TableSection = ({ title, data }: { title: string; data: { category: string
                 <span className="font-body text-lg font-bold text-[#00375e]">{row.early}</span>
               </td>
               <td className="py-5">
-                <span className="font-body text-base font-semibold text-[#72777f]">
+                <span className="font-body text-base font-semibold text-[#42474f]">
                   {row.regular}
                 </span>
               </td>
@@ -75,7 +75,7 @@ const TableSection = ({ title, data }: { title: string; data: { category: string
         </tbody>
       </table>
     </div>
-    <p className="mt-8 text-xs italic text-[#72777f]">
+    <p className="mt-8 text-xs italic text-[#42474f]">
       * Early Bird registration is valid until October 30, 2025.
     </p>
   </motion.div>
