@@ -45,7 +45,7 @@ export default function RegistrationForm() {
       <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(30,78,121,0.06)_0%,rgba(255,255,255,0)_100%)]" />
       <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_bottom_left,rgba(116,91,4,0.04)_0%,rgba(255,255,255,0)_100%)]" />
 
-      <header className="mb-12 max-w-4xl md:mb-24">
+      <header className="mb-8 max-w-4xl md:mb-24">
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ export default function RegistrationForm() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="font-headline text-5xl md:text-7xl font-black text-slate-900 leading-none tracking-tight mb-8"
+          className="font-headline text-4xl md:text-7xl font-black text-slate-900 leading-none tracking-tight mb-8"
         >
           IISA 2026 Registration
         </motion.h1>
@@ -91,8 +91,8 @@ export default function RegistrationForm() {
         </div>
       </header>
 
-      <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-        <div className="lg:col-span-8 space-y-12">
+      <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-start">
+        <div className="lg:col-span-8 space-y-8 md:space-y-12">
           <PersonalInfo register={register} errors={errors} watch={watch} />
           <ParticipantSelection register={register} errors={errors} watch={watch} />
           <PaperSubmission register={register} errors={errors} watch={watch} />

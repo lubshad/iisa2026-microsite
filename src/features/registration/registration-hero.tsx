@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Icon from "@/components/icon";
 
 export default function RegistrationHero() {
   return (
@@ -15,32 +16,32 @@ export default function RegistrationHero() {
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <p className="font-label mb-6 text-xs font-semibold uppercase tracking-[0.3em] text-[#ffe08d]">
+          <p className="font-label mb-3 text-[10px] font-semibold uppercase tracking-[0.3em] text-[#ffe08d] md:mb-6 md:text-xs">
             IISA 2026 Symposium
           </p>
-          <h1 className="font-headline mb-6 text-5xl font-bold leading-tight text-white md:text-7xl">
+          <h1 className="font-headline mb-4 text-4xl font-bold leading-tight text-white md:mb-6 md:text-7xl">
             Registration &amp;
             <br />
             <span className="italic text-[#ffe08d]">Fee Information</span>
           </h1>
-          <p className="mx-auto max-w-2xl text-xl leading-relaxed text-white/80">
+          <p className="mx-auto max-w-2xl text-base leading-relaxed text-white/80 md:text-xl">
             Find everything you need to know about attendance fees, categories, and delegate
             benefits for the 2026 conference.
           </p>
         </motion.div>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-4 text-white md:mt-12 md:gap-8">
-          <div className="flex items-center gap-3">
-            <div className="h-px w-8 bg-[#ffe08d]" />
-            <span className="text-sm">Early Bird Deadline: Oct 30, 2025</span>
+        <div className="mt-6 flex flex-wrap justify-center gap-4 text-white md:mt-12 md:gap-10">
+          <div className="flex items-center gap-2 md:gap-3">
+            <Icon className="size-4 text-[#ffe08d] md:size-5" name="calendar" />
+            <span className="text-xs font-medium md:text-sm">Early Bird: Oct 30, 2025</span>
           </div>
-          <div className="flex items-center gap-3">
-            <div className="h-px w-8 bg-[#ffe08d]" />
-            <span className="text-sm">November 19–22, 2026</span>
+          <div className="flex items-center gap-2 md:gap-3">
+            <Icon className="size-4 text-[#ffe08d] md:size-5" name="calendar" />
+            <span className="text-xs font-medium md:text-sm">November 19–22, 2026</span>
           </div>
-          <div className="flex items-center gap-3">
-            <div className="h-px w-8 bg-[#ffe08d]" />
-            <span className="text-sm">University of Calicut, Kerala</span>
+          <div className="flex items-center gap-2 md:gap-3">
+            <Icon className="size-4 text-[#ffe08d] md:size-5" name="school" />
+            <span className="text-xs font-medium md:text-sm">University of Calicut, Kerala</span>
           </div>
         </div>
       </div>

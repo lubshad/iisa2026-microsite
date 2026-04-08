@@ -48,9 +48,9 @@ export const SectionCard = ({ children, title, icon, active = true }: { children
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
-    className={`bg-white rounded-3xl p-8 shadow-sm ring-1 ring-slate-100 transition-opacity ${active ? "opacity-100" : "opacity-40 pointer-events-none"}`}
+    className={`bg-white rounded-3xl p-5 md:p-8 shadow-sm ring-1 ring-slate-100 transition-opacity ${active ? "opacity-100" : "opacity-40 pointer-events-none"}`}
   >
-    <div className="flex items-center gap-4 mb-8">
+    <div className="flex items-center gap-4 mb-6 md:mb-8">
       <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-primary/10 text-primary">
         <Icon name={icon} className="w-6 h-6" />
       </div>
@@ -109,7 +109,7 @@ export const ParticipantSelection = ({ register, errors, watch }: SectionProps) 
           "ENFORCEMENT_AUTHORITY",
           "OTHER"
         ].map((cat) => (
-          <label key={cat} className={`flex items-center gap-3 p-4 rounded-2xl border-2 transition-all cursor-pointer ${watch("category") === cat ? "border-primary bg-primary/5" : "border-slate-100 hover:border-slate-200"}`}>
+          <label key={cat} className={`flex items-center gap-3 p-3 rounded-2xl border-2 transition-all cursor-pointer md:p-4 ${watch("category") === cat ? "border-primary bg-primary/5" : "border-slate-100 hover:border-slate-200"}`}>
             <input type="radio" {...register("category")} value={cat} className="sr-only" />
             <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${watch("category") === cat ? "border-primary" : "border-slate-300"}`}>
               {watch("category") === cat && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
@@ -132,7 +132,7 @@ export const ParticipantSelection = ({ register, errors, watch }: SectionProps) 
           { value: "INTL_DELEGATE", label: "International Delegate (SAS/IIAV/IEEE)" },
           { value: "INTL_NON_MEMBER", label: "International Non-Member" }
         ].map((type) => (
-          <label key={type.value} className={`flex items-center gap-3 p-4 rounded-2xl border-2 transition-all cursor-pointer ${watch("membershipType") === type.value ? "border-primary bg-primary/5" : "border-slate-100 hover:border-slate-200"}`}>
+          <label key={type.value} className={`flex items-center gap-3 p-3 rounded-2xl border-2 transition-all cursor-pointer md:p-4 ${watch("membershipType") === type.value ? "border-primary bg-primary/5" : "border-slate-100 hover:border-slate-200"}`}>
             <input type="radio" {...register("membershipType")} value={type.value} className="sr-only" />
             <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${watch("membershipType") === type.value ? "border-primary" : "border-slate-300"}`}>
               {watch("membershipType") === type.value && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
@@ -214,7 +214,7 @@ export const RegistrationType = ({ register, watch }: SectionProps) => (
         { value: "EARLY_BIRD", label: "Early Bird Rate", sub: "Until October 30, 2025" },
         { value: "REGULAR", label: "Regular Rate", sub: "After October 30, 2025" }
       ].map((type) => (
-        <label key={type.value} className={`flex items-center gap-4 p-5 rounded-2xl border-2 transition-all cursor-pointer ${watch("registrationType") === type.value ? "border-primary bg-primary/5" : "border-slate-100 hover:border-slate-200"}`}>
+        <label key={type.value} className={`flex items-center gap-3 p-4 rounded-2xl border-2 transition-all cursor-pointer md:gap-4 md:p-5 ${watch("registrationType") === type.value ? "border-primary bg-primary/5" : "border-slate-100 hover:border-slate-200"}`}>
           <input type="radio" {...register("registrationType")} value={type.value} className="sr-only" />
           <div className={`w-6 h-6 rounded-lg border-2 flex items-center justify-center ${watch("registrationType") === type.value ? "border-primary bg-primary text-white" : "border-slate-200"}`}>
              {watch("registrationType") === type.value && <Icon name="check" className="w-4 h-4" />}
@@ -303,7 +303,7 @@ export const PaymentMethod = ({ register, watch, errors }: SectionProps) => (
 );
 
 export const Confirmation = ({ register, errors, watch }: SectionProps) => (
-  <div className="col-span-full bg-slate-900 rounded-[32px] p-8 text-white">
+  <div className="col-span-full bg-slate-900 rounded-[32px] p-5 md:p-8 text-white">
     <h3 className="font-headline text-2xl font-bold mb-6">10. Final Confirmation</h3>
     <label className="flex items-start gap-4 cursor-pointer group">
       <input type="checkbox" {...register("agreedToTerms")} className="sr-only" />

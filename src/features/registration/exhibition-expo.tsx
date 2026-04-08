@@ -19,25 +19,25 @@ const highlights = [
 
 export default function ExhibitionExpo() {
   return (
-    <section className="py-16">
+    <section className="py-12 md:py-24">
       {/* Section header */}
-      <div className="mb-16 max-w-3xl">
-        <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
+      <div className="mb-8 max-w-3xl md:mb-16">
+        <p className="font-label mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:mb-4 md:text-xs">
           Showcase Your Innovation
         </p>
-        <h2 className="font-headline mb-8 text-5xl leading-tight text-[#00375e]">
+        <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
           IISA 2026 Exhibition
         </h2>
-        <div className="mb-8 h-1 w-24 bg-[#745b04]" />
-        <div className="border-l-4 border-l-[#745b04] py-2 pl-6">
-          <p className="mb-2 font-body text-lg font-bold text-[#1a1c1c]">
+        <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24" />
+        <div className="border-l-4 border-l-[#745b04] py-2 pl-5 md:pl-6">
+          <p className="mb-1 font-body text-base font-bold text-[#1a1c1c] md:mb-2 md:text-lg">
             India International Symposium on Acoustics 2026
           </p>
-          <p className="font-body text-sm font-semibold text-[#00375e]">
+          <p className="font-body text-xs font-semibold text-[#00375e] md:text-sm">
             November 19–22, 2026 &nbsp;·&nbsp; University of Calicut, Kerala, India
           </p>
         </div>
-        <p className="mt-8 font-body text-lg leading-relaxed text-[#42474f]">
+        <p className="mt-6 font-body text-base leading-relaxed text-[#42474f] md:mt-8 md:text-lg">
           An exhibition will be organized as part of IISA 2026, bringing together leading
           organizations, companies, and institutions working across all areas of acoustics. The
           exhibition provides a platform to showcase products, technologies, equipment, software,
@@ -47,24 +47,24 @@ export default function ExhibitionExpo() {
       </div>
 
       {/* Scope + highlights + stats grid */}
-      <div className="mb-16 grid grid-cols-1 items-start gap-12 lg:grid-cols-2">
+      <div className="mb-8 grid grid-cols-1 items-start gap-8 lg:mb-16 lg:grid-cols-2 lg:gap-12">
         <motion.div
-          className="space-y-12"
+          className="space-y-8 md:space-y-12"
           initial={{ opacity: 0, x: -30 }}
           viewport={{ once: true }}
           whileInView={{ opacity: 1, x: 0 }}
         >
           <div>
-            <h3 className="font-headline mb-6 flex items-center gap-3 text-2xl text-[#00375e]">
-              <div className="flex size-10 items-center justify-center rounded-xl bg-[#00375e]/10">
-                <Icon className="size-5 text-[#00375e]" name="search" />
+            <h3 className="font-headline mb-4 flex items-center gap-3 text-xl text-[#00375e] md:mb-6 md:text-2xl">
+              <div className="flex size-9 items-center justify-center rounded-lg bg-[#00375e]/10 md:size-10 md:rounded-xl">
+                <Icon className="size-4 text-[#00375e] md:size-5" name="search" />
               </div>
               Scope of Exhibition
             </h3>
-            <ul className="space-y-4">
+            <ul className="space-y-3 md:space-y-4">
               {scopeItems.map((item, i) => (
-                <li key={i} className="flex items-center gap-3 font-body text-sm font-medium text-[#42474f]">
-                  <Icon className="size-4 text-[#00375e]" name="check" />
+                <li key={i} className="flex items-start gap-3 font-body text-sm font-medium text-[#42474f]">
+                  <Icon className="mt-1 size-3 text-[#00375e] md:size-4" name="check" />
                   {item}
                 </li>
               ))}
@@ -72,16 +72,16 @@ export default function ExhibitionExpo() {
           </div>
 
           <div>
-            <h3 className="font-headline mb-6 flex items-center gap-3 text-2xl text-[#00375e]">
-              <div className="flex size-10 items-center justify-center rounded-xl bg-[#745b04]/10">
-                <Icon className="size-5 text-[#745b04]" name="star" />
+            <h3 className="font-headline mb-4 flex items-center gap-3 text-xl text-[#00375e] md:mb-6 md:text-2xl">
+              <div className="flex size-9 items-center justify-center rounded-lg bg-[#745b04]/10 md:size-10 md:rounded-xl">
+                <Icon className="size-4 text-[#745b04] md:size-5" name="star" />
               </div>
               Exhibition Highlights
             </h3>
-            <ul className="space-y-4">
+            <ul className="space-y-3 md:space-y-4">
               {highlights.map((item, i) => (
-                <li key={i} className="flex items-center gap-3 font-body text-sm font-medium text-[#42474f]">
-                  <Icon className="size-4 text-[#745b04]" name="check" />
+                <li key={i} className="flex items-start gap-3 font-body text-sm font-medium text-[#42474f]">
+                  <Icon className="mt-1 size-3 text-[#745b04] md:size-4" name="check" />
                   {item}
                 </li>
               ))}
@@ -90,25 +90,25 @@ export default function ExhibitionExpo() {
         </motion.div>
 
         <motion.div
-          className="rounded-xl bg-[#00375e] p-10 md:p-12 text-white relative overflow-hidden"
+          className="relative overflow-hidden rounded-lg bg-[#00375e] p-5 md:rounded-xl md:p-12 text-white"
           initial={{ opacity: 0, x: 30 }}
           viewport={{ once: true }}
           whileInView={{ opacity: 1, x: 0 }}
         >
           <div className="absolute right-0 top-0 -mr-32 -mt-32 h-64 w-64 rounded-full bg-[#1e4e79] blur-[100px]" />
-          <div className="relative z-10 space-y-10">
+          <div className="relative z-10 space-y-8 md:space-y-10">
             <div>
-              <h3 className="font-headline mb-6 text-2xl font-bold text-white">Target Audience</h3>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="rounded-xl border border-white/10 bg-white/5 p-6">
-                  <div className="font-body mb-1 text-3xl font-bold text-[#ffe08d]">200+</div>
-                  <div className="font-label text-[10px] font-bold uppercase tracking-widest text-white/50">
+              <h3 className="font-headline mb-4 text-xl font-bold text-white md:mb-6 md:text-2xl">Target Audience</h3>
+              <div className="grid grid-cols-2 gap-4 md:gap-6">
+                <div className="rounded-lg border border-white/10 bg-white/5 p-4 md:rounded-xl md:p-6">
+                  <div className="font-body mb-1 text-2xl font-bold text-[#ffe08d] md:text-3xl">200+</div>
+                  <div className="font-label text-[9px] font-bold uppercase tracking-widest text-white/50 md:text-[10px]">
                     Indian Participants
                   </div>
                 </div>
-                <div className="rounded-xl border border-white/10 bg-white/5 p-6">
-                  <div className="font-body mb-1 text-3xl font-bold text-[#ffe08d]">100+</div>
-                  <div className="font-label text-[10px] font-bold uppercase tracking-widest text-white/50">
+                <div className="rounded-lg border border-white/10 bg-white/5 p-4 md:rounded-xl md:p-6">
+                  <div className="font-body mb-1 text-2xl font-bold text-[#ffe08d] md:text-3xl">100+</div>
+                  <div className="font-label text-[9px] font-bold uppercase tracking-widest text-white/50 md:text-[10px]">
                     International Participants
                   </div>
                 </div>
@@ -116,12 +116,12 @@ export default function ExhibitionExpo() {
             </div>
 
             <div>
-              <h3 className="font-headline mb-6 text-2xl font-bold text-white">Booth Details</h3>
-              <div className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 p-6">
-                <Icon className="size-8 text-[#9fcafc]" name="settings" />
+              <h3 className="font-headline mb-4 text-xl font-bold text-white md:mb-6 md:text-2xl">Booth Details</h3>
+              <div className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 p-4 md:gap-4 md:rounded-xl md:p-6">
+                <Icon className="size-6 text-[#9fcafc] md:size-8" name="settings" />
                 <div>
-                  <div className="text-lg font-bold text-white">9 Square Meters</div>
-                  <div className="text-xs text-white/50">
+                  <div className="text-base font-bold text-white md:text-lg">9 Square Meters</div>
+                  <div className="text-[10px] text-white/50 md:text-xs">
                     Standard Booth Size &nbsp;·&nbsp; First-come, first-served
                   </div>
                 </div>
@@ -133,65 +133,65 @@ export default function ExhibitionExpo() {
 
       {/* Exhibition fees */}
       <motion.div
-        className="rounded-xl bg-[#f9f9f9] border border-[#f3f3f4] p-10 md:p-14"
+        className="rounded-lg bg-[#f9f9f9] border border-[#f3f3f4] p-5 md:rounded-xl md:p-14"
         initial={{ opacity: 0, y: 30 }}
         viewport={{ once: true }}
         whileInView={{ opacity: 1, y: 0 }}
       >
-        <div className="mb-10 text-center">
-          <h3 className="font-headline mb-2 text-3xl text-[#00375e]">Exhibition Fees</h3>
-          <p className="font-body text-[#42474f]">
+        <div className="mb-6 text-center md:mb-10">
+          <h3 className="font-headline mb-2 text-2xl text-[#00375e] md:text-3xl">Exhibition Fees</h3>
+          <p className="font-body text-sm text-[#42474f] md:text-base">
             Secure your spot early to take advantage of reduced rates.
           </p>
         </div>
 
-        <div className="mb-10 grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div className="editorial-shadow rounded-xl bg-white p-8">
-            <div className="mb-6 flex items-center gap-3">
-              <Icon className="size-5 text-[#00375e]" name="globe" />
-              <span className="font-label text-xs font-bold uppercase tracking-widest text-[#42474f]">
+        <div className="mb-6 grid grid-cols-1 gap-4 md:mb-10 md:grid-cols-2 md:gap-8">
+          <div className="editorial-shadow rounded-lg bg-white p-5 md:rounded-xl md:p-8">
+            <div className="mb-4 flex items-center gap-3 md:mb-6">
+              <Icon className="size-4 text-[#00375e] md:size-5" name="globe" />
+              <span className="font-label text-[10px] font-bold uppercase tracking-widest text-[#42474f] md:text-xs">
                 Indian Exhibitors
               </span>
             </div>
-            <div className="mb-4 flex items-baseline justify-between">
-              <span className="font-body text-sm font-medium text-[#42474f]">
+            <div className="mb-3 flex items-baseline justify-between md:mb-4">
+              <span className="font-body text-xs font-medium text-[#42474f] md:text-sm">
                 Early (Before Sep 1, 2025)
               </span>
-              <span className="font-body text-2xl font-bold text-[#1a1c1c]">₹30,000</span>
+              <span className="font-body text-xl font-bold text-[#1a1c1c] md:text-2xl">₹30,000</span>
             </div>
             <div className="flex items-baseline justify-between">
-              <span className="font-body text-sm font-medium text-[#42474f]">
+              <span className="font-body text-xs font-medium text-[#42474f] md:text-sm">
                 Regular (After Sep 1, 2025)
               </span>
-              <span className="font-body text-xl font-bold text-[#42474f]">₹40,000</span>
+              <span className="font-body text-lg font-bold text-[#42474f] md:text-xl">₹40,000</span>
             </div>
           </div>
 
-          <div className="editorial-shadow rounded-xl bg-white p-8">
-            <div className="mb-6 flex items-center gap-3">
-              <Icon className="size-5 text-[#745b04]" name="map" />
-              <span className="font-label text-xs font-bold uppercase tracking-widest text-[#42474f]">
+          <div className="editorial-shadow rounded-lg bg-white p-5 md:rounded-xl md:p-8">
+            <div className="mb-4 flex items-center gap-3 md:mb-6">
+              <Icon className="size-4 text-[#745b04] md:size-5" name="map" />
+              <span className="font-label text-[10px] font-bold uppercase tracking-widest text-[#42474f] md:text-xs">
                 Foreign Exhibitors
               </span>
             </div>
-            <div className="mb-4 flex items-baseline justify-between">
-              <span className="font-body text-sm font-medium text-[#42474f]">
+            <div className="mb-3 flex items-baseline justify-between md:mb-4">
+              <span className="font-body text-xs font-medium text-[#42474f] md:text-sm">
                 Early (Before Sep 1, 2025)
               </span>
-              <span className="font-body text-2xl font-bold text-[#1a1c1c]">$1,000</span>
+              <span className="font-body text-xl font-bold text-[#1a1c1c] md:text-2xl">$1,000</span>
             </div>
             <div className="flex items-baseline justify-between">
-              <span className="font-body text-sm font-medium text-[#42474f]">
+              <span className="font-body text-xs font-medium text-[#42474f] md:text-sm">
                 Regular (After Sep 1, 2025)
               </span>
-              <span className="font-body text-xl font-bold text-[#42474f]">$1,500</span>
+              <span className="font-body text-lg font-bold text-[#42474f] md:text-xl">$1,500</span>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-6 rounded-xl border border-[#00375e]/10 bg-[#f3f3f4] p-8 md:flex-row">
-          <div className="flex items-center gap-4">
-            <div className="flex size-12 items-center justify-center rounded-full bg-[#00375e] font-bold text-white">
+        <div className="flex flex-col items-center justify-between gap-6 rounded-lg border border-[#00375e]/10 bg-[#f3f3f4] p-5 md:rounded-xl md:flex-row md:p-8">
+          <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
+            <div className="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#00375e] font-bold text-white">
               5%
             </div>
             <p className="font-body text-sm font-bold text-[#1a1c1c]">
@@ -200,12 +200,12 @@ export default function ExhibitionExpo() {
               <span className="text-[#00375e]">USI</span>
             </p>
           </div>
-          <button className="kasavu-gold-gradient rounded-md px-8 py-4 font-label text-xs font-bold uppercase tracking-widest text-white transition-transform hover:scale-[1.02]">
+          <button className="kasavu-gold-gradient w-full rounded-md px-8 py-4 font-label text-xs font-bold uppercase tracking-widest text-white transition-transform hover:scale-[1.02] md:w-auto">
             Enquire for Exhibition
           </button>
         </div>
 
-        <p className="mt-10 mx-auto max-w-2xl text-center font-body italic text-[#42474f]">
+        <p className="mt-8 mx-auto max-w-2xl text-center font-body text-sm italic text-[#42474f] md:mt-10 md:text-base">
           &ldquo;Organizations are invited to participate in the IISA 2026 Exhibition to showcase
           their innovations, connect with a global audience, and explore collaboration opportunities
           in acoustics and AI-driven technologies.&rdquo;

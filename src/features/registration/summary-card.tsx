@@ -28,7 +28,7 @@ export const SummaryCard = ({ watch, isSubmitting }: SummaryCardProps) => {
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="bg-white rounded-[32px] p-8 shadow-2xl shadow-primary/10 ring-1 ring-slate-100 overflow-hidden relative"
+        className="bg-white rounded-[32px] p-5 md:p-8 shadow-2xl shadow-primary/10 ring-1 ring-slate-100 overflow-hidden relative"
       >
         <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 blur-2xl" />
 
@@ -87,7 +87,7 @@ export const SummaryCard = ({ watch, isSubmitting }: SummaryCardProps) => {
         </div>
       </motion.div>
 
-      <div className="bg-slate-900 rounded-3xl p-8 text-white shadow-xl">
+      <div className="bg-slate-900 rounded-3xl p-5 md:p-8 text-white shadow-xl">
         <h5 className="text-[10px] font-black text-primary uppercase tracking-[0.3em] mb-4">Registration Includes</h5>
         <ul className="space-y-4">
           {INCLUSIONS.map((item, i) => (

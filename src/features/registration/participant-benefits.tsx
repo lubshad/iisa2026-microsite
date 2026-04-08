@@ -24,7 +24,7 @@ const benefits = [
 
 export default function ParticipantBenefits() {
   return (
-    <section className="bg-background py-16 md:py-24">
+    <section className="bg-background py-12 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <motion.div
@@ -50,7 +50,7 @@ export default function ParticipantBenefits() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="font-headline mb-12 text-4xl font-bold text-primary underline decoration-secondary decoration-4 underline-offset-8"
+              className="font-headline mb-8 text-3xl font-bold text-primary underline decoration-secondary decoration-4 underline-offset-8 md:mb-12 md:text-4xl"
             >
               Delegate Inclusions
             </motion.h2>
@@ -63,13 +63,13 @@ export default function ParticipantBenefits() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="group flex items-start gap-6"
+                  className="group flex items-start gap-4 md:gap-6"
                 >
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-primary-container/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary-container/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white md:h-14 md:w-14">
                     <Icon name={benefit.icon} className="h-7 w-7" />
                   </div>
                   <div>
-                    <h3 className="font-body mb-1 text-xl font-bold text-primary">{benefit.title}</h3>
+                    <h3 className="font-body mb-1 text-lg font-bold text-primary md:text-xl">{benefit.title}</h3>
                     <p className="font-body text-on-surface-variant leading-relaxed">{benefit.description}</p>
                   </div>
                 </motion.div>

@@ -27,12 +27,12 @@ const inclusions = [
 
 const TableSection = ({ title, data }: { title: string; data: { category: string; early: string; regular: string }[] }) => (
   <motion.div
-    className="editorial-shadow rounded-xl bg-white p-8 md:p-10"
+    className="editorial-shadow rounded-xl bg-white p-5 md:p-10"
     initial={{ opacity: 0, y: 20 }}
     viewport={{ once: true }}
     whileInView={{ opacity: 1, y: 0 }}
   >
-    <div className="mb-8 flex items-center gap-4">
+    <div className="mb-6 flex items-center gap-4 md:mb-8">
       <div className="flex size-12 items-center justify-center rounded-xl bg-[#00375e]/10">
         <Icon className="size-6 text-[#00375e]" name="credit-card" />
       </div>
@@ -83,14 +83,14 @@ const TableSection = ({ title, data }: { title: string; data: { category: string
 
 export default function PricingTable() {
   return (
-    <section className="py-16 space-y-12">
+    <section className="py-12 md:py-24 space-y-12">
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
         <TableSection data={indianFees} title="Indian / SAARC Participants" />
         <TableSection data={foreignFees} title="Foreign Delegates" />
       </div>
 
       <motion.div
-        className="relative overflow-hidden rounded-xl bg-[#00375e] p-10 md:p-16 text-white"
+        className="relative overflow-hidden rounded-xl bg-[#00375e] p-6 md:p-16 text-white"
         initial={{ opacity: 0, y: 20 }}
         viewport={{ once: true }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -101,7 +101,7 @@ export default function PricingTable() {
             <h3 className="font-headline mb-2 text-3xl font-bold text-white">
               Registration Includes
             </h3>
-            <div className="mb-8 h-1 w-16 bg-[#745b04]" />
+            <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8" />
             <p className="font-body mb-8 text-lg text-white/70">
               All registered delegates are entitled to the full conference experience and academic
               resources.
@@ -117,7 +117,7 @@ export default function PricingTable() {
               ))}
             </ul>
           </div>
-          <div className="rounded-xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm">
+          <div className="rounded-xl border border-white/10 bg-white/5 p-6 text-center backdrop-blur-sm md:p-8">
             <Icon className="mx-auto mb-6 size-12 text-[#9fcafc]" name="info" />
             <h4 className="font-headline mb-4 text-xl font-bold text-white">Need Help?</h4>
             <p className="font-body mb-8 text-sm leading-relaxed text-white/60">

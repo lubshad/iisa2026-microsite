@@ -53,10 +53,10 @@ const generalBenefits = [
 
 export default function SponsorshipTiers() {
   return (
-    <section className="py-16">
+    <section className="py-12 md:py-24">
       {/* Section header */}
-      <div className="mb-10 max-w-3xl md:mb-16">
-        <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
+      <div className="mb-8 max-w-3xl md:mb-16">
+        <p className="font-label mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:mb-4 md:text-xs">
           Partnership Opportunities
         </p>
         <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
@@ -87,7 +87,7 @@ export default function SponsorshipTiers() {
         {tiers.map((tier, index) => (
           <motion.div
             key={index}
-            className={`group relative flex flex-col rounded-xl p-6 transition-all duration-300 md:p-8 ${
+            className={`group relative flex flex-col rounded-xl p-5 transition-all duration-300 md:p-8 ${
               tier.variant === "popular"
                 ? "editorial-shadow ring-2 ring-[#00375e] bg-[#00375e]/5 -translate-y-2"
                 : tier.variant === "exclusive"
@@ -159,7 +159,7 @@ export default function SponsorshipTiers() {
 
       {/* General benefits */}
       <motion.div
-        className="rounded-xl bg-[#f9f9f9] p-10 md:p-14 border border-[#f3f3f4]"
+        className="rounded-xl bg-[#f9f9f9] p-6 md:p-14 border border-[#f3f3f4]"
         initial={{ opacity: 0, scale: 0.98 }}
         viewport={{ once: true }}
         whileInView={{ opacity: 1, scale: 1 }}
