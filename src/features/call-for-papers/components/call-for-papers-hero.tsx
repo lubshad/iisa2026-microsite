@@ -18,6 +18,12 @@ export default function CallForPapersHero() {
         src={universityImg}
       />
       <div className="hero-gradient absolute inset-0" />
+      <div className="pointer-events-none absolute inset-0 opacity-20 mix-blend-screen">
+        <svg className="h-full w-full" preserveAspectRatio="none" viewBox="0 0 1000 400">
+          <path d="M0,220 Q100,90 200,220 T400,220 T600,220 T800,220 T1000,220" fill="none" stroke="#ffe08d" strokeWidth="2" />
+          <path d="M0,250 Q150,130 300,250 T600,250 T900,250 T1000,250" fill="none" stroke="#e4c368" strokeWidth="1" />
+        </svg>
+      </div>
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 pt-24 md:px-8 md:pb-20 md:pt-48">
         <motion.div
@@ -40,6 +46,17 @@ export default function CallForPapersHero() {
             and practitioners to submit original research papers in all areas of
             acoustics, ultrasonics, and vibration.
           </p>
+          <div className="mb-8 max-w-3xl rounded-lg border border-white/10 bg-white/5 p-4 backdrop-blur-sm md:mb-12 md:p-5">
+            <div className="mb-3 flex items-center gap-3">
+              <Icon className="size-5 text-[#ffe08d]" name="waves" />
+              <p className="font-label text-[10px] font-bold uppercase tracking-[0.2em] text-[#ffe08d] md:text-xs">
+                Sound Research Focus
+              </p>
+            </div>
+            <p className="text-sm leading-relaxed text-white/80 md:text-base">
+              Tracks span acoustic sensing, sound analysis, auditory perception, ultrasonic systems, vibration, and electro-acoustic technologies.
+            </p>
+          </div>
 
           <div className="flex flex-wrap gap-x-6 gap-y-4 md:gap-x-10 md:gap-y-6">
             <div className="flex items-center gap-2 md:gap-3">

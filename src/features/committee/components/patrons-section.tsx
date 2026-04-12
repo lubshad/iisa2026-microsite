@@ -22,7 +22,7 @@ const patrons = [
 
 export default function PatronsSection() {
   return (
-    <section id="committee" className="mb-16 md:mb-32">
+    <section id="committee" className="relative mb-16 overflow-hidden md:mb-32">
       <div className="mb-10 flex flex-col items-baseline gap-8 md:mb-16 md:flex-row">
         <motion.h2
           initial={{ y: 20, opacity: 0 }}
@@ -58,8 +58,9 @@ export default function PatronsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-[#f3f3f4] p-1 group"
+              className="group relative overflow-hidden bg-[#f3f3f4] p-1"
             >
+              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]" />
               <div className="relative overflow-hidden mb-6 aspect-[4/5] bg-slate-200 dark:bg-slate-800">
                 <Image
                   src={patron.image}

@@ -50,7 +50,7 @@ export default function VenueSummary() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group flex gap-5 md:gap-8"
+              className="group relative overflow-hidden rounded-lg border border-white/10 bg-white/5 p-5 md:gap-8 md:p-6"
             >
               <div className="flex-shrink-0 w-20 h-20 border border-[#745b04]/30 flex items-center justify-center transition-all group-hover:bg-[#745b04] group-hover:border-[#745b04]">
                 <span className="text-3xl font-headline font-bold text-[#ffe08d] group-hover:text-white">

@@ -46,8 +46,13 @@ export default function CommitteeLeadership() {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="flex flex-col justify-end bg-[#00375e] p-8 text-white md:col-span-2 md:min-h-[400px] md:p-12"
+          className="relative flex flex-col justify-end overflow-hidden bg-[#00375e] p-8 text-white md:col-span-2 md:min-h-[400px] md:p-12"
         >
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-20 opacity-30">
+            <svg className="h-full w-full" preserveAspectRatio="none" viewBox="0 0 1200 120">
+              <path d="M0,72 C80,72 80,32 160,32 C240,32 240,98 320,98 C400,98 400,26 480,26 C560,26 560,90 640,90 C720,90 720,40 800,40 C880,40 880,100 960,100 C1040,100 1040,34 1120,34 C1160,34 1180,48 1200,48" fill="none" stroke="#9fcafc" strokeWidth="2" />
+            </svg>
+          </div>
           <span className="text-[#ffe08d] text-sm font-bold tracking-[0.2em] mb-4 uppercase">
             LEADERSHIP
           </span>
@@ -65,8 +70,9 @@ export default function CommitteeLeadership() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="bg-[#f3f3f4] p-1 group flex flex-col"
+            className="group relative flex flex-col overflow-hidden bg-[#f3f3f4] p-1"
           >
+            <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]" />
             <div className="relative overflow-hidden mb-4 aspect-[4/5] bg-slate-200">
               <Image
                 src={leader.image}
@@ -105,8 +111,9 @@ export default function CommitteeLeadership() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="rounded-lg bg-[#f3f3f4] p-5 md:p-8"
+              className="relative overflow-hidden rounded-lg bg-[#f3f3f4] p-5 md:p-8"
             >
+              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]" />
               <h4 className="text-[#745b04] font-bold text-sm uppercase tracking-widest mb-6">
                 {group.title}
               </h4>

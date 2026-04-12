@@ -6,7 +6,7 @@ import { technicalTracks } from "@/features/call-for-papers/data";
 
 export default function TechnicalTracks() {
   return (
-    <section className="bg-white py-12 md:py-24">
+    <section className="relative overflow-hidden bg-white py-12 md:py-24">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -36,10 +36,11 @@ export default function TechnicalTracks() {
               viewport={{ once: true }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.06 }}
-              className={`group flex flex-col justify-between bg-[#f3f3f4] p-5 transition-all hover:bg-[#00375e] md:p-8 ${
+              className={`group relative overflow-hidden flex flex-col justify-between bg-[#f3f3f4] p-5 transition-all hover:bg-[#00375e] md:p-8 ${
                 track.wide ? "lg:col-span-2" : ""
               }`}
             >
+              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]" />
               <div>
                 <div className="mb-6 flex size-12 items-center justify-center bg-[#745b04]/10 text-[#745b04] transition-colors group-hover:bg-white/10 group-hover:text-[#ffe08d]">
                   <Icon className="size-6" name={track.icon} />

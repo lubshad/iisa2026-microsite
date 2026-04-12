@@ -34,7 +34,7 @@ const accessibilityItems = [
 
 export default function AccessibilitySection() {
   return (
-    <section className="overflow-hidden bg-white py-12 md:py-24">
+    <section className="relative overflow-hidden bg-white py-12 md:py-24">
       <div className="mx-auto max-w-7xl grid grid-cols-1 items-start gap-10 px-4 md:gap-20 md:px-8 lg:grid-cols-2">
         {/* Left: transit items */}
         <motion.div
@@ -53,16 +53,19 @@ export default function AccessibilitySection() {
 
           <div className="space-y-6 md:space-y-10">
             {accessibilityItems.map((item) => (
-              <div key={item.title} className="group flex gap-6">
-                <div className="flex size-14 flex-shrink-0 items-center justify-center bg-[#745b04]/10 text-[#745b04] transition-all group-hover:bg-[#745b04] group-hover:text-white">
-                  <Icon className="size-6" name={item.icon} />
-                </div>
-                <div>
-                  <h3 className="font-headline mb-1 text-xl text-[#00375e]">{item.title}</h3>
-                  <p className="font-label mb-2 text-xs font-bold uppercase tracking-widest text-[#745b04]">
-                    {item.distance}
-                  </p>
-                  <p className="font-body leading-relaxed text-[#42474f]">{item.desc}</p>
+              <div key={item.title} className="group relative overflow-hidden rounded-lg border border-[#00375e]/8 bg-[#f9f9f9] p-5 md:p-6">
+                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]" />
+                <div className="flex gap-6">
+                  <div className="flex size-14 flex-shrink-0 items-center justify-center bg-[#745b04]/10 text-[#745b04] transition-all group-hover:bg-[#745b04] group-hover:text-white">
+                    <Icon className="size-6" name={item.icon} />
+                  </div>
+                  <div>
+                    <h3 className="font-headline mb-1 text-xl text-[#00375e]">{item.title}</h3>
+                    <p className="font-label mb-2 text-xs font-bold uppercase tracking-widest text-[#745b04]">
+                      {item.distance}
+                    </p>
+                    <p className="font-body leading-relaxed text-[#42474f]">{item.desc}</p>
+                  </div>
                 </div>
               </div>
             ))}

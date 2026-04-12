@@ -39,7 +39,7 @@ export default function AdvisoryCommittee() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.05 }}
-            className="flex items-center gap-3 group"
+            className="group flex items-center gap-3 rounded-lg border border-[#00375e]/8 bg-[#f9f9f9] px-4 py-4"
           >
             <div className="w-1.5 h-1.5 rounded-full bg-[#745b04] opacity-50 group-hover:opacity-100 transition-opacity" />
             <p className="text-[#42474f] text-sm leading-relaxed">

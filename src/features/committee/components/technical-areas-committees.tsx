@@ -63,8 +63,9 @@ export default function TechnicalAreasCommittees() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.05 }}
-            className="flex flex-col gap-4"
+            className="relative overflow-hidden rounded-lg border border-[#00375e]/8 bg-[#f9f9f9] p-5 md:p-6"
           >
+            <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]" />
             <h4 className="font-headline text-lg font-bold text-[#745b04] leading-tight">
               {area.title}
             </h4>

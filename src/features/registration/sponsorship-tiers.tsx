@@ -53,7 +53,7 @@ const generalBenefits = [
 
 export default function SponsorshipTiers() {
   return (
-    <section className="py-12 md:py-24">
+    <section className="relative overflow-hidden py-12 md:py-24">
       {/* Section header */}
       <div className="mb-8 max-w-3xl md:mb-16">
         <p className="font-label mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:mb-4 md:text-xs">
@@ -87,7 +87,7 @@ export default function SponsorshipTiers() {
         {tiers.map((tier, index) => (
           <motion.div
             key={index}
-            className={`group relative flex flex-col rounded-xl p-5 transition-all duration-300 md:p-8 ${
+            className={`group relative flex flex-col overflow-hidden rounded-xl p-5 transition-all duration-300 md:p-8 ${
               tier.variant === "popular"
                 ? "editorial-shadow ring-2 ring-[#00375e] bg-[#00375e]/5 -translate-y-2"
                 : tier.variant === "exclusive"
@@ -99,6 +99,11 @@ export default function SponsorshipTiers() {
             viewport={{ once: true }}
             whileInView={{ opacity: 1, y: 0 }}
           >
+            <div className={`absolute inset-x-0 top-0 h-1 ${
+              tier.variant === "exclusive"
+                ? "bg-gradient-to-r from-[#9fcafc] via-[#ffe08d] to-[#745b04]"
+                : "bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]"
+            }`} />
             {tier.variant === "popular" && (
               <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#00375e] px-6 py-1.5 text-[10px] font-bold uppercase tracking-widest text-white">
                 {tier.description}
@@ -153,17 +158,25 @@ export default function SponsorshipTiers() {
             >
               Inquire Now
             </button>
+            <div className={`mt-5 overflow-hidden rounded px-2 py-2 ${
+              tier.variant === "exclusive" ? "bg-white/5" : "bg-[#f9f9f9]"
+            }`}>
+              <svg className="h-4 w-full" preserveAspectRatio="none" viewBox="0 0 200 24">
+                <path d="M0,12 C10,12 10,5 20,5 C30,5 30,19 40,19 C50,19 50,8 60,8 C70,8 70,16 80,16 C90,16 90,4 100,4 C110,4 110,20 120,20 C130,20 130,9 140,9 C150,9 150,15 160,15 C170,15 170,7 180,7 C190,7 190,12 200,12" fill="none" stroke={tier.variant === "exclusive" ? "#9fcafc" : "#1e4e79"} strokeWidth="2" strokeLinecap="round" />
+              </svg>
+            </div>
           </motion.div>
         ))}
       </div>
 
       {/* General benefits */}
       <motion.div
-        className="rounded-xl bg-[#f9f9f9] p-6 md:p-14 border border-[#f3f3f4]"
+        className="relative overflow-hidden rounded-xl border border-[#f3f3f4] bg-[#f9f9f9] p-6 md:p-14"
         initial={{ opacity: 0, scale: 0.98 }}
         viewport={{ once: true }}
         whileInView={{ opacity: 1, scale: 1 }}
       >
+        <div className="absolute right-0 top-0 h-24 w-24 rounded-bl-[2rem] bg-white/70" />
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div>
             <h3 className="font-headline mb-6 text-3xl text-[#00375e]">

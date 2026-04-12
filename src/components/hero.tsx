@@ -30,13 +30,13 @@ export default function Hero() {
         </p>
         <h1 className="font-headline mb-4 text-4xl font-bold tracking-tight md:text-8xl">IISA 2026</h1>
         <h2 className="font-headline mb-6 max-w-2xl text-lg leading-snug opacity-90 md:text-3xl">
-          India International Symposium on Acoustics
+          India International Symposium on Acoustics, Sound and Intelligent Audio Systems
         </h2>
 
         <div className="mb-6 max-w-3xl rounded-lg border-l-4 border-l-[#745b04] bg-white/10 p-4 backdrop-blur-md md:mb-8 md:p-6">
           <p className="font-label mb-2 text-[10px] uppercase tracking-widest text-[#ffe08d] md:text-sm">Theme</p>
           <p className="text-base font-light italic leading-relaxed md:text-xl">
-            &quot;AI for Acoustics: Innovation, Inclusion and Impact for Social Good&quot;
+            &quot;AI for Acoustics and Sound: Intelligent Listening, Inclusive Hearing, and Impact for Social Good&quot;
           </p>
         </div>
 

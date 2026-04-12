@@ -43,7 +43,7 @@ export default function AboutCalicut() {
               </li>
             ))}
           </ul>
-          <div className="border-l-4 border-[#745b04] bg-white p-5 shadow-sm md:p-8">
+          <div className="relative overflow-hidden border-l-4 border-[#745b04] bg-white p-5 shadow-sm md:p-8">
             <h3 className="text-xl font-headline font-bold text-[#00375e] mb-3 italic">
               City of Spices
             </h3>
@@ -51,6 +51,11 @@ export default function AboutCalicut() {
               Discover why travelers have been flocking to this coastal gem since
               the medieval era.
             </p>
+            <div className="mt-4 overflow-hidden rounded bg-[#f9f9f9] px-2 py-2">
+              <svg className="h-4 w-full" preserveAspectRatio="none" viewBox="0 0 200 24">
+                <path d="M0,12 C10,12 10,5 20,5 C30,5 30,19 40,19 C50,19 50,8 60,8 C70,8 70,16 80,16 C90,16 90,4 100,4 C110,4 110,20 120,20 C130,20 130,9 140,9 C150,9 150,15 160,15 C170,15 170,7 180,7 C190,7 190,12 200,12" fill="none" stroke="#1e4e79" strokeWidth="2" strokeLinecap="round" />
+              </svg>
+            </div>
           </div>
         </motion.div>
 

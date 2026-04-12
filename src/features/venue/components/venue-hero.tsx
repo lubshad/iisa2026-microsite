@@ -22,6 +22,12 @@ export default function VenueHero() {
       {/* Gradient: strong at bottom-left, fades right */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#00375e]/90 via-[#00375e]/50 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-t from-[#00375e]/80 via-transparent to-transparent" />
+      <div className="pointer-events-none absolute inset-0 opacity-20 mix-blend-screen">
+        <svg className="h-full w-full" preserveAspectRatio="none" viewBox="0 0 1000 400">
+          <path d="M0,220 Q100,90 200,220 T400,220 T600,220 T800,220 T1000,220" fill="none" stroke="#ffe08d" strokeWidth="2" />
+          <path d="M0,250 Q150,130 300,250 T600,250 T900,250 T1000,250" fill="none" stroke="#9fcafc" strokeWidth="1" />
+        </svg>
+      </div>
 
       {/* Content anchored to bottom-left */}
       <div className="absolute inset-0 flex items-end">

@@ -63,8 +63,9 @@ export default function AdditionalInfo() {
               viewport={{ once: true }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group border border-white/10 bg-white/5 p-5 transition-all hover:bg-white/10 md:p-8"
+              className="group relative overflow-hidden border border-white/10 bg-white/5 p-5 transition-all hover:bg-white/10 md:p-8"
             >
+              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#9fcafc] via-[#ffe08d] to-[#745b04]" />
               <div className="mb-6 flex size-12 items-center justify-center bg-[#745b04]/30 text-[#ffe08d] transition-colors group-hover:bg-[#745b04]">
                 <Icon className="size-6" name={section.icon} />
               </div>
@@ -77,6 +78,11 @@ export default function AdditionalInfo() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-5 overflow-hidden rounded bg-white/5 px-2 py-2">
+                <svg className="h-4 w-full" preserveAspectRatio="none" viewBox="0 0 200 24">
+                  <path d="M0,12 C10,12 10,5 20,5 C30,5 30,19 40,19 C50,19 50,8 60,8 C70,8 70,16 80,16 C90,16 90,4 100,4 C110,4 110,20 120,20 C130,20 130,9 140,9 C150,9 150,15 160,15 C170,15 170,7 180,7 C190,7 190,12 200,12" fill="none" stroke="#9fcafc" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </div>
             </motion.div>
           ))}
         </div>

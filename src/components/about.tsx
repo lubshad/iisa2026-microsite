@@ -35,7 +35,13 @@ const focusAreas = [
 
 export default function About() {
   return (
-    <section className="bg-[#f9f9f9] py-12 md:py-24">
+    <section className="relative overflow-hidden bg-[#f9f9f9] py-12 md:py-24">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-28 opacity-60">
+        <svg className="h-full w-full" preserveAspectRatio="none" viewBox="0 0 1200 120">
+          <path d="M0,78 C70,78 70,34 140,34 C210,34 210,98 280,98 C350,98 350,22 420,22 C490,22 490,88 560,88 C630,88 630,46 700,46 C770,46 770,100 840,100 C910,100 910,26 980,26 C1050,26 1050,74 1120,74 C1160,74 1180,58 1200,58" fill="none" stroke="#9fcafc" strokeWidth="2" />
+          <path d="M0,96 C80,96 80,64 160,64 C240,64 240,112 320,112 C400,112 400,52 480,52 C560,52 560,104 640,104 C720,104 720,36 800,36 C880,36 880,92 960,92 C1040,92 1040,48 1120,48 C1160,48 1180,56 1200,56" fill="none" stroke="#e4c368" strokeWidth="1.5" />
+        </svg>
+      </div>
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-8 px-4 md:px-8 md:gap-16 lg:grid-cols-12">
         <div className="lg:col-span-5">
           <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
@@ -47,16 +53,36 @@ export default function About() {
           </h2>
           <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24"></div>
           <p className="mb-6 text-lg leading-relaxed text-on-surface-variant">
-            IISA 2026 explores the transformative role of Artificial Intelligence in advancing acoustical science with a strong focus on inclusion and societal impact. The symposium brings together researchers, engineers, healthcare professionals, and industry leaders to share knowledge, innovations, and real-world applications in acoustics.
+            IISA 2026 explores the transformative role of Artificial Intelligence in advancing acoustical science, sound technologies, and auditory intelligence with a strong focus on inclusion and societal impact. The symposium brings together researchers, engineers, healthcare professionals, and industry leaders to share knowledge, innovations, and real-world applications across the science of sound.
           </p>
           <p className="text-lg leading-relaxed text-on-surface-variant">
-            The conference aims to promote interdisciplinary collaboration and develop accessible, inclusive, and sustainable acoustic solutions for global communities.
+            The conference aims to promote interdisciplinary collaboration in acoustic sensing, sound analysis, hearing technologies, ultrasonics, noise control, and sustainable listening environments for global communities.
           </p>
+          <div className="editorial-shadow mt-8 rounded-lg border border-[#00375e]/10 bg-white p-5 md:p-6">
+            <div className="mb-4 flex items-center gap-3">
+              <div className="flex size-10 items-center justify-center rounded-full bg-primary-container text-[#00375e]">
+                <Icon className="size-5" name="waves" />
+              </div>
+              <div>
+                <p className="font-label text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04]">Acoustic Signature</p>
+                <p className="font-headline text-xl text-[#00375e]">Where Sound Science Meets AI</p>
+              </div>
+            </div>
+            <div className="mb-4 overflow-hidden rounded bg-[#f3f3f4] px-3 py-4">
+              <svg className="h-10 w-full" preserveAspectRatio="none" viewBox="0 0 600 80">
+                <path d="M0,40 L30,40 L45,18 L60,62 L75,26 L90,54 L120,40 L150,40 L165,12 L180,68 L195,24 L210,58 L240,40 L270,40 L285,16 L300,64 L315,28 L330,52 L360,40 L390,40 L405,14 L420,66 L435,30 L450,50 L480,40 L510,40 L525,20 L540,60 L555,34 L570,46 L600,40" fill="none" stroke="#00375e" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
+            <p className="text-sm leading-relaxed text-on-surface-variant">
+              From acoustic sensing and hearing assistance to intelligent listening environments, IISA 2026 is positioned around the full lifecycle of sound: capture, analysis, interpretation, and human impact.
+            </p>
+          </div>
         </div>
         <div className="grid grid-cols-1 gap-6 lg:col-span-7 md:grid-cols-2">
           {focusAreas.map((area, index) => (
-            <div key={area.title} className={`editorial-shadow rounded-lg bg-white p-5 md:p-8 ${index % 2 === 1 ? "md:mt-12" : ""}`}>
-              <Icon className="mb-3 size-8 text-[#00375e] md:mb-4 md:size-10" name={area.icon} />
+            <div key={area.title} className={`editorial-shadow relative overflow-hidden rounded-lg bg-white p-5 md:p-8 ${index % 2 === 1 ? "md:mt-12" : ""}`}>
+              <div className="absolute right-0 top-0 h-16 w-16 rounded-bl-[2rem] bg-[#f3f3f4]" />
+              <Icon className="relative mb-3 size-8 text-[#00375e] md:mb-4 md:size-10" name={area.icon} />
               <h3 className="font-headline mb-3 text-xl text-[#00375e]">{area.title}</h3>
               <p className="text-sm text-on-surface-variant">{area.description}</p>
             </div>

@@ -6,7 +6,8 @@ import { submissionGuidelines } from "@/features/call-for-papers/data";
 
 export default function SubmissionGuidelines() {
   return (
-    <section className="bg-white py-12 md:py-24">
+    <section className="relative overflow-hidden bg-white py-12 md:py-24">
+      <div className="pointer-events-none absolute left-0 top-16 hidden h-64 w-64 rounded-full bg-[#9fcafc]/20 blur-3xl md:block" />
       <div className="mx-auto max-w-7xl grid grid-cols-1 items-start gap-8 px-4 md:gap-16 md:px-8 lg:grid-cols-12">
         <motion.div
           className="lg:col-span-5"
@@ -32,18 +33,26 @@ export default function SubmissionGuidelines() {
             {submissionGuidelines.map((guideline, index) => (
               <motion.div
                 key={guideline.title}
-                className="group flex gap-6"
+                className="group relative overflow-hidden rounded-lg border border-[#00375e]/10 bg-[#f9f9f9] p-5 md:p-6"
                 initial={{ opacity: 0, y: 20 }}
                 viewport={{ once: true }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="flex size-12 flex-shrink-0 items-center justify-center bg-[#745b04]/10 text-[#745b04] transition-colors group-hover:bg-[#745b04] group-hover:text-white">
-                  <Icon className="size-6" name={guideline.icon} />
-                </div>
-                <div>
-                  <h3 className="font-headline mb-2 text-lg text-[#00375e]">{guideline.title}</h3>
-                  <p className="font-body text-[#42474f] leading-relaxed">{guideline.description}</p>
+                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]" />
+                <div className="flex gap-6">
+                  <div className="flex size-12 flex-shrink-0 items-center justify-center bg-[#745b04]/10 text-[#745b04] transition-colors group-hover:bg-[#745b04] group-hover:text-white">
+                    <Icon className="size-6" name={guideline.icon} />
+                  </div>
+                  <div>
+                    <h3 className="font-headline mb-2 text-lg text-[#00375e]">{guideline.title}</h3>
+                    <p className="font-body leading-relaxed text-[#42474f]">{guideline.description}</p>
+                    <div className="mt-4 overflow-hidden rounded bg-white px-2 py-2">
+                      <svg className="h-4 w-full" preserveAspectRatio="none" viewBox="0 0 200 24">
+                        <path d="M0,12 C10,12 10,4 20,4 C30,4 30,20 40,20 C50,20 50,8 60,8 C70,8 70,15 80,15 C90,15 90,5 100,5 C110,5 110,19 120,19 C130,19 130,9 140,9 C150,9 150,16 160,16 C170,16 170,6 180,6 C190,6 190,12 200,12" fill="none" stroke="#1e4e79" strokeWidth="2" strokeLinecap="round" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -57,7 +66,8 @@ export default function SubmissionGuidelines() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="border-l-4 border-[#745b04] bg-[#f3f3f4] p-6 md:p-12">
+          <div className="relative overflow-hidden border-l-4 border-[#745b04] bg-[#f3f3f4] p-6 md:p-12">
+            <div className="pointer-events-none absolute right-0 top-0 h-32 w-32 rounded-bl-[3rem] bg-white/50" />
             <div className="mb-6 flex items-center gap-4 md:mb-8">
               <Icon className="size-6 text-[#745b04] md:size-8" name="upload" />
               <h3 className="font-headline text-2xl text-[#00375e] md:text-3xl">Official Submission Portal</h3>

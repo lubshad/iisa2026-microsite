@@ -29,8 +29,9 @@ export default function PastPresidentsASI() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.05 }}
-            className="p-4 bg-[#f3f3f4] border border-[#c2c7d0]/10 rounded-lg text-center"
+            className="relative overflow-hidden rounded-lg border border-[#c2c7d0]/10 bg-[#f3f3f4] p-4 text-center"
           >
+            <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]" />
             <p className="text-[#42474f] text-sm font-medium">
               {president}
             </p>

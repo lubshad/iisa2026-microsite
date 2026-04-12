@@ -13,7 +13,7 @@ const stats = [
 
 export default function VenueOverview() {
   return (
-    <section className="bg-white py-12 md:py-24">
+    <section className="relative overflow-hidden bg-white py-12 md:py-24">
       <div className="mx-auto max-w-7xl grid grid-cols-1 items-center gap-8 px-4 md:gap-16 md:px-8 lg:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -42,7 +42,8 @@ export default function VenueOverview() {
           {/* Campus stats */}
           <div className="grid grid-cols-2 gap-6">
             {stats.map((stat) => (
-              <div key={stat.label} className="border-l-4 border-[#745b04] pl-5">
+              <div key={stat.label} className="relative overflow-hidden rounded-lg border border-[#00375e]/8 bg-[#f9f9f9] p-5">
+                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]" />
                 <p className="font-headline text-3xl font-bold text-[#00375e]">{stat.value}</p>
                 <p className="font-label mt-1 text-xs uppercase tracking-widest text-[#42474f]">
                   {stat.label}

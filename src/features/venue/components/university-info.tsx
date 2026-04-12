@@ -48,12 +48,17 @@ export default function UniversityInfo() {
           {details.map((detail, index) => (
             <motion.div
               key={detail.title}
-              className="group border-b border-[#c2c7d0]/20 border-t-4 border-t-[#745b04] bg-white p-6 transition-colors duration-500 hover:bg-[#00375e] md:border-b-0 md:border-r md:p-10"
+              className="group relative overflow-hidden border-b border-[#c2c7d0]/20 border-t-4 border-t-[#745b04] bg-white p-6 transition-colors duration-500 hover:bg-[#00375e] md:border-b-0 md:border-r md:p-10"
               initial={{ opacity: 0, y: 30 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
               whileInView={{ opacity: 1, y: 0 }}
             >
+              <div className="absolute bottom-4 right-4 hidden opacity-20 transition-opacity group-hover:opacity-30 md:block">
+                <svg className="h-10 w-24" preserveAspectRatio="none" viewBox="0 0 200 24">
+                  <path d="M0,12 C10,12 10,5 20,5 C30,5 30,19 40,19 C50,19 50,8 60,8 C70,8 70,16 80,16 C90,16 90,4 100,4 C110,4 110,20 120,20 C130,20 130,9 140,9 C150,9 150,15 160,15 C170,15 170,7 180,7 C190,7 190,12 200,12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </div>
               <div className="mb-6 inline-block bg-[#00375e]/10 p-4 transition-colors group-hover:bg-white/10">
                 <Icon
                   className="size-10 text-[#00375e] transition-colors group-hover:text-white"

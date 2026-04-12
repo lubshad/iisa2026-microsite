@@ -19,7 +19,7 @@ const highlights = [
 
 export default function ExhibitionExpo() {
   return (
-    <section className="py-12 md:py-24">
+    <section className="relative overflow-hidden py-12 md:py-24">
       {/* Section header */}
       <div className="mb-8 max-w-3xl md:mb-16">
         <p className="font-label mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:mb-4 md:text-xs">
@@ -54,7 +54,7 @@ export default function ExhibitionExpo() {
           viewport={{ once: true }}
           whileInView={{ opacity: 1, x: 0 }}
         >
-          <div>
+          <div className="relative overflow-hidden rounded-lg border border-[#00375e]/10 bg-[#f9f9f9] p-5 md:p-6">
             <h3 className="font-headline mb-4 flex items-center gap-3 text-xl text-[#00375e] md:mb-6 md:text-2xl">
               <div className="flex size-9 items-center justify-center rounded-lg bg-[#00375e]/10 md:size-10 md:rounded-xl">
                 <Icon className="size-4 text-[#00375e] md:size-5" name="search" />
@@ -71,7 +71,7 @@ export default function ExhibitionExpo() {
             </ul>
           </div>
 
-          <div>
+          <div className="relative overflow-hidden rounded-lg border border-[#745b04]/10 bg-white p-5 md:p-6">
             <h3 className="font-headline mb-4 flex items-center gap-3 text-xl text-[#00375e] md:mb-6 md:text-2xl">
               <div className="flex size-9 items-center justify-center rounded-lg bg-[#745b04]/10 md:size-10 md:rounded-xl">
                 <Icon className="size-4 text-[#745b04] md:size-5" name="star" />
@@ -90,12 +90,17 @@ export default function ExhibitionExpo() {
         </motion.div>
 
         <motion.div
-          className="relative overflow-hidden rounded-lg bg-[#00375e] p-5 md:rounded-xl md:p-12 text-white"
+          className="relative overflow-hidden rounded-lg bg-[#00375e] p-5 text-white md:rounded-xl md:p-12"
           initial={{ opacity: 0, x: 30 }}
           viewport={{ once: true }}
           whileInView={{ opacity: 1, x: 0 }}
         >
           <div className="absolute right-0 top-0 -mr-32 -mt-32 h-64 w-64 rounded-full bg-[#1e4e79] blur-[100px]" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-20 opacity-30">
+            <svg className="h-full w-full" preserveAspectRatio="none" viewBox="0 0 1200 120">
+              <path d="M0,72 C80,72 80,32 160,32 C240,32 240,98 320,98 C400,98 400,26 480,26 C560,26 560,90 640,90 C720,90 720,40 800,40 C880,40 880,100 960,100 C1040,100 1040,34 1120,34 C1160,34 1180,48 1200,48" fill="none" stroke="#9fcafc" strokeWidth="2" />
+            </svg>
+          </div>
           <div className="relative z-10 space-y-8 md:space-y-10">
             <div>
               <h3 className="font-headline mb-4 text-xl font-bold text-white md:mb-6 md:text-2xl">Target Audience</h3>
@@ -146,7 +151,8 @@ export default function ExhibitionExpo() {
         </div>
 
         <div className="mb-6 grid grid-cols-1 gap-4 md:mb-10 md:grid-cols-2 md:gap-8">
-          <div className="editorial-shadow rounded-lg bg-white p-5 md:rounded-xl md:p-8">
+          <div className="editorial-shadow relative overflow-hidden rounded-lg bg-white p-5 md:rounded-xl md:p-8">
+            <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]" />
             <div className="mb-4 flex items-center gap-3 md:mb-6">
               <Icon className="size-4 text-[#00375e] md:size-5" name="globe" />
               <span className="font-label text-[10px] font-bold uppercase tracking-widest text-[#42474f] md:text-xs">
@@ -167,7 +173,8 @@ export default function ExhibitionExpo() {
             </div>
           </div>
 
-          <div className="editorial-shadow rounded-lg bg-white p-5 md:rounded-xl md:p-8">
+          <div className="editorial-shadow relative overflow-hidden rounded-lg bg-white p-5 md:rounded-xl md:p-8">
+            <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]" />
             <div className="mb-4 flex items-center gap-3 md:mb-6">
               <Icon className="size-4 text-[#745b04] md:size-5" name="map" />
               <span className="font-label text-[10px] font-bold uppercase tracking-widest text-[#42474f] md:text-xs">

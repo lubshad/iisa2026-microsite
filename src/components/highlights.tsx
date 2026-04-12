@@ -11,11 +11,11 @@ const highlights = [
 ];
 
 const whyAttend = [
-  { icon: "brain" as const, title: "Learn", text: "Learn about cutting-edge advancements in acoustics and AI" },
-  { icon: "article" as const, title: "Present", text: "Present research and gain global visibility" },
-  { icon: "hub" as const, title: "Network", text: "Network with leading experts and professionals" },
-  { icon: "explore" as const, title: "Explore", text: "Explore industry innovations and collaborations" },
-  { icon: "mask" as const, title: "Experience", text: "Experience the culture and hospitality of Kerala" },
+  { icon: "brain" as const, title: "Learn", text: "Learn about cutting-edge acoustics, sound AI, and auditory science" },
+  { icon: "article" as const, title: "Present", text: "Present research in acoustics, vibration, hearing, and signal processing" },
+  { icon: "hub" as const, title: "Network", text: "Network with leading acousticians, audio engineers, and researchers" },
+  { icon: "explore" as const, title: "Explore", text: "Explore acoustic instrumentation, sensing systems, and industry collaborations" },
+  { icon: "waves" as const, title: "Discover", text: "Discover emerging directions in sound environments, ultrasonics, and noise control" },
 ];
 
 const participantTypes = [
@@ -28,7 +28,8 @@ const participantTypes = [
 
 export default function Highlights() {
   return (
-    <section className="bg-white py-12 md:py-24">
+    <section className="relative overflow-hidden bg-white py-12 md:py-24">
+      <div className="pointer-events-none absolute left-0 top-24 hidden h-64 w-64 rounded-full bg-[#9fcafc]/20 blur-3xl md:block" />
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="mb-12 grid grid-cols-1 items-start gap-8 md:gap-16 md:mb-24 lg:grid-cols-12">
           <div className="lg:col-span-5">
@@ -87,12 +88,18 @@ export default function Highlights() {
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-5">
             {whyAttend.map((item, i) => (
-              <div key={i} className="editorial-shadow flex flex-col items-center rounded-lg bg-white p-6 text-center transition-transform hover:-translate-y-1">
+              <div key={i} className="editorial-shadow relative overflow-hidden flex flex-col items-center rounded-lg border border-[#00375e]/8 bg-white p-6 text-center transition-transform hover:-translate-y-1">
+                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]" />
                 <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#f3f3f4] text-[#00375e]">
                   <Icon name={item.icon} className="size-6" />
                 </div>
                 <h3 className="font-headline mb-3 text-xl text-[#00375e]">{item.title}</h3>
                 <p className="text-sm text-on-surface-variant">{item.text}</p>
+                <div className="mt-5 w-full overflow-hidden rounded bg-[#f9f9f9] px-2 py-2">
+                  <svg className="h-4 w-full" preserveAspectRatio="none" viewBox="0 0 200 24">
+                    <path d="M0,12 C10,12 10,3 20,3 C30,3 30,21 40,21 C50,21 50,8 60,8 C70,8 70,16 80,16 C90,16 90,4 100,4 C110,4 110,20 120,20 C130,20 130,9 140,9 C150,9 150,15 160,15 C170,15 170,6 180,6 C190,6 190,12 200,12" fill="none" stroke="#1e4e79" strokeWidth="2" strokeLinecap="round" />
+                  </svg>
+                </div>
               </div>
             ))}
           </div>
