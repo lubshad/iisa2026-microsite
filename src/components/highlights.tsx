@@ -5,23 +5,15 @@ import universityImg from "@/assets/images/university-of-calicut.jpg";
 const highlights = [
   { icon: "user" as const, text: "Plenary and invited talks by global experts" },
   { icon: "document" as const, text: "Technical paper presentations" },
-  { icon: "school" as const, text: "Memorial lectures" },
+  { icon: "school" as const, text: "M. S. Narayanan and Prof. Rais Ahmed Memorial Lectures" },
   { icon: "chip" as const, text: "Exhibition of acoustical products and technologies" },
   { icon: "hub" as const, text: "Networking opportunities with academia and industry" },
-];
-
-const whyAttend = [
-  { icon: "brain" as const, title: "Learn", text: "Learn about cutting-edge acoustics, sound AI, and auditory science" },
-  { icon: "article" as const, title: "Present", text: "Present research in acoustics, vibration, hearing, and signal processing" },
-  { icon: "hub" as const, title: "Network", text: "Network with leading acousticians, audio engineers, and researchers" },
-  { icon: "explore" as const, title: "Explore", text: "Explore acoustic instrumentation, sensing systems, and industry collaborations" },
-  { icon: "waves" as const, title: "Discover", text: "Discover emerging directions in sound environments, ultrasonics, and noise control" },
 ];
 
 const participantTypes = [
   "Researchers",
   "Academic institutions",
-  "Industry professionals",
+  "Industries",
   "Medical professionals",
   "Enforcement authorities",
 ];
@@ -78,33 +70,6 @@ export default function Highlights() {
           </div>
         </div>
 
-        <div className="mb-12 md:mb-24">
-          <div className="mb-12 text-center">
-            <p className="font-label mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#745b04]">
-              Value Proposition
-            </p>
-            <h2 className="font-headline mx-auto mb-6 max-w-2xl text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">Why Attend IISA 2026?</h2>
-            <div className="mx-auto mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24" />
-          </div>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-5">
-            {whyAttend.map((item, i) => (
-              <div key={i} className="editorial-shadow relative overflow-hidden flex flex-col items-center rounded-lg border border-[#00375e]/8 bg-white p-6 text-center transition-transform hover:-translate-y-1">
-                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]" />
-                <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#f3f3f4] text-[#00375e]">
-                  <Icon name={item.icon} className="size-6" />
-                </div>
-                <h3 className="font-headline mb-3 text-xl text-[#00375e]">{item.title}</h3>
-                <p className="text-sm text-on-surface-variant">{item.text}</p>
-                <div className="mt-5 w-full overflow-hidden rounded bg-[#f9f9f9] px-2 py-2">
-                  <svg className="h-4 w-full" preserveAspectRatio="none" viewBox="0 0 200 24">
-                    <path d="M0,12 C10,12 10,3 20,3 C30,3 30,21 40,21 C50,21 50,8 60,8 C70,8 70,16 80,16 C90,16 90,4 100,4 C110,4 110,20 120,20 C130,20 130,9 140,9 C150,9 150,15 160,15 C170,15 170,6 180,6 C190,6 190,12 200,12" fill="none" stroke="#1e4e79" strokeWidth="2" strokeLinecap="round" />
-                  </svg>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
         <div className="overflow-hidden rounded-2xl bg-[#00375e] text-white">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="p-10 md:p-16">
@@ -116,7 +81,7 @@ export default function Highlights() {
                 The conference will be hosted at the University of Calicut, a premier institution in Kerala known for its academic excellence, research facilities, and serene campus environment. The venue offers excellent connectivity and a vibrant setting for international collaboration.
               </p>
               <div className="flex items-center gap-3 border-l-2 border-[#745b04] pl-4 italic text-[#ffe08d]">
-                "Join IISA 2026 and be part of a global effort to shape the future of acoustics through innovation, collaboration, and impact."
+                November 19&ndash;22, 2026 at University of Calicut Campus, Malappuram (Dt.), Kerala.
               </div>
             </div>
             <div className="relative min-h-[300px]">

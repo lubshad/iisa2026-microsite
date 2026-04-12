@@ -31,15 +31,17 @@ export default function RegistrationHero() {
             <span className="italic text-[#ffe08d]">Fee Information</span>
           </h1>
           <p className="mx-auto max-w-2xl text-base leading-relaxed text-white/80 md:text-xl">
-            Find everything you need to know about attendance fees, categories, and delegate
-            benefits for the 2026 conference.
+            Find the brochure-backed registration categories, fee slabs, exhibition rates,
+            and sponsorship information for IISA 2026.
           </p>
           <div className="mx-auto mt-6 max-w-3xl rounded-lg border border-white/10 bg-white/5 p-4 backdrop-blur-sm md:mt-8">
             <p className="font-label mb-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#ffe08d] md:text-xs">
               Delegate Value
             </p>
             <p className="text-sm leading-relaxed text-white/80 md:text-base">
-              Registration connects participants to acoustics sessions, technical exchange, sponsor showcases, and applied sound research communities.
+              Registration includes proceedings and conference materials, lunch and coffee
+              breaks, the cultural program, the conference banquet, and transport from the
+              venue to the place of accommodation.
             </p>
           </div>
         </motion.div>
@@ -47,7 +49,7 @@ export default function RegistrationHero() {
         <div className="mt-6 flex flex-wrap justify-center gap-4 text-white md:mt-12 md:gap-10">
           <div className="flex items-center gap-2 md:gap-3">
             <Icon className="size-4 text-[#ffe08d] md:size-5" name="calendar" />
-            <span className="text-xs font-medium md:text-sm">Early Bird: Oct 30, 2025</span>
+            <span className="text-xs font-medium md:text-sm">Early Bird Cutoff: September 1, 2025</span>
           </div>
           <div className="flex items-center gap-2 md:gap-3">
             <Icon className="size-4 text-[#ffe08d] md:size-5" name="calendar" />
@@ -55,7 +57,7 @@ export default function RegistrationHero() {
           </div>
           <div className="flex items-center gap-2 md:gap-3">
             <Icon className="size-4 text-[#ffe08d] md:size-5" name="school" />
-            <span className="text-xs font-medium md:text-sm">University of Calicut, Kerala</span>
+            <span className="text-xs font-medium md:text-sm">University of Calicut Campus, Malappuram (Dt.), Kerala</span>
           </div>
         </div>
       </div>

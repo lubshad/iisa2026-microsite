@@ -1,31 +1,31 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Icon from "@/components/icon";
-import universityImg from "@/assets/images/university-of-calicut.jpg";
 
 export default function CallForPapersHero() {
   return (
-    <section className="relative flex h-[70vh] min-h-[600px] items-end overflow-hidden bg-[#00375e] md:h-[85vh] md:min-h-[750px]">
-      <Image
-        alt="University of Calicut campus aerial view"
-        className="object-cover object-center"
-        fill
-        fetchPriority="high"
-        priority
-        sizes="100vw"
-        src={universityImg}
-      />
-      <div className="hero-gradient absolute inset-0" />
+    <section className="relative flex min-h-[560px] items-center overflow-hidden bg-[#00375e] md:min-h-[700px]">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(159,202,252,0.16),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(116,91,4,0.18),transparent_28%)]" />
       <div className="pointer-events-none absolute inset-0 opacity-20 mix-blend-screen">
         <svg className="h-full w-full" preserveAspectRatio="none" viewBox="0 0 1000 400">
           <path d="M0,220 Q100,90 200,220 T400,220 T600,220 T800,220 T1000,220" fill="none" stroke="#ffe08d" strokeWidth="2" />
           <path d="M0,250 Q150,130 300,250 T600,250 T900,250 T1000,250" fill="none" stroke="#e4c368" strokeWidth="1" />
         </svg>
       </div>
+      <div className="pointer-events-none absolute inset-x-0 bottom-16 opacity-40">
+        <svg className="h-24 w-full" preserveAspectRatio="none" viewBox="0 0 1200 160">
+          <path
+            d="M0,88 C60,88 60,30 120,30 C180,30 180,138 240,138 C300,138 300,48 360,48 C420,48 420,120 480,120 C540,120 540,22 600,22 C660,22 660,126 720,126 C780,126 780,62 840,62 C900,62 900,108 960,108 C1020,108 1020,44 1080,44 C1140,44 1140,90 1200,90"
+            fill="none"
+            stroke="#9fcafc"
+            strokeWidth="2"
+            strokeLinecap="round"
+          />
+        </svg>
+      </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 pt-24 md:px-8 md:pb-20 md:pt-48">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-16 md:px-8 md:py-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -34,27 +34,17 @@ export default function CallForPapersHero() {
           <p className="font-label mb-4 text-[10px] font-bold uppercase tracking-[0.2em] text-[#ffe08d] md:mb-6 md:text-xs">
             Call for Papers
           </p>
-          <h1 className="font-headline mb-4 max-w-3xl text-3xl font-bold leading-tight text-white md:text-7xl">
-            India International Symposium on Acoustics
+          <h1 className="font-headline mb-4 max-w-3xl text-4xl font-bold leading-tight text-white md:text-7xl">
+            Submit Your Work to IISA 2026
           </h1>
-          <p className="font-headline mb-8 text-xl font-light text-white/70 md:mb-10 md:text-3xl">
-            IISA 2026
+          <p className="font-headline mb-8 max-w-2xl text-lg font-light text-white/80 md:mb-10 md:text-3xl">
+            Acoustics, ultrasonics, vibration, and intelligent sound systems.
           </p>
           <div className="mb-8 h-1 w-16 bg-[#745b04] md:mb-10 md:w-24" />
-          <p className="font-body mb-10 max-w-2xl text-base leading-relaxed text-white/80 md:mb-12 md:text-lg">
-            IISA 2026 invites researchers, academicians, industry professionals,
-            and practitioners to submit original research papers in all areas of
-            acoustics, ultrasonics, and vibration.
-          </p>
-          <div className="mb-8 max-w-3xl rounded-lg border border-white/10 bg-white/5 p-4 backdrop-blur-sm md:mb-12 md:p-5">
-            <div className="mb-3 flex items-center gap-3">
-              <Icon className="size-5 text-[#ffe08d]" name="waves" />
-              <p className="font-label text-[10px] font-bold uppercase tracking-[0.2em] text-[#ffe08d] md:text-xs">
-                Sound Research Focus
-              </p>
-            </div>
-            <p className="text-sm leading-relaxed text-white/80 md:text-base">
-              Tracks span acoustic sensing, sound analysis, auditory perception, ultrasonic systems, vibration, and electro-acoustic technologies.
+          <div className="mb-8 max-w-3xl rounded-lg border-l-4 border-l-[#745b04] bg-white/10 p-4 backdrop-blur-md md:mb-12 md:p-6">
+            <p className="font-label mb-2 text-[10px] uppercase tracking-widest text-[#ffe08d] md:text-sm">Focus</p>
+            <p className="text-base font-light italic leading-relaxed text-white/90 md:text-xl">
+              Original contributions across the 11 technical areas of IISA 2026.
             </p>
           </div>
 

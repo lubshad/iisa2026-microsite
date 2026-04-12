@@ -4,13 +4,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import universityImg from "@/assets/images/university-of-calicut.jpg";
 
-const stats = [
-  { value: "500+", label: "Acres of green campus" },
-  { value: "50+", label: "Departments & centres" },
-  { value: "15,000+", label: "Students enrolled" },
-  { value: "1968", label: "Year of establishment" },
-];
-
 export default function VenueOverview() {
   return (
     <section className="relative overflow-hidden bg-white py-12 md:py-24">
@@ -30,26 +23,23 @@ export default function VenueOverview() {
           <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24" />
 
           <p className="font-body mb-6 text-lg leading-relaxed text-[#42474f]">
-            IISA 2026 will be held at the University of Calicut, one of the premier higher
-            education institutions in Kerala, India. Established in 1968, the university is known
-            for its strong academic environment, research excellence, and modern infrastructure.
+            IISA 2026 will be held at the University of Calicut, one of Kerala&apos;s premier
+            higher education institutions. Established in 1968, it is recognised for academic
+            excellence, inclusive education, and impactful research.
           </p>
           <p className="font-body mb-8 text-lg leading-relaxed text-[#42474f] md:mb-12">
-            The sprawling green campus at Thenhipalam provides a serene and inspiring setting —
-            ideal for academic exchange, international collaboration, and world-class conferences.
+            Located at Thenhipalam in Malappuram district, the campus offers a serene academic
+            setting with modern infrastructure and active national and international collaborations.
           </p>
-
-          {/* Campus stats */}
-          <div className="grid grid-cols-2 gap-6">
-            {stats.map((stat) => (
-              <div key={stat.label} className="relative overflow-hidden rounded-lg border border-[#00375e]/8 bg-[#f9f9f9] p-5">
-                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]" />
-                <p className="font-headline text-3xl font-bold text-[#00375e]">{stat.value}</p>
-                <p className="font-label mt-1 text-xs uppercase tracking-widest text-[#42474f]">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
+          <div className="rounded-lg border border-[#00375e]/8 bg-[#f9f9f9] p-5 md:p-6">
+            <p className="font-label mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:text-xs">
+              Venue Context
+            </p>
+            <p className="font-body leading-relaxed text-[#42474f]">
+              The brochure highlights the university&apos;s strength across science, technology,
+              humanities, social sciences, and interdisciplinary studies, with growing work in
+              Artificial Intelligence, Data Science, and computational sciences.
+            </p>
           </div>
         </motion.div>
 

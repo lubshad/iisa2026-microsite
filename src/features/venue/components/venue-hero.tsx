@@ -46,6 +46,9 @@ export default function VenueHero() {
             <p className="font-headline mb-8 text-xl font-light text-white/70 md:text-3xl">
               Thenhipalam, Malappuram, Kerala
             </p>
+            <p className="mb-8 max-w-3xl text-sm leading-relaxed text-white/80 md:text-base">
+              University of Calicut Campus, Malappuram (Dt.), Kerala - 673635, India
+            </p>
 
             {/* Gold accent rule */}
             <div className="mb-8 h-1 w-24 bg-[#745b04]" />

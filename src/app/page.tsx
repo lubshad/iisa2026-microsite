@@ -10,9 +10,6 @@ const Organizers = dynamic(() => import("@/components/organizers"), {
 const Highlights = dynamic(() => import("@/components/highlights"), {
   loading: () => <div className="h-96 w-full animate-pulse bg-white" />,
 });
-const Cultural = dynamic(() => import("@/components/cultural"), {
-  loading: () => <div className="h-96 w-full animate-pulse bg-surface-container-low" />,
-});
 const Footer = dynamic(() => import("@/components/footer"));
 
 export default function Home() {
@@ -24,7 +21,6 @@ export default function Home() {
         <About />
         <Organizers />
         <Highlights />
-        <Cultural />
       </main>
       <Footer />
     </div>

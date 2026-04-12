@@ -82,7 +82,7 @@ const TableSection = ({ title, data }: { title: string; data: { category: string
       </svg>
     </div>
     <p className="mt-8 text-xs italic text-[#42474f]">
-      * Early Bird registration is valid until October 30, 2025.
+      * Early Bird registration is valid up to September 1, 2025.
     </p>
   </motion.div>
 );
@@ -130,17 +130,13 @@ export default function PricingTable() {
           </div>
           <div className="rounded-xl border border-white/10 bg-white/5 p-6 text-center backdrop-blur-sm md:p-8">
             <Icon className="mx-auto mb-6 size-12 text-[#9fcafc]" name="info" />
-            <h4 className="font-headline mb-4 text-xl font-bold text-white">Need Help?</h4>
-            <p className="font-body mb-8 text-sm leading-relaxed text-white/60">
-              If you have any questions regarding the registration categories or payment methods,
-              please reach out to our organizing committee.
+            <h4 className="font-headline mb-4 text-xl font-bold text-white">Registration Timing</h4>
+            <p className="font-body mb-4 text-sm leading-relaxed text-white/70">
+              The brochure defines two fee slabs for all categories:
             </p>
-            <a
-              className="kasavu-gold-gradient inline-flex items-center gap-2 rounded-md px-8 py-4 font-label text-xs font-bold uppercase tracking-widest text-white transition-transform hover:scale-105"
-              href="mailto:support@iisa2026.org"
-            >
-              Contact Support
-            </a>
+            <p className="font-body text-sm leading-relaxed text-white/80">
+              Before September 1, 2025 and After September 1, 2025.
+            </p>
           </div>
         </div>
       </motion.div>

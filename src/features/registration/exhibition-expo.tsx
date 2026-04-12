@@ -15,6 +15,7 @@ const highlights = [
   "Coffee breaks inside the exhibition space to encourage interaction",
   "Direct engagement with global experts and decision-makers",
   "Opportunity to demonstrate products and solutions",
+  "Booths assigned on a first-come, first-served basis",
 ];
 
 export default function ExhibitionExpo() {
@@ -44,6 +45,15 @@ export default function ExhibitionExpo() {
           and services to a highly focused audience of researchers, industry professionals, and
           international delegates.
         </p>
+        <div className="mt-6 rounded-lg border border-[#00375e]/10 bg-[#f9f9f9] p-5 md:mt-8 md:p-6">
+          <p className="font-label mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:text-xs">
+            Exhibition Committee
+          </p>
+          <div className="space-y-2 text-sm leading-relaxed text-[#42474f] md:text-base">
+            <p><span className="font-semibold text-[#00375e]">Chair:</span> Dr. S. Kandaswamy</p>
+            <p><span className="font-semibold text-[#00375e]">Co-Chair:</span> Dr. Mahavir Singh</p>
+          </div>
+        </div>
       </div>
 
       {/* Scope + highlights + stats grid */}

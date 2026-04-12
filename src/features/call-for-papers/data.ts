@@ -26,7 +26,7 @@ export const submissionGuidelines: Guideline[] = [
   {
     icon: "article",
     title: "Contribution Types",
-    description: "Submissions can include experimental investigations, case studies, simulation studies, or instrument/system designs.",
+    description: "Constructive reviews, experimental investigations, case studies of national importance, simulation studies, and instrument or software design contributions are welcome.",
   },
   {
     icon: "description",
@@ -42,24 +42,24 @@ export const submissionGuidelines: Guideline[] = [
 
 export const importantDates: ImportantDate[] = [
   {
-    date: "TBA",
-    title: "Abstract Submission",
-    description: "Opening soon for all technical tracks.",
+    date: "To Be Announced",
+    title: "Deadline for Receipt of Abstracts",
+    description: "Important date listed in the brochure. The exact deadline has not been published yet.",
   },
   {
-    date: "TBA",
-    title: "Full Paper Deadline",
-    description: "Deadline for complete paper upload.",
+    date: "To Be Announced",
+    title: "Acceptance and Invitation to Submit Manuscripts",
+    description: "The brochure includes this milestone, but does not specify the date yet.",
   },
   {
-    date: "TBA",
-    title: "Acceptance Notification",
-    description: "Notifications sent to corresponding authors.",
+    date: "To Be Announced",
+    title: "Deadline for Receipt of Manuscripts",
+    description: "The manuscript deadline is listed in the brochure without a published date.",
   },
   {
-    date: "TBA",
-    title: "Camera Ready",
-    description: "Final version and registration deadline.",
+    date: "To Be Announced",
+    title: "End of Early Bird Registration",
+    description: "Early bird registration is announced in the brochure, with the final date pending confirmation.",
   },
 ];
 

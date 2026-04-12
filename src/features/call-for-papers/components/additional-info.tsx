@@ -19,6 +19,7 @@ export default function AdditionalInfo() {
       items: [
         "Structured & Regular technical sessions",
         "Sessions chaired by national & international experts",
+        "Foreign acousticians are welcome to organize structured sessions",
       ],
     },
     {
@@ -32,6 +33,7 @@ export default function AdditionalInfo() {
       items: [
         "Placement in structured sessions on request",
         "Communication through official website only",
+        "EasyChair is the official abstract and paper submission platform",
       ],
     },
   ];

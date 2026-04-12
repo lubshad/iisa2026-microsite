@@ -95,6 +95,27 @@
   background: linear-gradient(to right, rgba(0, 55, 94, 0.9) 0%, rgba(0, 55, 94, 0.4) 100%);
 }
 
+.hero-future-gradient {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(159, 202, 252, 0.18), transparent 28%),
+    radial-gradient(circle at 82% 18%, rgba(228, 195, 104, 0.2), transparent 24%),
+    radial-gradient(circle at 70% 72%, rgba(159, 202, 252, 0.14), transparent 30%),
+    linear-gradient(135deg, #00375e 0%, #1e4e79 42%, #273549 100%);
+}
+
+.hero-tech-grid {
+  background-image:
+    linear-gradient(rgba(159, 202, 252, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(159, 202, 252, 0.12) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent 90%);
+}
+
+.hero-scanlines {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 100% 10px;
+}
+
 .kasavu-gold-gradient {
   background: linear-gradient(135deg, #745b04 0%, #e4c368 100%);
 }

@@ -20,6 +20,14 @@ export default function Organizers() {
         <h3 className="font-label mb-8 text-xs font-bold uppercase tracking-[0.3em] text-[#745b04] md:mb-12">
           Organizers &amp; Strategic Partners
         </h3>
+        <div className="mx-auto mb-8 max-w-4xl space-y-3 md:mb-10">
+          <p className="text-sm font-medium uppercase tracking-[0.18em] text-[#00375e]">
+            Jointly Organized By ASI, University of Calicut, and Kannur University
+          </p>
+          <p className="text-sm uppercase tracking-[0.18em] text-[#745b04]">
+            Co-sponsored by International Commission for Acoustics and Acoustical Society of America
+          </p>
+        </div>
         <div className="flex flex-wrap items-center justify-center gap-6 opacity-80 md:gap-20">
           {organizers.map((item) => (
             <div key={item.label} className="flex flex-col items-center gap-3">

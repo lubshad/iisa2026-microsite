@@ -9,26 +9,20 @@ const accessibilityItems = [
   {
     icon: "flight" as const,
     title: "Calicut International Airport",
-    distance: "~11 km away",
-    desc: "Direct international connections via CCJ. Domestic flights from all major Indian cities.",
+    distance: "11 km away",
+    desc: "Convenient airport access for participants travelling from across India and abroad.",
   },
   {
     icon: "train" as const,
     title: "Kozhikode Railway Station",
-    distance: "~24 km away",
-    desc: "Connects to Mumbai, Chennai, Bangalore, Delhi, and all major regional hubs.",
+    distance: "24 km away",
+    desc: "Rail connectivity supports smooth access to the conference venue.",
   },
   {
     icon: "map" as const,
-    title: "NH 66 — Direct Road Access",
-    distance: "At the University Gate",
-    desc: "Excellent highway connectivity. Kochi is ~200 km south; Mangaluru ~200 km north.",
-  },
-  {
-    icon: "bus" as const,
-    title: "KSRTC & City Buses",
-    distance: "Regular service",
-    desc: "State and city bus services connect the campus to Kozhikode city and surrounding towns.",
+    title: "National Highway 66",
+    distance: "Direct road access",
+    desc: "The brochure notes NH 66 as a direct access route to the university campus.",
   },
 ];
 

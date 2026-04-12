@@ -24,10 +24,9 @@ export default function SubmissionGuidelines() {
           </h2>
           <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-10 md:w-24" />
           <p className="font-body mb-8 text-base leading-relaxed text-[#42474f] md:mb-12 md:text-lg">
-            IISA 2026 invites original contributions that have not been published or
-            submitted for publication elsewhere. All submissions undergo a
-            double-blind peer review by at least three members of the technical
-            program committee.
+            IISA 2026 invites original contributions and constructive reviews that have
+            not been published elsewhere. Experimental studies, case studies, simulation
+            work, and instrument or software design contributions are all within scope.
           </p>
           <div className="space-y-8">
             {submissionGuidelines.map((guideline, index) => (
@@ -79,17 +78,21 @@ export default function SubmissionGuidelines() {
             <div className="flex flex-wrap gap-4">
               <a
                 className="kasavu-gold-gradient inline-flex items-center gap-3 px-6 py-3.5 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-[1.02] md:px-8 md:py-4 md:text-base"
-                href="#"
+                href="https://easychair.org/conferences?conf=iisa20250"
+                rel="noreferrer"
+                target="_blank"
               >
                 Access Portal
                 <Icon className="size-4 md:size-5" name="external-link" />
               </a>
               <a
                 className="inline-flex items-center gap-3 border border-[#c2c7d0] bg-white px-8 py-4 text-base font-semibold text-[#00375e] transition-colors hover:bg-[#f3f3f4]"
-                href="#"
+                href="https://www.iisa2026cu.org"
+                rel="noreferrer"
+                target="_blank"
               >
-                <Icon className="size-5" name="download" />
-                Download Template
+                <Icon className="size-5" name="globe" />
+                Conference Website
               </a>
             </div>
 
@@ -97,8 +100,8 @@ export default function SubmissionGuidelines() {
               {[
                 { label: "Max Pages", value: "6 pages" },
                 { label: "Paper Size", value: "A4 format" },
-                { label: "Review Process", value: "Double-blind" },
-                { label: "Min Reviewers", value: "3 members" },
+                { label: "Language", value: "English" },
+                { label: "Submission Mode", value: "Website only" },
               ].map((item) => (
                 <div key={item.label} className="border-l-2 border-[#745b04]/40 pl-4">
                   <p className="font-label text-xs font-bold uppercase tracking-widest text-[#745b04]">
@@ -107,6 +110,26 @@ export default function SubmissionGuidelines() {
                   <p className="font-headline mt-1 text-xl text-[#00375e]">{item.value}</p>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-10 border-t border-[#c2c7d0]/30 pt-8">
+              <p className="font-label mb-4 text-xs font-bold uppercase tracking-widest text-[#745b04]">
+                Conference Contacts
+              </p>
+              <div className="space-y-3 text-sm text-[#42474f] md:text-base">
+                <p>
+                  <span className="font-semibold text-[#00375e]">Dr. Lajish V L:</span>{" "}
+                  <a className="underline underline-offset-4" href="mailto:lajish@uoc.ac.in">
+                    lajish@uoc.ac.in
+                  </a>
+                </p>
+                <p>
+                  <span className="font-semibold text-[#00375e]">Dr. Sunilkumar R K:</span>{" "}
+                  <a className="underline underline-offset-4" href="mailto:seuron74@gmail.com">
+                    seuron74@gmail.com
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </motion.div>

@@ -1,35 +1,60 @@
 import Icon from "@/components/icon";
 
-const focusAreas = [
+const technicalAreas = [
   {
-    icon: "hearing" as const,
-    title: "Speech & Hearing Technologies",
-    description: "Advancing digital intelligence in speech processing and inclusive hearing assistance tools.",
+    icon: "waves" as const,
+    title: "Aero, Hydro & Underwater Acoustics",
+    description: "Research in propagation, sensing, sonar systems, and sound behavior across air and water environments.",
   },
   {
-    icon: "chip" as const,
-    title: "Intelligent Sound Systems",
-    description: "Developing smart acoustic systems utilizing AI for enhanced audio processing.",
-  },
-  {
-    icon: "water" as const,
-    title: "Underwater Acoustics",
-    description: "Deep sea signal processing and sonar innovation combined with predictive modeling.",
+    icon: "building" as const,
+    title: "Architectural & Building Acoustics",
+    description: "Room acoustics, building performance, and sound environments designed for comfort, clarity, and function.",
   },
   {
     icon: "health" as const,
-    title: "Assistive Acoustics",
-    description: "Building accessible acoustic solutions and devices for impactful healthcare.",
+    title: "Bioacoustics",
+    description: "Acoustic communication, biological sound studies, and sound-based understanding of living systems.",
   },
   {
-    icon: "globe" as const,
-    title: "Sustainable Acoustic Environments",
-    description: "Leveraging technology for noise mapping and sustainable urban acoustic planning.",
+    icon: "bolt" as const,
+    title: "Environmental Noise",
+    description: "Noise assessment, mitigation, monitoring, and sustainable acoustic planning for built and natural environments.",
   },
   {
-    icon: "waves" as const,
-    title: "Ultrasonics & Vibration",
-    description: "Exploring the intersection of advanced ultrasonic techniques and machine learning.",
+    icon: "settings" as const,
+    title: "Instrumentation & Signal Processing",
+    description: "Measurement systems, acoustic devices, signal analysis, and computational methods for real-world applications.",
+  },
+  {
+    icon: "music" as const,
+    title: "Musical Acoustics",
+    description: "Research on musical sound, instruments, performance acoustics, and the physics of musical expression.",
+  },
+  {
+    icon: "science" as const,
+    title: "Physical Acoustics & Ultrasonics",
+    description: "Wave phenomena, ultrasonics, propagation, and advanced physical principles in acoustical science.",
+  },
+  {
+    icon: "microphone" as const,
+    title: "Speech",
+    description: "Speech acoustics, spoken communication, hearing-related systems, and speech-oriented signal technologies.",
+  },
+  {
+    icon: "psychology" as const,
+    title: "Sound Perception",
+    description: "Listening, auditory cognition, psychoacoustics, and human response to sound environments.",
+  },
+  {
+    icon: "speaker" as const,
+    title: "Transducers & Electro-acoustics",
+    description: "Electro-acoustic systems, transducer design, actuation, sensing, and sound reproduction technologies.",
+  },
+  {
+    icon: "construction" as const,
+    title: "Vibro-acoustics & Noise",
+    description: "Vibration, structure-borne sound, machinery acoustics, and engineering approaches to noise control.",
   },
 ];
 
@@ -53,10 +78,10 @@ export default function About() {
           </h2>
           <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24"></div>
           <p className="mb-6 text-lg leading-relaxed text-on-surface-variant">
-            IISA 2026 explores the transformative role of Artificial Intelligence in advancing acoustical science, sound technologies, and auditory intelligence with a strong focus on inclusion and societal impact. The symposium brings together researchers, engineers, healthcare professionals, and industry leaders to share knowledge, innovations, and real-world applications across the science of sound.
+            IISA 2026 brings together acousticians, engineers, scientists, healthcare professionals, and industry leaders across the full spectrum of acoustics, ultrasonics, vibration, and intelligent sound systems. The conference is structured around 11 technical areas drawn directly from the symposium tracks.
           </p>
           <p className="text-lg leading-relaxed text-on-surface-variant">
-            The conference aims to promote interdisciplinary collaboration in acoustic sensing, sound analysis, hearing technologies, ultrasonics, noise control, and sustainable listening environments for global communities.
+            From underwater acoustics and environmental noise to speech, sound perception, electro-acoustics, and vibro-acoustics, the program is designed to reflect the complete research breadth described in the brochure.
           </p>
           <div className="editorial-shadow mt-8 rounded-lg border border-[#00375e]/10 bg-white p-5 md:p-6">
             <div className="mb-4 flex items-center gap-3">
@@ -64,8 +89,8 @@ export default function About() {
                 <Icon className="size-5" name="waves" />
               </div>
               <div>
-                <p className="font-label text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04]">Acoustic Signature</p>
-                <p className="font-headline text-xl text-[#00375e]">Where Sound Science Meets AI</p>
+                <p className="font-label text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04]">Technical Areas</p>
+                <p className="font-headline text-xl text-[#00375e]">A Broad Research Spectrum in Acoustics</p>
               </div>
             </div>
             <div className="mb-4 overflow-hidden rounded bg-[#f3f3f4] px-3 py-4">
@@ -74,12 +99,12 @@ export default function About() {
               </svg>
             </div>
             <p className="text-sm leading-relaxed text-on-surface-variant">
-              From acoustic sensing and hearing assistance to intelligent listening environments, IISA 2026 is positioned around the full lifecycle of sound: capture, analysis, interpretation, and human impact.
+              The home page now reflects all 11 brochure-defined technical areas: aero and hydro acoustics, building acoustics, bioacoustics, environmental noise, instrumentation, musical acoustics, ultrasonics, speech, perception, transducers, and vibro-acoustics.
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-6 lg:col-span-7 md:grid-cols-2">
-          {focusAreas.map((area, index) => (
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:col-span-7 xl:grid-cols-3">
+          {technicalAreas.map((area, index) => (
             <div key={area.title} className={`editorial-shadow relative overflow-hidden rounded-lg bg-white p-5 md:p-8 ${index % 2 === 1 ? "md:mt-12" : ""}`}>
               <div className="absolute right-0 top-0 h-16 w-16 rounded-bl-[2rem] bg-[#f3f3f4]" />
               <Icon className="relative mb-3 size-8 text-[#00375e] md:mb-4 md:size-10" name={area.icon} />
