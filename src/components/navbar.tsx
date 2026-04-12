@@ -19,18 +19,21 @@ export default function Navbar({ activePath = routes.home }: NavbarProps) {
           <Link href="/" className="font-serif text-[1.7rem] font-bold text-[#1E4E79]">
             IISA 2026
           </Link>
-          <div className="hidden items-center gap-8 md:flex">
+          <div className="hidden items-center gap-4 md:flex">
             {primaryNavigation.map((item) => (
               <Link
                 key={item.label}
                 href={item.href}
-                className={`pb-1 text-[13px] transition-colors ${
+                className={`relative px-3 py-2 text-[14px] tracking-[0.02em] transition-colors ${
                   item.href === activePath
-                    ? "border-b-2 border-[#745B04] font-semibold text-[#745B04]"
-                    : "text-[#1E4E79] hover:text-[#745B04]"
+                    ? "font-semibold text-[#745B04]"
+                    : "font-medium text-[#00375e] hover:text-[#745B04]"
                 }`}
               >
                 {item.label}
+                {item.href === activePath && (
+                  <span className="absolute inset-x-3 -bottom-0.5 h-0.5 rounded-full bg-[#745B04]" aria-hidden="true" />
+                )}
               </Link>
             ))}
           </div>

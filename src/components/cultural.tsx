@@ -28,10 +28,6 @@ export default function Cultural() {
               <span className="text-sm font-medium">Calicut Cuisine</span>
             </div>
           </div>
-          <button className="group mt-8 flex items-center gap-3 font-semibold text-[#745b04] md:mt-12">
-            EXPLORE KERALA CULTURE
-            <Icon className="size-5 transition-transform group-hover:translate-x-2" name="arrow-right" />
-          </button>
         </div>
         <div className="grid grid-cols-2 gap-4">
           <div className="space-y-4">

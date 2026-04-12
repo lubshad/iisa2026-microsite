@@ -4,7 +4,6 @@ export const routes = {
   registration: "/registration",
   committee: "/committee",
   venue: "/venue",
-  keralaCulture: "/kerala-culture",
 } as const;
 
 export type RoutePath = (typeof routes)[keyof typeof routes];
@@ -15,5 +14,4 @@ export const primaryNavigation = [
   { href: routes.registration, label: "Registration" },
   { href: routes.committee, label: "Committee" },
   { href: routes.venue, label: "Venue" },
-  { href: routes.keralaCulture, label: "Kerala Culture" },
 ] as const;
