@@ -17,6 +17,13 @@ const notoSerif = Noto_Serif({
 export const metadata: Metadata = {
   title: "IISA 2026 | International Symposium on Acoustics",
   description: "Advancing the frontiers of acoustics through collaborative innovation and academic excellence.",
+  icons: {
+    icon: [
+      { url: "/iisa2026-white.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/iisa2026-white.svg",
+    apple: "/iisa2026-white.svg",
+  },
 };
 
 export default function RootLayout({

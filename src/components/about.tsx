@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Icon from "@/components/icon";
 
 const technicalAreas = [
@@ -63,8 +66,22 @@ export default function About() {
     <section className="relative overflow-hidden bg-[#f9f9f9] py-12 md:py-24">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-28 opacity-60">
         <svg className="h-full w-full" preserveAspectRatio="none" viewBox="0 0 1200 120">
-          <path d="M0,78 C70,78 70,34 140,34 C210,34 210,98 280,98 C350,98 350,22 420,22 C490,22 490,88 560,88 C630,88 630,46 700,46 C770,46 770,100 840,100 C910,100 910,26 980,26 C1050,26 1050,74 1120,74 C1160,74 1180,58 1200,58" fill="none" stroke="#9fcafc" strokeWidth="2" />
-          <path d="M0,96 C80,96 80,64 160,64 C240,64 240,112 320,112 C400,112 400,52 480,52 C560,52 560,104 640,104 C720,104 720,36 800,36 C880,36 880,92 960,92 C1040,92 1040,48 1120,48 C1160,48 1180,56 1200,56" fill="none" stroke="#e4c368" strokeWidth="1.5" />
+          <motion.path 
+            d="M0,78 C70,78 70,34 140,34 C210,34 210,98 280,98 C350,98 350,22 420,22 C490,22 490,88 560,88 C630,88 630,46 700,46 C770,46 770,100 840,100 C910,100 910,26 980,26 C1050,26 1050,74 1120,74 C1160,74 1180,58 1200,58" 
+            fill="none" 
+            stroke="#9fcafc" 
+            strokeWidth="2" 
+            animate={{ y: [0, 4, -4, 0] }}
+            transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+          />
+          <motion.path 
+            d="M0,96 C80,96 80,64 160,64 C240,64 240,112 320,112 C400,112 400,52 480,52 C560,52 560,104 640,104 C720,104 720,36 800,36 C880,36 880,92 960,92 C1040,92 1040,48 1120,48 C1160,48 1180,56 1200,56" 
+            fill="none" 
+            stroke="#e4c368" 
+            strokeWidth="1.5" 
+            animate={{ y: [0, -6, 5, 0] }}
+            transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
+          />
         </svg>
       </div>
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-8 px-4 md:px-8 md:gap-16 lg:grid-cols-12">
@@ -95,7 +112,16 @@ export default function About() {
             </div>
             <div className="mb-4 overflow-hidden rounded bg-[#f3f3f4] px-3 py-4">
               <svg className="h-10 w-full" preserveAspectRatio="none" viewBox="0 0 600 80">
-                <path d="M0,40 L30,40 L45,18 L60,62 L75,26 L90,54 L120,40 L150,40 L165,12 L180,68 L195,24 L210,58 L240,40 L270,40 L285,16 L300,64 L315,28 L330,52 L360,40 L390,40 L405,14 L420,66 L435,30 L450,50 L480,40 L510,40 L525,20 L540,60 L555,34 L570,46 L600,40" fill="none" stroke="#00375e" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                <motion.path 
+                  d="M0,40 L30,40 L45,18 L60,62 L75,26 L90,54 L120,40 L150,40 L165,12 L180,68 L195,24 L210,58 L240,40 L270,40 L285,16 L300,64 L315,28 L330,52 L360,40 L390,40 L405,14 L420,66 L435,30 L450,50 L480,40 L510,40 L525,20 L540,60 L555,34 L570,46 L600,40" 
+                  fill="none" 
+                  stroke="#00375e" 
+                  strokeWidth="3" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  animate={{ y: [0, -3, 3, 0] }}
+                  transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+                />
               </svg>
             </div>
             <p className="text-sm leading-relaxed text-on-surface-variant">

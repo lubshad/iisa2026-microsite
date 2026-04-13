@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { primaryNavigation, routes, type RoutePath } from "@/navigation/routes";
@@ -16,8 +17,15 @@ export default function Navbar({ activePath = routes.home }: NavbarProps) {
     <>
       <nav className="sticky top-0 z-50 bg-white/80 shadow-[0_20px_40px_rgba(30,78,121,0.06)] backdrop-blur-md">
         <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3 md:px-8 md:py-4">
-          <Link href="/" className="font-serif text-[1.7rem] font-bold text-[#1E4E79]">
-            IISA 2026
+          <Link href="/" className="flex items-center" aria-label="IISA 2026 Home">
+            <Image
+              src="/iisa2026-black.svg"
+              alt="IISA 2026"
+              width={120}
+              height={44}
+              className="h-10 w-auto md:h-11"
+              priority
+            />
           </Link>
           <div className="hidden items-center gap-4 md:flex">
             {primaryNavigation.map((item) => (
@@ -78,7 +86,13 @@ export default function Navbar({ activePath = routes.home }: NavbarProps) {
             >
               {/* Drawer header */}
               <div className="flex items-center justify-between border-b border-[#f3f3f4] px-6 py-4">
-                <span className="font-serif text-lg font-bold text-[#1E4E79]">IISA 2026</span>
+                <Image
+                  src="/iisa2026-black.svg"
+                  alt="IISA 2026"
+                  width={100}
+                  height={36}
+                  className="h-9 w-auto"
+                />
                 <button
                   className="flex size-8 items-center justify-center rounded-md text-[#42474f] hover:bg-[#f3f3f4]"
                   onClick={() => setDrawerOpen(false)}

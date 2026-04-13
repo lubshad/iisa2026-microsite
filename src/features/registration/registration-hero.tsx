@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Icon from "@/components/icon";
+import HeroGraphics from "@/components/hero-graphics";
 
 export default function RegistrationHero() {
   return (
@@ -9,12 +10,7 @@ export default function RegistrationHero() {
       {/* Subtle geometric accents */}
       <div className="absolute right-0 top-0 -z-0 h-full w-1/2 translate-x-1/4 skew-x-12 transform bg-[#1e4e79]/40" />
       <div className="absolute bottom-0 left-0 -z-0 h-64 w-64 -translate-x-1/2 translate-y-1/2 rounded-full bg-[#745b04]/10 blur-[80px]" />
-      <div className="pointer-events-none absolute inset-0 opacity-20 mix-blend-screen">
-        <svg className="h-full w-full" preserveAspectRatio="none" viewBox="0 0 1000 400">
-          <path d="M0,200 Q100,80 200,200 T400,200 T600,200 T800,200 T1000,200" fill="none" stroke="#ffe08d" strokeWidth="2" />
-          <path d="M0,230 Q150,130 300,230 T600,230 T900,230 T1000,230" fill="none" stroke="#9fcafc" strokeWidth="1" />
-        </svg>
-      </div>
+      <HeroGraphics showGradients={false} showBottomWave={false} />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 text-center md:px-8">
         <motion.div
