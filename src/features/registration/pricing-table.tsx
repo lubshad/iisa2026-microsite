@@ -27,62 +27,64 @@ const inclusions = [
 
 const TableSection = ({ title, data }: { title: string; data: { category: string; early: string; regular: string }[] }) => (
   <motion.div
-    className="editorial-shadow relative overflow-hidden rounded-xl bg-white p-5 md:p-10"
+    className="relative"
     initial={{ opacity: 0, y: 20 }}
     viewport={{ once: true }}
     whileInView={{ opacity: 1, y: 0 }}
   >
-    <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]" />
-    <div className="mb-6 flex items-center gap-4 md:mb-8">
-      <div className="flex size-12 items-center justify-center rounded-xl bg-[#00375e]/10">
-        <Icon className="size-6 text-[#00375e]" name="credit-card" />
-      </div>
-      <h3 className="font-headline text-2xl text-[#00375e]">{title}</h3>
+    <div className="mb-5 flex items-center gap-4 md:mb-6">
+      <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#c78f6a]/60 to-[#c78f6a]" />
+      <h3 className="font-headline text-center text-lg font-bold tracking-tight text-[#7b4528] md:text-3xl">
+        {title}
+      </h3>
+      <div className="h-px flex-1 bg-gradient-to-l from-transparent via-[#c78f6a]/60 to-[#c78f6a]" />
     </div>
 
-    <div className="overflow-x-auto">
-      <table className="w-full text-left">
-        <thead>
-          <tr className="border-b border-[#f3f3f4]">
-            <th className="font-label pb-4 text-xs font-bold uppercase tracking-widest text-[#42474f]">
-              Category
-            </th>
-            <th className="font-label pb-4 text-xs font-bold uppercase tracking-widest text-[#745b04]">
-              Early Bird
-            </th>
-            <th className="font-label pb-4 text-xs font-bold uppercase tracking-widest text-[#42474f]">
-              Regular
-            </th>
-          </tr>
-        </thead>
-        <tbody className="divide-y divide-[#f3f3f4]">
-          {data.map((row, i) => (
-            <tr key={i} className="transition-colors hover:bg-[#f9f9f9]/60">
-              <td className="py-5 pr-4">
-                <span className="font-body text-base font-semibold text-[#1a1c1c]">
-                  {row.category}
-                </span>
-              </td>
-              <td className="py-5">
-                <span className="font-body text-lg font-bold text-[#00375e]">{row.early}</span>
-              </td>
-              <td className="py-5">
-                <span className="font-body text-base font-semibold text-[#42474f]">
-                  {row.regular}
-                </span>
-              </td>
+    <div className="overflow-hidden rounded-[1.25rem] border border-[#c78f6a] bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(231,238,237,0.96))] shadow-[0_18px_38px_rgba(95,57,38,0.14)]">
+      <div className="overflow-x-auto">
+        <table className="w-full table-fixed text-left">
+          <colgroup>
+            <col className="w-[32%]" />
+            <col className="w-[34%]" />
+            <col className="w-[34%]" />
+          </colgroup>
+          <thead>
+            <tr className="bg-[#c78f6a]">
+              <th className="bg-[linear-gradient(135deg,#8f4f2c,#67351e)] px-2 py-2.5 text-center text-[11px] font-bold text-white md:px-4 md:py-4 md:text-xl">
+                Category
+              </th>
+              <th className="border-l border-[#c78f6a] bg-[linear-gradient(135deg,#8f4f2c,#67351e)] px-2 py-2.5 text-center text-[11px] font-bold text-white md:px-4 md:py-4 md:text-xl">
+                Before Sept 1, 2026
+              </th>
+              <th className="border-l border-[#c78f6a] bg-[linear-gradient(135deg,#8f4f2c,#67351e)] px-2 py-2.5 text-center text-[11px] font-bold text-white md:px-4 md:py-4 md:text-xl">
+                After Sept 1, 2026
+              </th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {data.map((row, i) => (
+              <tr
+                key={row.category}
+                className={i % 2 === 0 ? "bg-[rgba(216,221,222,0.62)]" : "bg-transparent"}
+              >
+                <td className="px-2 py-2.5 text-xs font-medium leading-tight text-[#5b3926] md:px-5 md:py-5 md:text-[1.1rem]">
+                  {row.category}
+                </td>
+                <td className="px-2 py-2.5 text-center text-xs font-medium text-[#5b3926] md:px-4 md:py-5 md:text-[1.1rem]">
+                  {row.early}
+                </td>
+                <td className="px-2 py-2.5 text-center text-xs font-medium text-[#5b3926] md:px-4 md:py-5 md:text-[1.1rem]">
+                  {row.regular}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
-    <div className="mt-6 overflow-hidden rounded bg-[#f9f9f9] px-2 py-2">
-      <svg className="h-4 w-full" preserveAspectRatio="none" viewBox="0 0 200 24">
-        <path d="M0,12 C10,12 10,5 20,5 C30,5 30,19 40,19 C50,19 50,8 60,8 C70,8 70,16 80,16 C90,16 90,4 100,4 C110,4 110,20 120,20 C130,20 130,9 140,9 C150,9 150,15 160,15 C170,15 170,7 180,7 C190,7 190,12 200,12" fill="none" stroke="#1e4e79" strokeWidth="2" strokeLinecap="round" />
-      </svg>
-    </div>
-    <p className="mt-8 text-xs italic text-[#42474f]">
-      * Early Bird registration is valid up to September 1, 2025.
+
+    <p className="mt-4 text-xs italic text-[#6a5448] md:mt-5">
+      * Early Bird registration is valid up to September 1, 2026.
     </p>
   </motion.div>
 );
@@ -90,7 +92,7 @@ const TableSection = ({ title, data }: { title: string; data: { category: string
 export default function PricingTable() {
   return (
     <section className="py-12 md:py-24 space-y-12">
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+      <div className="space-y-10">
         <TableSection data={indianFees} title="Indian / SAARC Participants" />
         <TableSection data={foreignFees} title="Foreign Delegates" />
       </div>
@@ -135,7 +137,7 @@ export default function PricingTable() {
               The brochure defines two fee slabs for all categories:
             </p>
             <p className="font-body text-sm leading-relaxed text-white/80">
-              Before September 1, 2025 and After September 1, 2025.
+              Before September 1, 2026 and After September 1, 2026.
             </p>
           </div>
         </div>

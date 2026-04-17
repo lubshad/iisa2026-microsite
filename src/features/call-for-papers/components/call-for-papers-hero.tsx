@@ -2,12 +2,12 @@
 
 import { motion } from "framer-motion";
 import Icon from "@/components/icon";
-import HeroGraphics from "@/components/hero-graphics";
+import HeroBackdrop from "@/components/hero-backdrop";
 
 export default function CallForPapersHero() {
   return (
-    <section className="relative flex min-h-[560px] items-center overflow-hidden bg-[#00375e] md:min-h-[700px]">
-      <HeroGraphics />
+    <section className="relative flex min-h-[560px] items-center overflow-hidden bg-[#120f2e] md:min-h-[700px]">
+      <HeroBackdrop />
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-16 md:px-8 md:py-24">
         <motion.div

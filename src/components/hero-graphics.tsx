@@ -2,6 +2,15 @@
 
 import { motion } from "framer-motion";
 
+const equalizerConfig = [
+  { duration: 2.2, delay: 0.1 },
+  { duration: 2.8, delay: 0.35 },
+  { duration: 3.1, delay: 0.2 },
+  { duration: 2.5, delay: 0.5 },
+  { duration: 3.3, delay: 0.15 },
+  { duration: 2.7, delay: 0.4 },
+] as const;
+
 export default function HeroGraphics({
   showGradients = true,
   showBottomWave = true,
@@ -41,7 +50,7 @@ export default function HeroGraphics({
 
       {/* Acoustic Equalizer Bars (New) - Mild Animation */}
       <div className="pointer-events-none absolute bottom-0 right-10 flex h-32 items-end gap-1 opacity-10 mix-blend-screen md:right-24 md:h-48 md:gap-2">
-        {[...Array(6)].map((_, i) => (
+        {equalizerConfig.map((config, i) => (
           <motion.div
             key={i}
             className="w-2 rounded-t-sm bg-[#ffe08d] md:w-4"
@@ -50,10 +59,10 @@ export default function HeroGraphics({
             }}
             transition={{
               repeat: Infinity,
-              duration: 2 + Math.random() * 2,
+              duration: config.duration,
               ease: "easeInOut",
               times: [0, 0.25, 0.5, 0.75, 1],
-              delay: Math.random() * 1,
+              delay: config.delay,
             }}
           />
         ))}

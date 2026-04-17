@@ -127,3 +127,76 @@
 .page-shell {
   min-height: 100vh;
 }
+
+@keyframes heroDriftSlow {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1.03) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(-4%, -8%, 0) scale(1.1) rotate(-2.5deg);
+  }
+}
+
+@keyframes heroDriftMedium {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1.02) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(6%, -5%, 0) scale(1.12) rotate(3deg);
+  }
+}
+
+@keyframes heroDriftFast {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1.01) rotate(0deg);
+    opacity: 0.12;
+  }
+  50% {
+    transform: translate3d(-7%, -9%, 0) scale(1.16) rotate(-4deg);
+    opacity: 0.22;
+  }
+}
+
+@keyframes heroPulseGrid {
+  0%,
+  100% {
+    opacity: 0.12;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: translate3d(0, -20px, 0) scale(1.03);
+  }
+}
+
+.hero-grid-motion {
+  animation: heroPulseGrid 10s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.hero-layer-drift-slow {
+  animation: heroDriftSlow 12s ease-in-out infinite;
+  will-change: transform;
+}
+
+.hero-layer-drift-medium {
+  animation: heroDriftMedium 9s ease-in-out infinite;
+  will-change: transform;
+}
+
+.hero-layer-drift-fast {
+  animation: heroDriftFast 7s ease-in-out infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-grid-motion,
+  .hero-layer-drift-slow,
+  .hero-layer-drift-medium,
+  .hero-layer-drift-fast {
+    animation: none;
+  }
+}

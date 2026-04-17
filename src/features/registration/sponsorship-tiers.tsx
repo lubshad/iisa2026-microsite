@@ -56,13 +56,16 @@ export default function SponsorshipTiers() {
     <section className="relative overflow-hidden py-12 md:py-24">
       {/* Section header */}
       <div className="mb-8 max-w-3xl md:mb-16">
-        <p className="font-label mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:mb-4 md:text-xs">
-          Partnership Opportunities
-        </p>
-        <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
+        <div className="mb-4 inline-flex items-center gap-3 rounded-full border border-[#745b04]/20 bg-[#fff7e8] px-4 py-2">
+          <span className="h-2.5 w-2.5 rounded-full bg-[#745b04]" />
+          <p className="font-label text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:text-xs">
+            Partnership Opportunities
+          </p>
+        </div>
+        <h2 className="font-headline mb-4 text-4xl leading-tight text-[#00375e] md:mb-5 md:text-6xl">
           IISA 2026 Sponsorship
         </h2>
-        <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24" />
+        <div className="mb-6 h-1.5 w-24 rounded-full bg-[linear-gradient(90deg,#745b04,#e4c368)] md:mb-8 md:w-32" />
         <div className="border-l-4 border-l-[#745b04] py-2 pl-6">
           <p className="mb-2 font-body text-lg font-bold text-[#1a1c1c]">
             India International Symposium on Acoustics 2026
@@ -119,7 +122,7 @@ export default function SponsorshipTiers() {
                 {tier.name}
               </span>
               <div
-                className={`font-body text-xl font-bold ${
+                className={`font-body text-2xl font-bold md:text-3xl ${
                   tier.variant === "exclusive" ? "text-white" : "text-[#1a1c1c]"
                 }`}
               >

@@ -23,13 +23,16 @@ export default function ExhibitionExpo() {
     <section className="relative overflow-hidden py-12 md:py-24">
       {/* Section header */}
       <div className="mb-8 max-w-3xl md:mb-16">
-        <p className="font-label mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:mb-4 md:text-xs">
-          Showcase Your Innovation
-        </p>
-        <h2 className="font-headline mb-6 text-3xl leading-tight text-[#00375e] md:mb-8 md:text-5xl">
+        <div className="mb-4 inline-flex items-center gap-3 rounded-full border border-[#745b04]/20 bg-[#fff7e8] px-4 py-2">
+          <span className="h-2.5 w-2.5 rounded-full bg-[#745b04]" />
+          <p className="font-label text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:text-xs">
+            Showcase Your Innovation
+          </p>
+        </div>
+        <h2 className="font-headline mb-4 text-4xl leading-tight text-[#00375e] md:mb-5 md:text-6xl">
           IISA 2026 Exhibition
         </h2>
-        <div className="mb-6 h-1 w-16 bg-[#745b04] md:mb-8 md:w-24" />
+        <div className="mb-6 h-1.5 w-24 rounded-full bg-[linear-gradient(90deg,#745b04,#e4c368)] md:mb-8 md:w-32" />
         <div className="border-l-4 border-l-[#745b04] py-2 pl-5 md:pl-6">
           <p className="mb-1 font-body text-base font-bold text-[#1a1c1c] md:mb-2 md:text-lg">
             India International Symposium on Acoustics 2026
@@ -148,21 +151,27 @@ export default function ExhibitionExpo() {
 
       {/* Exhibition fees */}
       <motion.div
-        className="rounded-lg bg-[#f9f9f9] border border-[#f3f3f4] p-5 md:rounded-xl md:p-14"
+        className="rounded-lg border border-[#e7d4c7] bg-[linear-gradient(135deg,#fffdfa,#f7f1eb)] p-5 shadow-[0_20px_45px_rgba(95,57,38,0.08)] md:rounded-xl md:p-14"
         initial={{ opacity: 0, y: 30 }}
         viewport={{ once: true }}
         whileInView={{ opacity: 1, y: 0 }}
       >
         <div className="mb-6 text-center md:mb-10">
-          <h3 className="font-headline mb-2 text-2xl text-[#00375e] md:text-3xl">Exhibition Fees</h3>
-          <p className="font-body text-sm text-[#42474f] md:text-base">
+          <div className="mb-3 inline-flex items-center gap-3 rounded-full border border-[#745b04]/20 bg-[#fff7e8] px-4 py-2">
+            <span className="h-2.5 w-2.5 rounded-full bg-[#745b04]" />
+            <span className="font-label text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:text-xs">
+              Pricing
+            </span>
+          </div>
+          <h3 className="font-headline mb-2 text-3xl text-[#00375e] md:text-5xl">Exhibition Fees</h3>
+          <p className="font-body text-sm text-[#42474f] md:text-lg">
             Secure your spot early to take advantage of reduced rates.
           </p>
         </div>
 
         <div className="mb-6 grid grid-cols-1 gap-4 md:mb-10 md:grid-cols-2 md:gap-8">
-          <div className="editorial-shadow relative overflow-hidden rounded-lg bg-white p-5 md:rounded-xl md:p-8">
-            <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]" />
+          <div className="relative overflow-hidden rounded-lg border border-[#d5b7a0] bg-[linear-gradient(135deg,#ffffff,#eef3f2)] p-5 shadow-[0_18px_38px_rgba(95,57,38,0.12)] md:rounded-xl md:p-8">
+            <div className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-[#8f4f2c] via-[#c78f6a] to-[#745b04]" />
             <div className="mb-4 flex items-center gap-3 md:mb-6">
               <Icon className="size-4 text-[#00375e] md:size-5" name="globe" />
               <span className="font-label text-[10px] font-bold uppercase tracking-widest text-[#42474f] md:text-xs">
@@ -170,21 +179,21 @@ export default function ExhibitionExpo() {
               </span>
             </div>
             <div className="mb-3 flex items-baseline justify-between md:mb-4">
-              <span className="font-body text-xs font-medium text-[#42474f] md:text-sm">
-                Early (Before Sep 1, 2025)
+              <span className="font-body text-xs font-semibold text-[#42474f] md:text-sm">
+                Early (Before Sep 1, 2026)
               </span>
-              <span className="font-body text-xl font-bold text-[#1a1c1c] md:text-2xl">₹30,000</span>
+              <span className="font-body text-2xl font-bold text-[#8f4f2c] md:text-4xl">₹30,000</span>
             </div>
             <div className="flex items-baseline justify-between">
-              <span className="font-body text-xs font-medium text-[#42474f] md:text-sm">
-                Regular (After Sep 1, 2025)
+              <span className="font-body text-xs font-semibold text-[#42474f] md:text-sm">
+                Regular (After Sep 1, 2026)
               </span>
-              <span className="font-body text-lg font-bold text-[#42474f] md:text-xl">₹40,000</span>
+              <span className="font-body text-xl font-bold text-[#1a1c1c] md:text-3xl">₹40,000</span>
             </div>
           </div>
 
-          <div className="editorial-shadow relative overflow-hidden rounded-lg bg-white p-5 md:rounded-xl md:p-8">
-            <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#00375e] via-[#9fcafc] to-[#745b04]" />
+          <div className="relative overflow-hidden rounded-lg border border-[#d5b7a0] bg-[linear-gradient(135deg,#ffffff,#eef3f2)] p-5 shadow-[0_18px_38px_rgba(95,57,38,0.12)] md:rounded-xl md:p-8">
+            <div className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-[#8f4f2c] via-[#c78f6a] to-[#745b04]" />
             <div className="mb-4 flex items-center gap-3 md:mb-6">
               <Icon className="size-4 text-[#745b04] md:size-5" name="map" />
               <span className="font-label text-[10px] font-bold uppercase tracking-widest text-[#42474f] md:text-xs">
@@ -192,16 +201,16 @@ export default function ExhibitionExpo() {
               </span>
             </div>
             <div className="mb-3 flex items-baseline justify-between md:mb-4">
-              <span className="font-body text-xs font-medium text-[#42474f] md:text-sm">
-                Early (Before Sep 1, 2025)
+              <span className="font-body text-xs font-semibold text-[#42474f] md:text-sm">
+                Early (Before Sep 1, 2026)
               </span>
-              <span className="font-body text-xl font-bold text-[#1a1c1c] md:text-2xl">$1,000</span>
+              <span className="font-body text-2xl font-bold text-[#8f4f2c] md:text-4xl">$1,000</span>
             </div>
             <div className="flex items-baseline justify-between">
-              <span className="font-body text-xs font-medium text-[#42474f] md:text-sm">
-                Regular (After Sep 1, 2025)
+              <span className="font-body text-xs font-semibold text-[#42474f] md:text-sm">
+                Regular (After Sep 1, 2026)
               </span>
-              <span className="font-body text-lg font-bold text-[#42474f] md:text-xl">$1,500</span>
+              <span className="font-body text-xl font-bold text-[#1a1c1c] md:text-3xl">$1,500</span>
             </div>
           </div>
         </div>

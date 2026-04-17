@@ -8,6 +8,7 @@ import {
   UniversityInfo,
   AccessibilitySection,
   AboutCalicut,
+  HowToReach,
   VenueSummary,
 } from "@/features/venue";
 
@@ -28,6 +29,7 @@ export default function VenuePage() {
       <main>
         <VenueHero />
         <VenueOverview />
+        <HowToReach />
         <UniversityInfo />
         <AccessibilitySection />
         <AboutCalicut />

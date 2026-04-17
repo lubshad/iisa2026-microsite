@@ -2,15 +2,12 @@
 
 import { motion } from "framer-motion";
 import Icon from "@/components/icon";
-import HeroGraphics from "@/components/hero-graphics";
+import HeroBackdrop from "@/components/hero-backdrop";
 
 export default function RegistrationHero() {
   return (
-    <section className="relative flex h-[70vh] min-h-[600px] items-center overflow-hidden bg-[#00375e] md:h-[85vh] md:min-h-[750px]">
-      {/* Subtle geometric accents */}
-      <div className="absolute right-0 top-0 -z-0 h-full w-1/2 translate-x-1/4 skew-x-12 transform bg-[#1e4e79]/40" />
-      <div className="absolute bottom-0 left-0 -z-0 h-64 w-64 -translate-x-1/2 translate-y-1/2 rounded-full bg-[#745b04]/10 blur-[80px]" />
-      <HeroGraphics showGradients={false} showBottomWave={false} />
+    <section className="relative flex h-[70vh] min-h-[600px] items-center overflow-hidden bg-[#120f2e] md:h-[85vh] md:min-h-[750px]">
+      <HeroBackdrop />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 text-center md:px-8">
         <motion.div

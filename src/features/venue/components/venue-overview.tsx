@@ -1,8 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
-import universityImg from "@/assets/images/university-of-calicut.jpg";
 
 export default function VenueOverview() {
   return (
@@ -31,19 +29,9 @@ export default function VenueOverview() {
             Located at Thenhipalam in Malappuram district, the campus offers a serene academic
             setting with modern infrastructure and active national and international collaborations.
           </p>
-          <div className="rounded-lg border border-[#00375e]/8 bg-[#f9f9f9] p-5 md:p-6">
-            <p className="font-label mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#745b04] md:text-xs">
-              Venue Context
-            </p>
-            <p className="font-body leading-relaxed text-[#42474f]">
-              The brochure highlights the university&apos;s strength across science, technology,
-              humanities, social sciences, and interdisciplinary studies, with growing work in
-              Artificial Intelligence, Data Science, and computational sciences.
-            </p>
-          </div>
         </motion.div>
 
-        {/* Actual campus photo */}
+        {/* Google Map embed */}
         <motion.div
           className="relative"
           initial={{ opacity: 0, scale: 0.97 }}
@@ -52,22 +40,17 @@ export default function VenueOverview() {
           whileInView={{ opacity: 1, scale: 1 }}
         >
           <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-2xl">
-            <Image
-              alt="University of Calicut campus aerial view"
-              className="object-cover object-center"
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              src={universityImg}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.7225133027396!2d75.89266047508725!3d11.134031952495741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba651d12ad11f7d%3A0xcdc1f327bd56c1a3!2sUniversity%20of%20Calicut!5e0!3m2!1sen!2sin!4v1776412563251!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="University of Calicut on Google Maps"
+              className="absolute inset-0 h-full w-full"
             />
-            {/* Caption overlay */}
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#00375e]/80 to-transparent px-8 py-6">
-              <p className="font-label text-xs font-bold uppercase tracking-[0.2em] text-[#ffe08d]">
-                University of Calicut
-              </p>
-              <p className="font-body text-sm text-white/80">
-                Thenhipalam, Malappuram, Kerala — Aerial View
-              </p>
-            </div>
           </div>
           {/* Decorative border accent */}
           <div className="absolute -bottom-4 -right-4 -z-10 h-full w-full rounded-xl border-2 border-[#745b04]/20" />
