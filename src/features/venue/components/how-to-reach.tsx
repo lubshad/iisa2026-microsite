@@ -61,7 +61,7 @@ export default function HowToReach() {
                 {/* Icon + Title */}
                 <div className="mb-6 flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#f0f4f8]">
-                    <Icon name={mode.icon} className="size-5 text-[#00375e]" />
+                    <Icon name={mode.icon as "flight" | "train"} className="size-5 text-[#00375e]" />
                   </div>
                   <h3 className="font-headline text-2xl font-bold text-[#00375e]">
                     {mode.title}
